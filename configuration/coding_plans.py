@@ -283,7 +283,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
 
 def get_rqa_coding_plans(pipeline_name):
     if pipeline_name == "gpsdd_kilifi_s01_pipeline":
-        return KIAMBU_S01_RQA_CODING_PLANS
+        return KILIFI_S01_RQA_CODING_PLANS
 
     elif pipeline_name == "gpsdd_kiambu_s01_pipeline":
         return KIAMBU_S01_RQA_CODING_PLANS
