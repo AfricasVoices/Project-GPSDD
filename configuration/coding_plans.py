@@ -21,9 +21,9 @@ def clean_age_with_range_filter(text):
         return Codes.NOT_CODED
 
 KILIFI_S01_RQA_CODING_PLANS = [
-        CodingPlan(raw_field="rqa_s01e01_raw",
+        CodingPlan(raw_field="kilifi_rqa_s01e01_raw",
                            time_field="sent_on",
-                           run_id_field="rqa_s01e01_run_id",
+                           run_id_field="kilifi_rqa_s01e01_run_id",
                            coda_filename="GPSDD_KILIFI_s01e01.json",
                            icr_filename="kilifi_s01e01.csv",
                            coding_configurations=[
@@ -38,9 +38,9 @@ KILIFI_S01_RQA_CODING_PLANS = [
                            ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e01"),
                            raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e02_raw",
+        CodingPlan(raw_field="kilifi_rqa_s01e02_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e02_run_id",
+                   run_id_field="kilifi_rqa_s01e02_run_id",
                    coda_filename="GPSDD_KILIFI_s01e02.json",
                    icr_filename="kilifi_s01e02.csv",
                    coding_configurations=[
@@ -55,9 +55,9 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e02"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e03_raw",
+        CodingPlan(raw_field="kilifi_rqa_s01e03_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e03_run_id",
+                   run_id_field="kilifi_rqa_s01e03_run_id",
                    coda_filename="GPSDD_KILIFI_s01e03.json",
                    icr_filename="kilifi_s01e03.csv",
                    coding_configurations=[
@@ -72,9 +72,9 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e03"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e04_raw",
+        CodingPlan(raw_field="kilifi_rqa_s01e04_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e04_run_id",
+                   run_id_field="kilifi_rqa_s01e04_run_id",
                    coda_filename="GPSDD_KILIFI_s01e04.json",
                    icr_filename="kilifi_s01e04.csv",
                    coding_configurations=[
@@ -89,9 +89,9 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e04"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e05_raw",
+        CodingPlan(raw_field="kilifi_rqa_s01e05_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e05_run_id",
+                   run_id_field="kilifi_rqa_s01e05_run_id",
                    coda_filename="GPSDD_KILIFI_s01e05.json",
                    icr_filename="kilifi_s01e05.csv",
                    coding_configurations=[
@@ -108,9 +108,9 @@ KILIFI_S01_RQA_CODING_PLANS = [
 ]
 
 KIAMBU_S01_RQA_CODING_PLANS = [
-        CodingPlan(raw_field="rqa_s01e01_raw",
+        CodingPlan(raw_field="kiambu_rqa_s01e01_raw",
                            time_field="sent_on",
-                           run_id_field="rqa_s01e01_run_id",
+                           run_id_field="kiambu_rqa_s01e01_run_id",
                            coda_filename="GPSDD_KIAMBU_s01e01.json",
                            icr_filename="kiambu_s01e01.csv",
                            coding_configurations=[
@@ -125,9 +125,9 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                            ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e01"),
                            raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e02_raw",
+        CodingPlan(raw_field="kiambu_rqa_s01e02_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e02_run_id",
+                   run_id_field="kiambu_rqa_s01e02_run_id",
                    coda_filename="GPSDD_KIAMBU_s01e02.json",
                    icr_filename="kiambu_s01e02.csv",
                    coding_configurations=[
@@ -142,9 +142,9 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e02"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e03_raw",
+        CodingPlan(raw_field="kiambu_rqa_s01e03_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e03_run_id",
+                   run_id_field="kiambu_rqa_s01e03_run_id",
                    coda_filename="GPSDD_KIAMBU_s01e03.json",
                    icr_filename="kiambu_s01e03.csv",
                    coding_configurations=[
@@ -159,9 +159,9 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e03"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e04_raw",
+        CodingPlan(raw_field="kiambu_rqa_s01e04_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e04_run_id",
+                   run_id_field="kiambu_rqa_s01e04_run_id",
                    coda_filename="GPSDD_KIAMBU_s01e04.json",
                    icr_filename="kiambu_s01e04.csv",
                    coding_configurations=[
@@ -176,9 +176,9 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e04"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e05_raw",
+        CodingPlan(raw_field="kiambu_rqa_s01e05_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e05_run_id",
+                   run_id_field="kiambu_rqa_s01e05_run_id",
                    coda_filename="GPSDD_KIAMBU_s01e05.json",
                    icr_filename="kiambu_s01e05.csv",
                    coding_configurations=[
@@ -195,9 +195,9 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 ]
 
 BUNGOMA_S01_RQA_CODING_PLANS = [
-        CodingPlan(raw_field="rqa_s01e01_raw",
+        CodingPlan(raw_field="bungoma_rqa_s01e01_raw",
                            time_field="sent_on",
-                           run_id_field="rqa_s01e01_run_id",
+                           run_id_field="bungoma_rqa_s01e01_run_id",
                            coda_filename="GPSDD_BUNGOMA_s01e01.json",
                            icr_filename="bungoma_s01e01.csv",
                            coding_configurations=[
@@ -212,9 +212,9 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                            ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e01"),
                            raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e02_raw",
+        CodingPlan(raw_field="bungoma_rqa_s01e02_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e02_run_id",
+                   run_id_field="bungoma_rqa_s01e02_run_id",
                    coda_filename="GPSDD_BUNGOMA_s01e02.json",
                    icr_filename="bungoma_s01e02.csv",
                    coding_configurations=[
@@ -229,9 +229,9 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e02"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e03_raw",
+        CodingPlan(raw_field="bungoma_rqa_s01e03_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e03_run_id",
+                   run_id_field="bungoma_rqa_s01e03_run_id",
                    coda_filename="GPSDD_BUNGOMA_s01e03.json",
                    icr_filename="bungoma_s01e03.csv",
                    coding_configurations=[
@@ -246,9 +246,9 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e03"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e04_raw",
+        CodingPlan(raw_field="bungoma_rqa_s01e04_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e04_run_id",
+                   run_id_field="bungoma_rqa_s01e04_run_id",
                    coda_filename="GPSDD_BUNGOMA_s01e04.json",
                    icr_filename="bungoma_s01e04.csv",
                    coding_configurations=[
@@ -263,9 +263,9 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e04"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
-        CodingPlan(raw_field="rqa_s01e05_raw",
+        CodingPlan(raw_field="bungoma_rqa_s01e05_raw",
                    time_field="sent_on",
-                   run_id_field="rqa_s01e05_run_id",
+                   run_id_field="bungoma_rqa_s01e05_run_id",
                    coda_filename="GPSDD_BUNGOMA_s01e05.json",
                    icr_filename="bungoma_s01e05.csv",
                    coding_configurations=[
