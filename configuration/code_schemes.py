@@ -10,12 +10,23 @@ def _open_scheme(filename):
 
 
 class CodeSchemes(object):
-    S01E01 = _open_scheme("s01e01.json")
-    S01E02 = _open_scheme("s01e02.json")
-    S01E03 = _open_scheme("s01e03.json")
-    S01E04 = _open_scheme("s01e04.json")
-    S01E05 = _open_scheme("s01e05.json")
-    S01_CLOSE_OUT = _open_scheme("s01_close_out.json")
+    KILIFI_S01E01 = _open_scheme("kilifi_s01e01.json")
+    KILIFI_S01E02 = _open_scheme("kilifi_s01e02.json")
+    KILIFI_S01E03 = _open_scheme("kilifi_s01e03.json")
+    KILIFI_S01E04 = _open_scheme("kilifi_s01e04.json")
+    KILIFI_S01E05 = _open_scheme("kilifi_s01e05.json")
+
+    KIAMBU_S01E01 = _open_scheme("kiambu_s01e01.json")
+    KIAMBU_S01E02 = _open_scheme("kiambu_s01e02.json")
+    KIAMBU_S01E03 = _open_scheme("kiambu_s01e03.json")
+    KIAMBU_S01E04 = _open_scheme("kiambu_s01e04.json")
+    KIAMBU_S01E05 = _open_scheme("kiambu_s01e05.json")
+
+    BUNGOMA_S01E01 = _open_scheme("bungoma_s01e01.json")
+    BUNGOMA_S01E02 = _open_scheme("bungoma_s01e02.json")
+    BUNGOMA_S01E03 = _open_scheme("bungoma_s01e03.json")
+    BUNGOMA_S01E04 = _open_scheme("bungoma_s01e04.json")
+    BUNGOMA_S01E05 = _open_scheme("bungoma_s01e05.json")
 
     KENYA_CONSTITUENCY = _open_scheme("kenya_constituency.json")
     KENYA_COUNTY = _open_scheme("kenya_county.json")
