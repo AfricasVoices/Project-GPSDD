@@ -298,7 +298,7 @@ def get_demog_coding_plans(pipeline_name):
     return [
         CodingPlan(raw_field="gender_raw",
                    time_field="gender_time",
-                   coda_filename="UNICEF_COVID19_KE_gender.json",
+                   coda_filename="GPSDD_BUNGOMA_gender.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -314,7 +314,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="age_raw",
                    time_field="age_time",
-                   coda_filename="UNICEF_COVID19_KE_age.json",
+                   coda_filename="GPSDD_BUNGOMA_age.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -339,7 +339,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="location_raw",
                    time_field="location_time",
-                   coda_filename="UNICEF_COVID19_KE_location.json",
+                   coda_filename="GPSDD_BUNGOMA_location.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
