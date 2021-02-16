@@ -1,0 +1,127 @@
+{
+  "PipelineName": "gpsdd_all_locations_pipeline",
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/gpsdd-kiambu-textit-token.txt",
+      "ContactsFileName": "gpsdd_kiambu_contacts",
+      "ActivationFlowNames": [
+        "gpsdd_kiambu_s01e01_activation"
+      ],
+      "SurveyFlowNames": [
+        "gpsdd_kiambu_s01_demog"
+      ],
+      "TestContactUUIDs": [
+        "40b2747e-764a-4635-b922-6c67c7327075",
+        "fb7dc7b9-403d-4420-895a-dd32aac6ada2"
+      ]
+    }
+  ],
+  "PhoneNumberUuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "GPSDD_phone_number_avf_phone_id"
+  },
+  "RapidProKeyRemappings": [
+    {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
+    
+    {"RapidProKey": "Rqa_S01E01 (Text) - gpsdd_kilifi_s01e01_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E01 (Run ID) - gpsdd_kilifi_s01e01_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_S01E01 (Time) - gpsdd_kilifi_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E02 (Text) - gpsdd_kilifi_s01e02_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E02 (Run ID) - gpsdd_kilifi_s01e02_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_S01E02 (Time) - gpsdd_kilifi_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E03 (Text) - gpsdd_kilifi_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E03 (Run ID) - gpsdd_kilifi_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E03 (Time) - gpsdd_kilifi_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E04 (Text) - gpsdd_kilifi_s01e04_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E04 (Run ID) - gpsdd_kilifi_s01e04_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_S01E04 (Time) - gpsdd_kilifi_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E05 (Text) - gpsdd_kilifi_s01e05_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_kilifi_s01e05_activation", "PipelineKey": "rqa_s01e05_run_id"},
+    {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_kilifi_s01e05_activation", "PipelineKey": "sent_on"},
+    
+    {"RapidProKey": "Rqa_S01E01 (Text) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E01 (Run ID) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_S01E01 (Time) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E02 (Text) - gpsdd_kiambu_s01e02_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E02 (Run ID) - gpsdd_kiambu_s01e02_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_S01E02 (Time) - gpsdd_kiambu_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E03 (Text) - gpsdd_kiambu_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E03 (Run ID) - gpsdd_kiambu_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E03 (Time) - gpsdd_kiambu_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E04 (Text) - gpsdd_kiambu_s01e04_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E04 (Run ID) - gpsdd_kiambu_s01e04_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_S01E04 (Time) - gpsdd_kiambu_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E05 (Text) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "rqa_s01e05_run_id"},
+    {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "sent_on"},
+    
+    {"RapidProKey": "Rqa_S01E01 (Text) - gpsdd_bungoma_s01e01_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E01 (Run ID) - gpsdd_bungoma_s01e01_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_S01E01 (Time) - gpsdd_bungoma_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E02 (Text) - gpsdd_bungoma_s01e02_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E02 (Run ID) - gpsdd_bungoma_s01e02_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_S01E02 (Time) - gpsdd_bungoma_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E03 (Text) - gpsdd_bungoma_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E03 (Run ID) - gpsdd_bungoma_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E03 (Time) - gpsdd_bungoma_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E04 (Text) - gpsdd_bungoma_s01e04_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E04 (Run ID) - gpsdd_bungoma_s01e04_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_S01E04 (Time) - gpsdd_bungoma_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E05 (Text) - gpsdd_bungoma_s01e05_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_bungoma_s01e05_activation", "PipelineKey": "rqa_s01e05_run_id"},
+    {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_bungoma_s01e05_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Constituency (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Constituency (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "location_time"},
+    {"RapidProKey": "Gender (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "age_time"},
+    
+    {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "location_time"},
+    {"RapidProKey": "Gender (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "age_time"},
+    
+    {"RapidProKey": "Constituency (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Constituency (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "location_time"},
+    {"RapidProKey": "Gender (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "age_time"}
+  ],
+  "ProjectStartDate": "2020-11-17T10:30:00+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": true,
+  "MoveWSMessages": true,
+  "AutomatedAnalysis": {
+    "GenerateCountyThemeDistributionMaps": true,
+    "GenerateConstituencyThemeDistributionMaps": true
+  },
+  "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "gpsdd_analysis_outputs/all_locations/production.csv",
+    "MessagesUploadPath": "gpsdd_analysis_outputs/all_locations/messages.csv",
+    "IndividualsUploadPath": "gpsdd_analysis_outputs/all_locations/individuals.csv",
+    "AutomatedAnalysisDir": "gpsdd_analysis_outputs/all_locations/automated_analysis"
+  },
+  "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+  "BucketDirPath": "2021/GPSDD"
+}
