@@ -44,12 +44,14 @@
     {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "kiambu_rqa_s01e05_run_id"},
     {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "sent_on"},
 
-    {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "location_raw"},
-    {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "location_time"},
-    {"RapidProKey": "Gender (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "gender_raw"},
-    {"RapidProKey": "Gender (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "gender_time"},
-    {"RapidProKey": "Age (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "age_raw"},
-    {"RapidProKey": "Age (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "age_time"}
+    {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_raw"},
+    {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_time"},
+    {"RapidProKey": "Gender (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_gender_raw"},
+    {"RapidProKey": "Gender (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_gender_time"},
+    {"RapidProKey": "Age (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_age_raw"},
+    {"RapidProKey": "Age (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_age_time"},
+    {"RapidProKey": "Disability (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disability_raw"},
+    {"RapidProKey": "Disability (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disability_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
@@ -68,5 +70,5 @@
   },
   "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
   "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
-  "BucketDirPath": "2021/GPSDD"
+  "BucketDirPath": "2021/GPSDD/KIAMBU"
 }

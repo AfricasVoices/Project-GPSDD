@@ -31,6 +31,7 @@ class CodeSchemes(object):
     KENYA_CONSTITUENCY = _open_scheme("kenya_constituency.json")
     KENYA_COUNTY = _open_scheme("kenya_county.json")
     GENDER = _open_scheme("gender.json")
+    DISABLED = _open_scheme("disabled.json")
     AGE = _open_scheme("age.json")
     AGE_CATEGORY = _open_scheme("age_category.json")
 
