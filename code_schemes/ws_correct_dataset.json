@@ -1,0 +1,331 @@
+{
+  "SchemeID": "Scheme-ffff43a6",
+  "Name": "WS - Correct Dataset",
+  "Version": "0.0.0.3",
+  "Codes": [
+    {
+      "CodeID": "code-a9eceb77",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi location",
+      "StringValue": "kilifi_location",
+      "NumericValue": 1,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi location"
+      ]
+    },
+    {
+      "CodeID": "code-a5c1f7e2",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi age",
+      "StringValue": "kilifi_age",
+      "NumericValue": 2,
+      "VisibleInCoda": true,
+      "MatchValues":  [
+        "kilifi age"
+      ]
+    },
+    {
+      "CodeID": "code-086ffd5c",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi gender",
+      "StringValue": "kilifi_gender",
+      "NumericValue": 3,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi gender"
+      ]
+    },
+    {
+      "CodeID": "code-48b90c60",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi disabled",
+      "StringValue": "kilifi_disabled",
+      "NumericValue": 4,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi disabled"
+      ]
+    },
+    {
+      "CodeID": "code-6151d1b7",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu location",
+      "StringValue": "kiambu_location",
+      "NumericValue": 5,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu location"
+      ]
+    },
+    {
+      "CodeID": "code-1a0baaf7",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu age",
+      "StringValue": "kiambu_age",
+      "NumericValue": 6,
+      "VisibleInCoda": true,
+      "MatchValues":  [
+        "kiambu age"
+      ]
+    },
+    {
+      "CodeID": "code-f58951a1",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu gender",
+      "StringValue": "kiambu_gender",
+      "NumericValue": 7,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu gender"
+      ]
+    },
+    {
+      "CodeID": "code-97e037f0",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu disabled",
+      "StringValue": "kiambu_disabled",
+      "NumericValue": 8,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu disabled"
+      ]
+    },
+    {
+      "CodeID": "code-4a2e9468",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma location",
+      "StringValue": "bungoma_location",
+      "NumericValue": 9,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma location"
+      ]
+    },
+    {
+      "CodeID": "code-f86ff529",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma age",
+      "StringValue": "bungoma_age",
+      "NumericValue": 10,
+      "VisibleInCoda": true,
+      "MatchValues":  [
+        "bungoma age"
+      ]
+    },
+    {
+      "CodeID": "code-2133ffaa",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma gender",
+      "StringValue": "bungoma_gender",
+      "NumericValue": 11,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma gender"
+      ]
+    },
+    {
+      "CodeID": "code-34b98a66",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma disabled",
+      "StringValue": "bungoma_disabled",
+      "NumericValue": 12,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma disabled"
+      ]
+    },
+    {
+      "CodeID": "code-a30edd73",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e01",
+      "StringValue": "gpsdd_kilifi_s01e01",
+      "NumericValue": 13,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e01"
+      ]
+    },
+    {
+      "CodeID": "code-ce99f0e3",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e02",
+      "StringValue": "gpsdd_kilifi_s01e02",
+      "NumericValue": 14,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e02"
+      ]
+    },
+    {
+      "CodeID": "code-d6757dc4",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e03",
+      "StringValue": "gpsdd_kilifi_s01e03",
+      "NumericValue": 15,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e03"
+      ]
+    },
+    {
+      "CodeID": "code-1feb7755",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e04",
+      "StringValue": "gpsdd_kilifi_s01e04",
+      "NumericValue": 16,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e04"
+      ]
+    },
+    {
+      "CodeID": "code-2a901d22",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e05",
+      "StringValue": "gpsdd_kilifi_s01e05",
+      "NumericValue": 17,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-59ce7a3e",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e01",
+      "StringValue": "gpsdd_kiambu_s01e01",
+      "NumericValue": 18,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e01"
+      ]
+    },
+    {
+      "CodeID": "code-27e9f829",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e02",
+      "StringValue": "gpsdd_kiambu_s01e02",
+      "NumericValue": 19,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e02"
+      ]
+    },
+    {
+      "CodeID": "code-566a5181",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e03",
+      "StringValue": "gpsdd_kiambu_s01e03",
+      "NumericValue": 20,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e03"
+      ]
+    },
+    {
+      "CodeID": "code-4da7c5d5",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e04",
+      "StringValue": "gpsdd_kiambu_s01e04",
+      "NumericValue": 21,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e04"
+      ]
+    },
+    {
+      "CodeID": "code-06d2df3a",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e05",
+      "StringValue": "gpsdd_kiambu_s01e05",
+      "NumericValue": 22,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-54b4fc0a",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e01",
+      "StringValue": "gpsdd_bungoma_s01e01",
+      "NumericValue": 23,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e01"
+      ]
+    },
+    {
+      "CodeID": "code-68545a4f",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e02",
+      "StringValue": "gpsdd_bungoma_s01e02",
+      "NumericValue": 24,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e02"
+      ]
+    },
+    {
+      "CodeID": "code-7de3484c",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e03",
+      "StringValue": "gpsdd_bungoma_s01e03",
+      "NumericValue": 25,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e03"
+      ]
+    },
+    {
+      "CodeID": "code-37894212",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e04",
+      "StringValue": "gpsdd_bungoma_s01e04",
+      "NumericValue": 26,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e04"
+      ]
+    },
+    {
+      "CodeID": "code-9c977972",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e05",
+      "StringValue": "gpsdd_bungoma_s01e05",
+      "NumericValue": 27,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "StringValue": "NC",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "StringValue": "NR",
+      "VisibleInCoda": false
+    },
+    {
+      "CodeID": "code-CE-016c1e22",
+      "CodeType": "Control",
+      "ControlCode": "CE",
+      "DisplayText": "CE (coding error)",
+      "NumericValue": -110,
+      "StringValue": "CE",
+      "VisibleInCoda": false
+    }
+  ]
+}
