@@ -304,8 +304,8 @@ KILIFI_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.GENDER,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="kilifi_gender_coded",
-                       analysis_file_key="kilifi_gender",
+                       coded_field="gender_coded",
+                       analysis_file_key="gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -320,16 +320,16 @@ KILIFI_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE,
                        cleaner=clean_age_with_range_filter,
-                       coded_field="kilifi_age_coded",
-                       analysis_file_key="kilifi_age",
+                       coded_field="age_coded",
+                       analysis_file_key="age",
                        include_in_theme_distribution=Codes.FALSE,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE_CATEGORY,
-                       coded_field="kilifi_age_category_coded",
-                       analysis_file_key="kilifi_age_category",
+                       coded_field="age_category_coded",
+                       analysis_file_key="age_category",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -344,15 +344,15 @@ KILIFI_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_COUNTY,
-                       coded_field="kilifi_county_coded",
-                       analysis_file_key="kilifi_county",
+                       coded_field="county_coded",
+                       analysis_file_key="county",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_CONSTITUENCY,
-                       coded_field="kilifi_constituency_coded",
-                       analysis_file_key="kilifi_constituency",
+                       coded_field="constituency_coded",
+                       analysis_file_key="constituency",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -368,8 +368,8 @@ KILIFI_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="kilifi_disabled_coded",
-                       analysis_file_key="kilifi_disabled_gender",
+                       coded_field="disabled_coded",
+                       analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -386,8 +386,8 @@ KIAMBU_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.GENDER,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="kiambu_gender_coded",
-                       analysis_file_key="kiambu_gender",
+                       coded_field="gender_coded",
+                       analysis_file_key="gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -402,16 +402,16 @@ KIAMBU_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE,
                        cleaner=clean_age_with_range_filter,
-                       coded_field="kiambu_age_coded",
-                       analysis_file_key="kiambu_age",
+                       coded_field="age_coded",
+                       analysis_file_key="age",
                        include_in_theme_distribution=Codes.FALSE,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE_CATEGORY,
-                       coded_field="kiambu_age_category_coded",
-                       analysis_file_key="kiambu_age_category",
+                       coded_field="age_category_coded",
+                       analysis_file_key="age_category",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -426,15 +426,15 @@ KIAMBU_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_COUNTY,
-                       coded_field="kiambu_county_coded",
-                       analysis_file_key="kiambu_county",
+                       coded_field="county_coded",
+                       analysis_file_key="county",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_CONSTITUENCY,
-                       coded_field="kiambu_constituency_coded",
-                       analysis_file_key="kiambu_constituency",
+                       coded_field="constituency_coded",
+                       analysis_file_key="constituency",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -450,8 +450,8 @@ KIAMBU_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="kiambu_disabled_coded",
-                       analysis_file_key="kiambu_disabled_gender",
+                       coded_field="disabled_coded",
+                       analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -468,8 +468,8 @@ BUNGOMA_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.GENDER,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="bungoma_gender_coded",
-                       analysis_file_key="bungoma_gender",
+                       coded_field="gender_coded",
+                       analysis_file_key="gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -484,16 +484,16 @@ BUNGOMA_DEMOG_CODING_PLANS = [
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE,
                        cleaner=clean_age_with_range_filter,
-                       coded_field="bungoma_age_coded",
-                       analysis_file_key="bungoma_age",
+                       coded_field="age_coded",
+                       analysis_file_key="age",
                        include_in_theme_distribution=Codes.FALSE,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.AGE_CATEGORY,
-                       coded_field="bungoma_age_category_coded",
-                       analysis_file_key="bungoma_age_category",
+                       coded_field="age_category_coded",
+                       analysis_file_key="age_category",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -508,15 +508,15 @@ BUNGOMA_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_COUNTY,
-                       coded_field="bungoma_county_coded",
-                       analysis_file_key="bungoma_county",
+                       coded_field="county_coded",
+                       analysis_file_key="county",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KENYA_CONSTITUENCY,
-                       coded_field="bungoma_constituency_coded",
-                       analysis_file_key="bungoma_constituency",
+                       coded_field="constituency_coded",
+                       analysis_file_key="constituency",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],
@@ -526,14 +526,14 @@ BUNGOMA_DEMOG_CODING_PLANS = [
 
     CodingPlan(raw_field="bungoma_disabled_raw",
                time_field="bungoma_disabled_time",
-               coda_filename="GPSDD_KILIFI_disabled.json",
+               coda_filename="GPSDD_BUNGOMA_disabled.json",
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
                        cleaner=somali.DemographicCleaner.clean_gender,
-                       coded_field="bungoma_disabled_coded",
-                       analysis_file_key="bungoma_disabled_gender",
+                       coded_field="disabled_coded",
+                       analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    )
                ],

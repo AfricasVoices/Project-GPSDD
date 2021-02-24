@@ -22,6 +22,9 @@
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
     "TableName": "GPSDD_phone_number_avf_phone_id"
   },
+  "OperationsDashboard": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-dashboards-firebase-adminsdk-gvecb-ef772e79b6.json"
+  },
   "RapidProKeyRemappings": [
     {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
 
@@ -51,8 +54,8 @@
     {"RapidProKey": "Gender (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_gender_time"},
     {"RapidProKey": "Age (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_raw"},
     {"RapidProKey": "Age (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_time"},
-    {"RapidProKey": "Disability (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disability_raw"},
-    {"RapidProKey": "Disability (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disability_time"}
+    {"RapidProKey": "Disabled (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_raw"},
+    {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
