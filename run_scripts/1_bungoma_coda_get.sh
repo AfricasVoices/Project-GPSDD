@@ -3,7 +3,7 @@
 set -e
 
 if [[ $# -ne 3 ]]; then
-    echo "Usage: ./1_coda_get.sh <coda-auth-file> <coda-v2-root> <data-root>"
+    echo "Usage: ./1_bungoma_coda_get.sh <coda-auth-file> <coda-v2-root> <data-root>"
     echo "Downloads coded messages datasets from Coda to '<data-root>/Coded Coda Files'"
     exit
 fi
@@ -15,27 +15,16 @@ DATA_ROOT=$3
 ./checkout_coda_v2.sh "$CODA_V2_ROOT"
 
 DATASETS=(
-    "GPSDD_KILIFI_s01e01"
-    "GPSDD_KILIFI_s01e02"
-    "GPSDD_KILIFI_s01e03"
-    "GPSDD_KILIFI_s01e04"
-    "GPSDD_KILIFI_s01e05"
-
-    "GPSDD_KIAMBU_s01e01"
-    "GPSDD_KIAMBU_s01e02"
-    "GPSDD_KIAMBU_s01e03"
-    "GPSDD_KIAMBU_s01e04"
-    "GPSDD_KIAMBU_s01e05"
-
     "GPSDD_BUNGOMA_s01e01"
     "GPSDD_BUNGOMA_s01e02"
     "GPSDD_BUNGOMA_s01e03"
     "GPSDD_BUNGOMA_s01e04"
     "GPSDD_BUNGOMA_s01e05"
 
-    "GPSDD_age"
-    "GPSDD_gender"
-    "GPSDD_location"
+    "GPSDD_BUNGOMA_age"
+    "GPSDD_BUNGOMA_gender"
+    "GPSDD_BUNGOMA_location"
+    "GPSDD_BUNGOMA_disabled"
 )
 
 cd "$CODA_V2_ROOT/data_tools"

@@ -3,7 +3,7 @@
 set -e
 
 if [[ $# -ne 3 ]]; then
-    echo "Usage: ./4_coda_add.sh <coda-auth-file> <coda-v2-root> <data-root>"
+    echo "Usage: ./4_kiambu_coda_add.sh <coda-auth-file> <coda-v2-root> <data-root>"
     echo "Uploads coded messages datasets from '<data-root>/Outputs/Coda Files' to Coda"
     exit
 fi
@@ -15,27 +15,16 @@ DATA_ROOT=$3
 ./checkout_coda_v2.sh "$CODA_V2_ROOT"
 
 DATASETS=(
-    "GPSDD_KILIFI_s01e01"
-    "GPSDD_KILIFI_s01e02"
-    "GPSDD_KILIFI_s01e03"
-    "GPSDD_KILIFI_s01e04"
-    "GPSDD_KILIFI_s01e05"
-
     "GPSDD_KIAMBU_s01e01"
     "GPSDD_KIAMBU_s01e02"
     "GPSDD_KIAMBU_s01e03"
     "GPSDD_KIAMBU_s01e04"
     "GPSDD_KIAMBU_s01e05"
 
-    "GPSDD_BUNGOMA_s01e01"
-    "GPSDD_BUNGOMA_s01e02"
-    "GPSDD_BUNGOMA_s01e03"
-    "GPSDD_BUNGOMA_s01e04"
-    "GPSDD_BUNGOMA_s01e05"
-
-    "GPSDD_age"
-    "GPSDD_gender"
-    "GPSDD_location"
+    "GPSDD_KIAMBU_age"
+    "GPSDD_KIAMBU_gender"
+    "GPSDD_KIAMBU_location"
+    "GPSDD_KIAMBU_disabled"
 )
 
 cd "$CODA_V2_ROOT/data_tools"

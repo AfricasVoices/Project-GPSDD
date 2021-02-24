@@ -3,7 +3,7 @@
 set -e
 
 if [[ $# -ne 10 ]]; then
-    echo "Usage: ./run_pipeline.sh"
+    echo "Usage: ./run_kiambu_pipeline.sh"
     echo "  <user> <pipeline-run-mode> <pipeline-configuration-json>"
     echo "  <coda-pull-credentials-path> <coda-push-credentials-path> <avf-bucket-credentials-path>"
     echo "  <coda-tools-root> <data-root> <data-backup-dir> <performance-logs-dir>"
@@ -31,14 +31,14 @@ echo "Starting run with id '$RUN_ID'"
 ./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" \
                         "$TIMESTAMP" "$RUN_ID" "PipelineRunStart"
 
-./1_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
+./1_kiambu_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
 ./2_fetch_raw_data.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
 
 ./3_generate_outputs.sh --profile-memory "$PERFORMANCE_LOGS_DIR/memory-$RUN_ID.profile" \
-    "$USER" "$PIPELINE_RUN_MODE" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
+                      "$USER" "$PIPELINE_RUN_MODE" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
 
-./4_coda_add.sh "$CODA_PUSH_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
+./4_kiambu_coda_add.sh "$CODA_PUSH_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
 if [[ $PIPELINE_RUN_MODE == "all-stages" ]]; then
    ./5_automated_analysis.sh --profile-memory "$PERFORMANCE_LOGS_DIR/automated-analysis-memory-$RUN_ID.profile" \
@@ -50,7 +50,7 @@ fi
 ./7_upload_analysis_files.sh "$USER" "$PIPELINE_RUN_MODE" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" \
     "$RUN_ID" "$DATA_ROOT"
 
-./8_upload_log_files.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$PERFORMANCE_LOGS_DIR"
+./8_upload_log_files.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$PERFORMANCE_LOGS_DIR" \
                         "$DATA_BACKUPS_DIR"
 
 ./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" \
