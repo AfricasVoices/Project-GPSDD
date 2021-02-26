@@ -12,6 +12,9 @@ from core_data_modules.logging import Logger
 from core_data_modules.traced_data.io import TracedDataJsonIO
 from core_data_modules.util import IOUtils
 
+from core_data_modules.analysis import AnalysisConfiguration, engagement_counts, theme_distributions, \
+    repeat_participations, sample_messages, traffic_analysis, analysis_utils
+
 from src import AnalysisUtils
 from configuration.code_schemes import  CodeSchemes
 from src.lib.configuration_objects import CodingModes
@@ -22,6 +25,7 @@ log = Logger(__name__)
 
 IMG_SCALE_FACTOR = 10  # Increase this to increase the resolution of the outputted PNGs
 CONSENT_WITHDRAWN_KEY = "consent_withdrawn"
+SENT_ON_KEY = "sent_on"
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Runs automated analysis over the outputs produced by "
@@ -558,5 +562,16 @@ if __name__ == "__main__":
     else:
         log.info("Skipping generating a map of per-constituency theme participation because "
                  "`generate_constituency_theme_distribution_maps` is set to False")
+
+    if pipeline_configuration.automated_analysis.traffic_labels is not None:
+        log.info("Exporting traffic analysis...")
+    with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
+        traffic_analysis.export_traffic_analysis_csv(
+            messages, CONSENT_WITHDRAWN_KEY,
+            coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
+            SENT_ON_KEY,
+            pipeline_configuration.automated_analysis.traffic_labels,
+            f
+        )
 
     log.info("Automated analysis python script complete")

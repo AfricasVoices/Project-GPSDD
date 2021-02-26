@@ -63,7 +63,28 @@
   "MoveWSMessages": true,
   "AutomatedAnalysis": {
     "GenerateCountyThemeDistributionMaps": true,
-    "GenerateConstituencyThemeDistributionMaps": true
+    "GenerateConstituencyThemeDistributionMaps": true,
+    "TrafficLabels": [
+      {"StartDate": "2021-03-01T12:00+03:00", "EndDate": "2020-03-01T16:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-02T09:00+03:00", "EndDate": "2020-03-02T11:00+03:00", "Label": "E01 West Fm"},
+      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2020-03-03T11:00+03:00", "Label": "E01 Sulwe Fm"},
+
+      {"StartDate": "2021-03-08T12:00+03:00", "EndDate": "2020-03-08T16:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2020-03-09T11:00+03:00", "Label": "E02 West Fm"},
+      {"StartDate": "2021-03-10T09:00+03:00", "EndDate": "2020-03-1011:00+03:00", "Label": "E02 Sulwe Fm"},
+
+      {"StartDate": "2021-03-15T12:00+03:00", "EndDate": "2020-03-15T16:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-16T09:00+03:00", "EndDate": "2020-03-16T11:00+03:00", "Label": "E03 West Fm"},
+      {"StartDate": "2021-03-17T09:00+03:00", "EndDate": "2020-03-17T11:00+03:00", "Label": "E03 Sulwe Fm"},
+
+      {"StartDate": "2021-03-22T12:00+03:00", "EndDate": "2020-03-22T16:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-03-23T09:00+03:00", "EndDate": "2020-03-23T11:00+03:00", "Label": "E04 West Fm"},
+      {"StartDate": "2021-03-24T09:00+03:00", "EndDate": "2020-03-24T11:00+03:00", "Label": "E04 Sulwe Fm"},
+
+      {"StartDate": "2021-03-29T12:00+03:00", "EndDate": "2020-03-29T16:00+03:00", "Label": "E05 Ad"},
+      {"StartDate": "2021-03-30T09:00+03:00", "EndDate": "2020-03-30T11:00+03:00", "Label": "E05 West Fm"},
+      {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2020-03-31T11:00+03:00", "Label": "E05 Sulwe Fm"}
+    ]
   },
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
