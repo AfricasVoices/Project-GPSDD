@@ -30,8 +30,8 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_S01E01,
-                       coded_field="rqa_s01e01_coded",
-                       analysis_file_key="rqa_s01e01",
+                       coded_field="kilifi_rqa_s01e01_coded",
+                       analysis_file_key="kilifi_rqa_s01e01",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E01, x, y)
                    )
                ],
@@ -47,8 +47,8 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_S01E02,
-                       coded_field="rqa_s01e02_coded",
-                       analysis_file_key="rqa_s01e02",
+                       coded_field="kilifi_rqa_s01e02_coded",
+                       analysis_file_key="kilifi_rqa_s01e02",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E02, x, y)
                    )
                ],
@@ -64,8 +64,8 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_S01E03,
-                       coded_field="rqa_s01e03_coded",
-                       analysis_file_key="rqa_s01e03",
+                       coded_field="kilifi_rqa_s01e03_coded",
+                       analysis_file_key="kilifi_rqa_s01e03",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E03, x, y)
                    )
                ],
@@ -81,8 +81,8 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_S01E04,
-                       coded_field="rqa_s01e04_coded",
-                       analysis_file_key="rqa_s01e04",
+                       coded_field="kilifi_rqa_s01e04_coded",
+                       analysis_file_key="kilifi_rqa_s01e04",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E04, x, y)
                    )
                ],
@@ -98,8 +98,8 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_S01E05,
-                       coded_field="rqa_s01e05_coded",
-                       analysis_file_key="rqa_s01e05",
+                       coded_field="kilifi_rqa_s01e05_coded",
+                       analysis_file_key="kilifi_rqa_s01e05",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E05, x, y)
                    )
                ],
@@ -117,8 +117,8 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_S01E01,
-                       coded_field="rqa_s01e01_coded",
-                       analysis_file_key="rqa_s01e01",
+                       coded_field="kiambu_rqa_s01e01_coded",
+                       analysis_file_key="kiambu_rqa_s01e01",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E01, x, y)
                    )
                ],
@@ -134,8 +134,8 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_S01E02,
-                       coded_field="rqa_s01e02_coded",
-                       analysis_file_key="rqa_s01e02",
+                       coded_field="kiambu_rqa_s01e02_coded",
+                       analysis_file_key="kiambu_rqa_s01e02",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E02, x, y)
                    )
                ],
@@ -151,8 +151,8 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_S01E03,
-                       coded_field="rqa_s01e03_coded",
-                       analysis_file_key="rqa_s01e03",
+                       coded_field="kiambu_rqa_s01e03_coded",
+                       analysis_file_key="kiambu_rqa_s01e03",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E03, x, y)
                    )
                ],
@@ -168,8 +168,8 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_S01E05,
-                       coded_field="rqa_s01e04_coded",
-                       analysis_file_key="rqa_s01e04",
+                       coded_field="kiambu_rqa_s01e04_coded",
+                       analysis_file_key="kiambu_rqa_s01e04",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E05, x, y)
                    )
                ],
@@ -185,8 +185,8 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_S01E05,
-                       coded_field="rqa_s01e05_coded",
-                       analysis_file_key="rqa_s01e05",
+                       coded_field="kiambu_rqa_s01e05_coded",
+                       analysis_file_key="kiambu_rqa_s01e05",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E05, x, y)
                    )
                ],
@@ -204,8 +204,8 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_S01E01,
-                       coded_field="rqa_s01e01_coded",
-                       analysis_file_key="rqa_s01e01",
+                       coded_field="bungoma_rqa_s01e01_coded",
+                       analysis_file_key="bungoma_rqa_s01e01",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E01, x, y)
                    )
                ],
@@ -221,8 +221,8 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_S01E02,
-                       coded_field="rqa_s01e02_coded",
-                       analysis_file_key="rqa_s01e02",
+                       coded_field="bungoma_rqa_s01e02_coded",
+                       analysis_file_key="bungoma_rqa_s01e02",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E02, x, y)
                    )
                ],
@@ -238,8 +238,8 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_S01E03,
-                       coded_field="rqa_s01e03_coded",
-                       analysis_file_key="rqa_s01e03",
+                       coded_field="bungoma_rqa_s01e03_coded",
+                       analysis_file_key="bungoma_rqa_s01e03",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E03, x, y)
                    )
                ],
@@ -255,8 +255,8 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_S01E04,
-                       coded_field="rqa_s01e04_coded",
-                       analysis_file_key="rqa_s01e04",
+                       coded_field="bungoma_rqa_s01e04_coded",
+                       analysis_file_key="bungoma_rqa_s01e04",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E04, x, y)
                    )
                ],
@@ -272,8 +272,8 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_S01E05,
-                       coded_field="rqa_s01e05_coded",
-                       analysis_file_key="rqa_s01e05",
+                       coded_field="bungoma_rqa_s01e05_coded",
+                       analysis_file_key="bungoma_rqa_s01e05",
                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E05, x, y)
                    )
                ],
