@@ -50,6 +50,9 @@
       ]
     }
   ],
+  "ListeningGroupCSVURLs":[
+
+    ],
   "PhoneNumberUuidTable": {
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
     "TableName": "GPSDD_phone_number_avf_phone_id"
