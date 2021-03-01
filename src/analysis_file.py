@@ -9,7 +9,7 @@ from core_data_modules.traced_data.util import FoldTracedData
 from core_data_modules.traced_data.util.fold_traced_data import FoldStrategies
 from core_data_modules.util import TimeUtils
 
-from src.lib import PipelineConfiguration, ConsentUtils
+from src.lib import PipelineConfiguration, ConsentUtils, ListeningGroups
 from src.lib.configuration_objects import CodingModes
 
 
@@ -63,7 +63,8 @@ class AnalysisFile(object):
                 writer.writerow(analysis_dict)
 
     @classmethod
-    def generate(cls, user, data, csv_by_message_output_path, csv_by_individual_output_path):
+    def generate(cls, user, data, pipeline_configuration, raw_data_dir, csv_by_message_output_path,
+                 csv_by_individual_output_path):
         # Serializer is currently overflowing
         # TODO: Investigate/address the cause of this.
         sys.setrecursionlimit(15000)
@@ -107,6 +108,10 @@ class AnalysisFile(object):
         folded_data = FoldTracedData.fold_iterable_of_traced_data(
             user, to_be_folded, lambda td: td["uid"], fold_strategies
         )
+
+        # Tag listening group participants
+        ListeningGroups.tag_listening_groups_participants(user, data, pipeline_configuration, raw_data_dir)
+        ListeningGroups.tag_listening_groups_participants(user, data, pipeline_configuration, raw_data_dir)
 
         ConsentUtils.set_stopped(user, data, consent_withdrawn_key)
         ConsentUtils.set_stopped(user, folded_data, consent_withdrawn_key)

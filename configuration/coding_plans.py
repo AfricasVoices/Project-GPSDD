@@ -22,6 +22,7 @@ def clean_age_with_range_filter(text):
 
 KILIFI_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kilifi_rqa_s01e01_raw",
+               listening_group_filename="gpsdd_kilifi_s01e01_listening_group.csv",
                time_field="sent_on",
                run_id_field="kilifi_rqa_s01e01_run_id",
                coda_filename="GPSDD_KILIFI_s01e01.json",
@@ -40,6 +41,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kilifi_rqa_s01e02_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kilifi_s01e02_listening_group.csv",
                run_id_field="kilifi_rqa_s01e02_run_id",
                coda_filename="GPSDD_KILIFI_s01e02.json",
                icr_filename="kilifi_s01e02.csv",
@@ -57,6 +59,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kilifi_rqa_s01e03_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kilifi_s01e03_listening_group.csv",
                run_id_field="kilifi_rqa_s01e03_run_id",
                coda_filename="GPSDD_KILIFI_s01e03.json",
                icr_filename="kilifi_s01e03.csv",
@@ -74,6 +77,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kilifi_rqa_s01e04_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kilifi_s01e04_listening_group.csv",
                run_id_field="kilifi_rqa_s01e04_run_id",
                coda_filename="GPSDD_KILIFI_s01e04.json",
                icr_filename="kilifi_s01e04.csv",
@@ -91,6 +95,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kilifi_rqa_s01e05_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kilifi_s01e05_listening_group.csv",
                run_id_field="kilifi_rqa_s01e05_run_id",
                coda_filename="GPSDD_KILIFI_s01e05.json",
                icr_filename="kilifi_s01e05.csv",
@@ -110,6 +115,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
 KIAMBU_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kiambu_rqa_s01e01_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kiambu_s01e02_listening_group.csv",
                run_id_field="kiambu_rqa_s01e01_run_id",
                coda_filename="GPSDD_KIAMBU_s01e01.json",
                icr_filename="kiambu_s01e01.csv",
@@ -127,6 +133,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kiambu_rqa_s01e02_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kiambu_s01e03_listening_group.csv",
                run_id_field="kiambu_rqa_s01e02_run_id",
                coda_filename="GPSDD_KIAMBU_s01e02.json",
                icr_filename="kiambu_s01e02.csv",
@@ -144,6 +151,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kiambu_rqa_s01e03_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kiambu_s01e03_listening_group.csv",
                run_id_field="kiambu_rqa_s01e03_run_id",
                coda_filename="GPSDD_KIAMBU_s01e03.json",
                icr_filename="kiambu_s01e03.csv",
@@ -161,6 +169,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kiambu_rqa_s01e04_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kiambu_s01e04_listening_group.csv",
                run_id_field="kiambu_rqa_s01e04_run_id",
                coda_filename="GPSDD_KIAMBU_s01e04.json",
                icr_filename="kiambu_s01e04.csv",
@@ -178,6 +187,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="kiambu_rqa_s01e05_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_kiambu_s01e05_listening_group.csv",
                run_id_field="kiambu_rqa_s01e05_run_id",
                coda_filename="GPSDD_KIAMBU_s01e05.json",
                icr_filename="kiambu_s01e05.csv",
@@ -197,6 +207,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
 BUNGOMA_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="bungoma_rqa_s01e01_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_bungoma_s01e01_listening_group.csv",
                run_id_field="bungoma_rqa_s01e01_run_id",
                coda_filename="GPSDD_BUNGOMA_s01e01.json",
                icr_filename="bungoma_s01e01.csv",
@@ -214,6 +225,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="bungoma_rqa_s01e02_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_bungoma_s01e02_listening_group.csv",
                run_id_field="bungoma_rqa_s01e02_run_id",
                coda_filename="GPSDD_BUNGOMA_s01e02.json",
                icr_filename="bungoma_s01e02.csv",
@@ -231,6 +243,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="bungoma_rqa_s01e03_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_bungoma_s01e03_listening_group.csv",
                run_id_field="bungoma_rqa_s01e03_run_id",
                coda_filename="GPSDD_BUNGOMA_s01e03.json",
                icr_filename="bungoma_s01e03.csv",
@@ -248,6 +261,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="bungoma_rqa_s01e04_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_bungoma_s01e04_listening_group.csv",
                run_id_field="bungoma_rqa_s01e04_run_id",
                coda_filename="GPSDD_BUNGOMA_s01e04.json",
                icr_filename="bungoma_s01e04.csv",
@@ -265,6 +279,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="bungoma_rqa_s01e05_raw",
                time_field="sent_on",
+               listening_group_filename="gpsdd_bungoma_s01e05_listening_group.csv",
                run_id_field="bungoma_rqa_s01e05_run_id",
                coda_filename="GPSDD_BUNGOMA_s01e05.json",
                icr_filename="bungoma_s01e05.csv",

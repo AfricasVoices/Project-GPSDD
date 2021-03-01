@@ -20,7 +20,7 @@ class PipelineConfiguration(object):
     def __init__(self, pipeline_name, raw_data_sources, phone_number_uuid_table, operations_dashboard, timestamp_remappings,
                  rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages, move_ws_messages,
                  memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path,
-                 automated_analysis, drive_upload=None):
+                 automated_analysis, drive_upload=None, listening_group_csv_urls=None):
         """
         :param pipeline_name: The name of this pipeline.
         :type pipeline_name: str
@@ -56,6 +56,8 @@ class PipelineConfiguration(object):
         :type bucket_dir_path: str
         :param automated_analysis: Different Automated analysis Script Configurations
         :type automated_analysis: AutomatedAnalysis
+        :param listening_group_csv_urls: Google cloud storage urls to fetch listening group csvs from.
+        :type listening_group_csv_urls: list of str | None
         """
         self.pipeline_name = pipeline_name
         self.raw_data_sources = raw_data_sources
@@ -72,6 +74,7 @@ class PipelineConfiguration(object):
         self.data_archive_upload_bucket = data_archive_upload_bucket
         self.automated_analysis = automated_analysis
         self.bucket_dir_path = bucket_dir_path
+        self.listening_group_csv_urls = listening_group_csv_urls
 
         PipelineConfiguration.RQA_CODING_PLANS = coding_plans.get_rqa_coding_plans(self.pipeline_name)
         PipelineConfiguration.DEMOG_CODING_PLANS = coding_plans.get_demog_coding_plans(self.pipeline_name)
@@ -124,6 +127,7 @@ class PipelineConfiguration(object):
         if "DriveUpload" in configuration_dict:
             drive_upload_paths = DriveUpload.from_configuration_dict(configuration_dict["DriveUpload"])
 
+        listening_group_csv_urls = configuration_dict.get("ListeningGroupCSVURLs")
 
         memory_profile_upload_bucket = configuration_dict["MemoryProfileUploadBucket"]
         data_archive_upload_bucket = configuration_dict["DataArchiveUploadBucket"]
@@ -132,7 +136,7 @@ class PipelineConfiguration(object):
         return cls(pipeline_name, raw_data_sources, phone_number_uuid_table, operations_dashboard, timestamp_remappings,
                    rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages,
                    move_ws_messages, memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path,
-                   automated_analysis, drive_upload_paths)
+                   automated_analysis, drive_upload_paths, listening_group_csv_urls)
 
     @classmethod
     def from_configuration_file(cls, f):
@@ -169,6 +173,11 @@ class PipelineConfiguration(object):
         validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
         validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
         validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
+
+        if self.listening_group_csv_urls is not None:
+            validators.validate_list(self.listening_group_csv_urls, "listening_group_csv_urls")
+            for i, listening_group_csv_url in enumerate(self.listening_group_csv_urls):
+                validators.validate_string(listening_group_csv_url, f"{listening_group_csv_url}")
 
 
 class RawDataSource(ABC):
