@@ -515,3 +515,24 @@ class AutomatedAnalysis(object):
                                  "generate_county_theme_distribution_maps")
         validators.validate_bool(self.generate_constituency_theme_distribution_maps,
                                  "generate_constituency_theme_distribution_maps")
+
+class TrafficLabel(object):
+    def __init__(self, label, start_date, end_date):
+        self.label = label
+        self.start_date = start_date
+        self.end_date = end_date
+
+        self.validate()
+
+    @classmethod
+    def from_configuration_dict(cls, configuration_dict):
+        label = configuration_dict["Label"]
+        start_date = isoparse(configuration_dict["StartDate"])
+        end_date = isoparse(configuration_dict["EndDate"])
+
+        return cls(label, start_date, end_date)
+
+    def validate(self):
+        validators.validate_string(self.label, "label")
+        validators.validate_datetime(self.start_date, "start_date")
+        validators.validate_datetime(self.end_date, "end_date")
