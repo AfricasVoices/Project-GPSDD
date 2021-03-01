@@ -76,7 +76,7 @@
       {"StartDate": "2021-03-23T12:00+03:00", "EndDate": "2020-03-23T16:00+03:00", "Label": "E04 Ad"},
       {"StartDate": "2021-03-24T09:00+03:00", "EndDate": "2020-03-24T11:00+03:00", "Label": "E04 Radio Kaya"},
 
-      {"StartDate": "2021-03-30T12:00+03:00", "EndDate": "2020-03-30T16:00+03:00", "Label": "E05 West Fm"},
+      {"StartDate": "2021-03-30T12:00+03:00", "EndDate": "2020-03-30T16:00+03:00", "Label": "E05 Ad"},
       {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2020-03-31T11:00+03:00", "Label": "E05 Radio Kaya"}
     ]
   },
