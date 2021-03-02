@@ -27,6 +27,20 @@ IMG_SCALE_FACTOR = 10  # Increase this to increase the resolution of the outputt
 CONSENT_WITHDRAWN_KEY = "consent_withdrawn"
 SENT_ON_KEY = "sent_on"
 
+
+def coding_plans_to_analysis_configurations(coding_plans):
+    analysis_configurations = []
+    for plan in coding_plans:
+        for cc in plan.coding_configurations:
+            if not cc.include_in_theme_distribution:
+                continue
+
+            analysis_configurations.append(
+                AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
+            )
+    return analysis_configurations
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Runs automated analysis over the outputs produced by "
                                                  "`generate_outputs.py`, and optionally uploads the outputs to Drive.")
@@ -565,13 +579,13 @@ if __name__ == "__main__":
 
     if pipeline_configuration.automated_analysis.traffic_labels is not None:
         log.info("Exporting traffic analysis...")
-    with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
-        traffic_analysis.export_traffic_analysis_csv(
-            messages, CONSENT_WITHDRAWN_KEY,
-            coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-            SENT_ON_KEY,
-            pipeline_configuration.automated_analysis.traffic_labels,
-            f
-        )
+        with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
+            traffic_analysis.export_traffic_analysis_csv(
+                messages, CONSENT_WITHDRAWN_KEY,
+                coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
+                SENT_ON_KEY,
+                pipeline_configuration.automated_analysis.traffic_labels,
+                f
+            )
 
     log.info("Automated analysis python script complete")
