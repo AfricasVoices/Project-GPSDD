@@ -382,7 +382,6 @@ KILIFI_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
-                       cleaner=somali.DemographicCleaner.clean_gender,
                        coded_field="disabled_coded",
                        analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -464,7 +463,6 @@ KIAMBU_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
-                       cleaner=somali.DemographicCleaner.clean_gender,
                        coded_field="disabled_coded",
                        analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -546,7 +544,6 @@ BUNGOMA_DEMOG_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.DISABLED,
-                       cleaner=somali.DemographicCleaner.clean_gender,
                        coded_field="disabled_coded",
                        analysis_file_key="disabled_gender",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
