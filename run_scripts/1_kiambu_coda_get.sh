@@ -25,6 +25,9 @@ DATASETS=(
     "GPSDD_KIAMBU_gender"
     "GPSDD_KIAMBU_location"
     "GPSDD_KIAMBU_disabled"
+
+    "GPSDD_KIAMBU_baseline_community_awareness"
+    "GPSDD_KIAMBU_baseline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"

@@ -567,8 +567,46 @@ def get_demog_coding_plans(pipeline_name):
         return KILIFI_DEMOG_CODING_PLANS + KIAMBU_DEMOG_CODING_PLANS + BUNGOMA_DEMOG_CODING_PLANS
 
 
+KIAMBU_FOLLOW_UP_CODING_PLANS = [
+    CodingPlan(raw_field="baseline_community_awareness_raw",
+               time_field="baseline_community_awareness_time",
+               coda_filename="GPSDD_KIAMBU_baseline_community_awareness.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.SINGLE,
+                       code_scheme=CodeSchemes.KIAMBU_BASELINE_COMMUNITY_AWARENESS,
+                       cleaner=somali.DemographicCleaner.clean_yes_no,
+                       coded_field="baseline_community_awareness_coded",
+                       analysis_file_key="baseline_community_awareness",
+                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
+
+    CodingPlan(raw_field="baseline_government_role_raw",
+               time_field="baseline_government_role_time",
+               coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.SINGLE,
+                       code_scheme=CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE,
+                       cleaner=somali.DemographicCleaner.clean_yes_no,
+                       coded_field="baseline_government_role_coded",
+                       analysis_file_key="baseline_government_role",
+                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
+]
+
+
 def get_follow_up_coding_plans(pipeline_name):
-    return []
+    if pipeline_name == "gpsdd_kiambu_s01_pipeline":
+        return KIAMBU_FOLLOW_UP_CODING_PLANS
+    else:
+        return []
 
 
 def get_ws_correct_dataset_scheme(pipeline_name):
