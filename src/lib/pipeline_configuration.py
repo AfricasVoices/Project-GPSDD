@@ -489,7 +489,8 @@ class DriveUpload(object):
 
 
 class AutomatedAnalysis(object):
-    def __init__(self, generate_county_theme_distribution_maps, generate_constituency_theme_distribution_maps):
+    def __init__(self, generate_county_theme_distribution_maps, generate_constituency_theme_distribution_maps,
+                 traffic_labels=None):
         """
         :param generate_region_theme_distribution_maps: Whether to generate somali region theme distribution maps.
         :type generate_region_theme_distribution_maps: bool
@@ -500,6 +501,7 @@ class AutomatedAnalysis(object):
         """
         self.generate_county_theme_distribution_maps = generate_county_theme_distribution_maps
         self.generate_constituency_theme_distribution_maps = generate_constituency_theme_distribution_maps
+        self.traffic_labels = traffic_labels
 
         self.validate()
 
@@ -507,14 +509,24 @@ class AutomatedAnalysis(object):
     def from_configuration_dict(cls, configuration_dict):
         generate_county_theme_distribution_maps = configuration_dict["GenerateCountyThemeDistributionMaps"]
         generate_constituency_theme_distribution_maps = configuration_dict["GenerateConstituencyThemeDistributionMaps"]
+        traffic_labels = configuration_dict.get("TrafficLabels")
+        if traffic_labels is not None:
+            traffic_labels = [TrafficLabel.from_configuration_dict(d) for d in traffic_labels]
 
-        return cls(generate_county_theme_distribution_maps, generate_constituency_theme_distribution_maps)
+        return cls(generate_county_theme_distribution_maps, generate_constituency_theme_distribution_maps, traffic_labels)
 
     def validate(self):
         validators.validate_bool(self.generate_county_theme_distribution_maps,
                                  "generate_county_theme_distribution_maps")
         validators.validate_bool(self.generate_constituency_theme_distribution_maps,
                                  "generate_constituency_theme_distribution_maps")
+
+        if self.traffic_labels is not None:
+            assert isinstance(self.traffic_labels, list)
+            for tl in self.traffic_labels:
+                assert isinstance(tl, TrafficLabel)
+                tl.validate()
+
 
 class TrafficLabel(object):
     def __init__(self, label, start_date, end_date):
