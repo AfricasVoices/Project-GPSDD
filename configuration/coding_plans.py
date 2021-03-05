@@ -575,7 +575,6 @@ KILIFI_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KILIFI_BASELINE_COMMUNITY_AWARENESS,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_community_awareness_coded",
                        analysis_file_key="baseline_community_awareness",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -591,7 +590,6 @@ KILIFI_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -609,7 +607,6 @@ KIAMBU_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KIAMBU_BASELINE_COMMUNITY_AWARENESS,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_community_awareness_coded",
                        analysis_file_key="baseline_community_awareness",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -625,7 +622,6 @@ KIAMBU_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -643,7 +639,6 @@ BUNGOMA_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.BUNGOMA_BASELINE_COMMUNITY_AWARENESS,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_community_awareness_coded",
                        analysis_file_key="baseline_community_awareness",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
@@ -659,7 +654,6 @@ BUNGOMA_FOLLOW_UP_CODING_PLANS = [
                    CodingConfiguration(
                        coding_mode=CodingModes.SINGLE,
                        code_scheme=CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE,
-                       cleaner=somali.DemographicCleaner.clean_yes_no,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
                        fold_strategy=FoldStrategies.assert_label_ids_equal
