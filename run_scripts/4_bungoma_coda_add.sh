@@ -25,6 +25,9 @@ DATASETS=(
     "GPSDD_BUNGOMA_gender"
     "GPSDD_BUNGOMA_location"
     "GPSDD_BUNGOMA_disabled"
+
+    "GPSDD_BUNGOMA_baseline_community_awareness"
+    "GPSDD_BUNGOMA_baseline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"
