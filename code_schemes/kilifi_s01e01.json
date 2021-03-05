@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-ccecbbd4",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1258bcf6",
+      "CodeType": "Normal",
+      "DisplayText": "community lacks knowledge",
+      "NumericValue": 2,
+      "StringValue": "community_lacks_knowledge",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4f69d432",
+      "CodeType": "Normal",
+      "DisplayText": "relieves pain",
+      "NumericValue": 8,
+      "StringValue": "relieves_pain",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4da0fad0",
+      "CodeType": "Normal",
+      "DisplayText": "drug misuse",
+      "NumericValue": 9,
+      "StringValue": "drug_misuse",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-82c9b908",
+      "CodeType": "Normal",
+      "DisplayText": "antibiotics are good",
+      "NumericValue": 10,
+      "StringValue": "antibiotics_are_good",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f7c352f9",
+      "CodeType": "Normal",
+      "DisplayText": "health questions/narratives",
+      "NumericValue": 11,
+      "StringValue": "health_questions_or_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a2ad09c7",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 12,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
