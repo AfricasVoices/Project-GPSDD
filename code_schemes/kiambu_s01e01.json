@@ -4,6 +4,38 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-3da81b29",
+      "CodeType": "Normal",
+      "DisplayText": "the community is aware",
+      "NumericValue": 13,
+      "StringValue": "the_community_is_aware",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bff4e48c",
+      "CodeType": "Normal",
+      "DisplayText": "amr exists",
+      "NumericValue": 14,
+      "StringValue": "amr_exists",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-92da4521",
+      "CodeType": "Normal",
+      "DisplayText": "causes of drug resistance",
+      "NumericValue": 6,
+      "StringValue": "causes_of_drug_resistance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a2ad09c7",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 12,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
