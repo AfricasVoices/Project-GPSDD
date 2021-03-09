@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-ccecbbd4",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1258bcf6",
+      "CodeType": "Normal",
+      "DisplayText": "community lacks knowledge",
+      "NumericValue": 2,
+      "StringValue": "community_lacks_knowledge",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5ba5788e",
+      "CodeType": "Normal",
+      "DisplayText": "bacteria/virus developed resistance to antimicrobials",
+      "NumericValue": 3,
+      "StringValue": "bacteria_or_virus_developed_resistance_to_antimicrobials",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f6ff7613",
+      "CodeType": "Normal",
+      "DisplayText": "less quality medicines",
+      "NumericValue": 4,
+      "StringValue": "less_quality_medicines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a2472ece",
+      "CodeType": "Normal",
+      "DisplayText": "should visit hospital",
+      "NumericValue": 5,
+      "StringValue": "should_visit_hospital",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-92da4521",
+      "CodeType": "Normal",
+      "DisplayText": "causes of drug resistance",
+      "NumericValue": 6,
+      "StringValue": "causes_of_drug_resistance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4288ce1d",
+      "CodeType": "Normal",
+      "DisplayText": "poor access to hospitals",
+      "NumericValue": 7,
+      "StringValue": "poor_access_to_hospitals",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a2ad09c7",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 12,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
