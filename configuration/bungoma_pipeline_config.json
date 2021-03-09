@@ -7,7 +7,10 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-bungoma-textit-token.txt",
       "ContactsFileName": "gpsdd_bungoma_contacts",
       "ActivationFlowNames": [
-        "gpsdd_bungoma_s01e01_activation"
+        "gpsdd_bungoma_s01e01_activation",
+        "gpsdd_bungoma_s01e02_activation",
+        "gpsdd_bungoma_s01e03_activation",
+        "gpsdd_bungoma_s01e04_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog",
@@ -15,7 +18,9 @@
       ],
       "TestContactUUIDs": [
         "40b2747e-764a-4635-b922-6c67c7327075",
-        "fb7dc7b9-403d-4420-895a-dd32aac6ada2"
+        "fb7dc7b9-403d-4420-895a-dd32aac6ada2",
+        "d1623047-99c1-4137-9601-8d61ba4ffdf6",
+        "c323751f-49aa-46e4-8d36-3e60e8b90e68"
       ]
     }
   ],

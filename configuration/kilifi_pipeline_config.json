@@ -7,14 +7,19 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-kilifi-textit-token.txt",
       "ContactsFileName": "gpsdd_kilifi_contacts",
       "ActivationFlowNames": [
-        "gpsdd_kilifi_s01e01_activation"
+        "gpsdd_kilifi_s01e01_activation",
+        "gpsdd_kilifi_s01e02_activation",
+        "gpsdd_kilifi_s01e03_activation",
+        "gpsdd_kilifi_s01e04_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_kilifi_s01_demog",
         "gpsdd_kilifi_s01_baseline"
       ],
       "TestContactUUIDs": [
-        "64918562-d983-4dce-8aa0-91df2879e10b"
+        "64918562-d983-4dce-8aa0-91df2879e10b",
+        "96716fa6-7ab6-431e-aa87-54eff239b62c",
+        "e1442557-4c37-4da3-8a92-19fdb044880b"
       ]
     }
   ],
