@@ -10,7 +10,8 @@
         "gpsdd_kiambu_s01e01_activation"
       ],
       "SurveyFlowNames": [
-        "gpsdd_kiambu_s01_demog"
+        "gpsdd_kiambu_s01_demog",
+        "gpsdd_kiambu_s01_baseline"
       ],
       "TestContactUUIDs": [
         "0793361d-c2cb-4a46-89ed-40ef05f5fa4f"
@@ -57,7 +58,12 @@
     {"RapidProKey": "Age (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_age_raw"},
     {"RapidProKey": "Age (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_age_time"},
     {"RapidProKey": "Disabled (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disabled_raw"},
-    {"RapidProKey": "Disabled (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disabled_time"}
+    {"RapidProKey": "Disabled (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disabled_time"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-02-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

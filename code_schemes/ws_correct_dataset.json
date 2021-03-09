@@ -301,6 +301,72 @@
       ]
     },
     {
+      "CodeID": "code-44d586f1",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu baseline community awareness",
+      "StringValue": "kiambu_baseline_community_awareness",
+      "NumericValue": 28,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu baseline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-803a759e",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu baseline government role",
+      "StringValue": "kiambu_baseline_government_role",
+      "NumericValue": 29,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu baseline government role"
+      ]
+    },
+    {
+      "CodeID": "code-51174478",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi baseline community awareness",
+      "StringValue": "kilifi_baseline_community_awareness",
+      "NumericValue": 30,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi baseline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-0c45dd85",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi baseline government role",
+      "StringValue": "kilifi_baseline_government_role",
+      "NumericValue": 31,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi baseline government role"
+      ]
+    },
+    {
+      "CodeID": "code-3dfee167",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma baseline community awareness",
+      "StringValue": "bungoma_baseline_community_awareness",
+      "NumericValue": 32,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma baseline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-dd5883db",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma baseline government role",
+      "StringValue": "bungoma_baseline_government_role",
+      "NumericValue": 33,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma baseline government role"
+      ]
+    },
+    {
       "CodeID": "code-NC-42f1d983",
       "CodeType": "Control",
       "ControlCode": "NC",

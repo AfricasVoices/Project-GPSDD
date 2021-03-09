@@ -10,7 +10,8 @@
         "gpsdd_bungoma_s01e01_activation"
       ],
       "SurveyFlowNames": [
-        "gpsdd_bungoma_s01_demog"
+        "gpsdd_bungoma_s01_demog",
+        "gpsdd_bungoma_s01_baseline"
       ],
       "TestContactUUIDs": [
         "40b2747e-764a-4635-b922-6c67c7327075",
@@ -58,7 +59,12 @@
     {"RapidProKey": "Age (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_raw"},
     {"RapidProKey": "Age (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_time"},
     {"RapidProKey": "Disabled (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_raw"},
-    {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"}
+    {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

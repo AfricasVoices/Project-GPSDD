@@ -35,4 +35,13 @@ class CodeSchemes(object):
     AGE = _open_scheme("age.json")
     AGE_CATEGORY = _open_scheme("age_category.json")
 
+    KIAMBU_BASELINE_COMMUNITY_AWARENESS = _open_scheme("kiambu_baseline_community_awareness.json")
+    KIAMBU_BASELINE_GOVERNMENT_ROLE = _open_scheme("kiambu_baseline_government_role.json")
+
+    KILIFI_BASELINE_COMMUNITY_AWARENESS = _open_scheme("kilifi_baseline_community_awareness.json")
+    KILIFI_BASELINE_GOVERNMENT_ROLE = _open_scheme("kilifi_baseline_government_role.json")
+
+    BUNGOMA_BASELINE_COMMUNITY_AWARENESS = _open_scheme("bungoma_baseline_community_awareness.json")
+    BUNGOMA_BASELINE_GOVERNMENT_ROLE = _open_scheme("bungoma_baseline_government_role.json")
+
     WS_CORRECT_DATASET = _open_scheme("ws_correct_dataset.json")

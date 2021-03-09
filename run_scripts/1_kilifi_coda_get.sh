@@ -25,6 +25,9 @@ DATASETS=(
     "GPSDD_KILIFI_gender"
     "GPSDD_KILIFI_location"
     "GPSDD_KILIFI_disabled"
+
+    "GPSDD_KILIFI_baseline_community_awareness"
+    "GPSDD_KILIFI_baseline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"
