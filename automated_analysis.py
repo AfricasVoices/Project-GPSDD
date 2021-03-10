@@ -15,6 +15,8 @@ from core_data_modules.util import IOUtils
 from core_data_modules.analysis import AnalysisConfiguration, engagement_counts, theme_distributions, \
     repeat_participations, sample_messages, traffic_analysis, analysis_utils
 
+from configuration.coding_plans import get_rqa_coding_plans, get_demog_coding_plans, get_follow_up_coding_plans, \
+    BUNGOMA_S01_RQA_CODING_PLANS, KILIFI_S01_RQA_CODING_PLANS, KIAMBU_S01_RQA_CODING_PLANS
 from src import AnalysisUtils
 from configuration.code_schemes import  CodeSchemes
 from src.lib.configuration_objects import CodingModes
@@ -76,6 +78,12 @@ if __name__ == "__main__":
     Logger.set_project_name(pipeline_configuration.pipeline_name)
     log.debug(f"Pipeline name is {pipeline_configuration.pipeline_name}")
 
+    if pipeline_configuration.pipeline_name == "gpsdd_all_locations_s01_pipeline":
+        PipelineConfiguration.RQA_CODING_PLANS = get_rqa_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.DEMOG_CODING_PLANS = get_demog_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = get_follow_up_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DEMOG_CODING_PLANS + PipelineConfiguration.FOLLOW_UP_CODING_PLANS
+
     sys.setrecursionlimit(30000)
     # Read the messages dataset
     log.info(f"Loading the messages dataset from {messages_json_input_path}...")
@@ -92,6 +100,19 @@ if __name__ == "__main__":
         for i in range (len(individuals)):
             individuals[i] = dict(individuals[i].items())
     log.info(f"Loaded {len(individuals)} individuals")
+
+    with open(f"{automated_analysis_output_dir}/{pipeline_configuration.pipeline_name}.txt", "w") as f:
+        for td in individuals:
+            if td[CONSENT_WITHDRAWN_KEY] == Codes.TRUE:
+                continue
+
+            plan = PipelineConfiguration.RQA_CODING_PLANS[1]
+            if plan.raw_field in td:
+                f.write(f"{td[plan.raw_field]}\n")
+
+            # for cc in plan.coding_configurations:
+            #     if cc.code_scheme.get_code_with_code_id(td[cc.coded_field][0]["CodeID"]).control_code == "NC":
+            #         f.write(f"{td[plan.raw_field]}\n")
 
     # Compute the number of messages, individuals, and relevant messages per episode and overall.
     log.info("Computing the per-episode and per-season engagement counts...")
@@ -406,6 +427,22 @@ if __name__ == "__main__":
             writer.writerow(sample)
 
     # Produce maps of Kenya at county level
+    pipeline_name = pipeline_configuration.pipeline_name
+    if pipeline_name == "gpsdd_kilifi_s01_pipeline":
+        county_field = "kilifi_county"
+        constituency_field = "kilifi_constituency"
+    elif pipeline_name == "gpsdd_kiambu_s01_pipeline":
+        county_field = "kiambu_county"
+        constituency_field = "kiambu_constituency"
+    elif pipeline_name == "gpsdd_bungoma_s01_pipeline":
+        county_field = "bungoma_county"
+        constituency_field = "bungoma_constituency"
+    elif pipeline_name == "gpsdd_all_locations_s01_pipeline":
+        county_field = "county"
+        constituency_field = "constituency"
+    else:
+        assert False, f"PipelineName {pipeline_name} not recognized"
+
     log.info("Loading the Kenya county geojson...")
     counties_map = geopandas.read_file("geojson/kenya_counties.geojson")
 
@@ -419,7 +456,7 @@ if __name__ == "__main__":
     labels = dict()
     for code in CodeSchemes.KENYA_COUNTY.codes:
         if code.code_type == CodeTypes.NORMAL:
-            county_frequencies[code.string_value] = demographic_distributions["county"][code.code_id]
+            county_frequencies[code.string_value] = demographic_distributions[county_field][code.code_id]
             labels[code.string_value] = county_frequencies[code.string_value]
 
     fig, ax = plt.subplots()
@@ -445,7 +482,7 @@ if __name__ == "__main__":
                     for county_code in CodeSchemes.KENYA_COUNTY.codes:
                         if county_code.code_type == CodeTypes.NORMAL:
                             rqa_total_county_frequencies[county_code.string_value] = \
-                                episode["Total Relevant Participants"][f"county:{county_code.string_value}"]
+                                episode["Total Relevant Participants"][f"{county_field}:{county_code.string_value}"]
 
                     fig, ax = plt.subplots()
                     MappingUtils.plot_frequency_map(counties_map, "ADM1_AVF", rqa_total_county_frequencies,
@@ -476,7 +513,7 @@ if __name__ == "__main__":
                     for county_code in CodeSchemes.KENYA_COUNTY.codes:
                         if county_code.code_type == CodeTypes.NORMAL:
                             theme_county_frequencies[county_code.string_value] = \
-                                demographic_counts[f"county:{county_code.string_value}"]
+                                demographic_counts[f"{county_field}:{county_code.string_value}"]
 
                     fig, ax = plt.subplots()
                     MappingUtils.plot_frequency_map(counties_map, "ADM1_AVF", theme_county_frequencies, ax=ax,
@@ -501,7 +538,7 @@ if __name__ == "__main__":
     constituency_frequencies = dict()
     for code in CodeSchemes.KENYA_CONSTITUENCY.codes:
         if code.code_type == CodeTypes.NORMAL:
-            constituency_frequencies[code.string_value] = demographic_distributions["constituency"][code.code_id]
+            constituency_frequencies[code.string_value] = demographic_distributions[constituency_field][code.code_id]
 
     fig, ax = plt.subplots()
     MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", constituency_frequencies, ax=ax)
@@ -527,7 +564,7 @@ if __name__ == "__main__":
                     for constituency_code in CodeSchemes.KENYA_CONSTITUENCY.codes:
                         if constituency_code.code_type == CodeTypes.NORMAL:
                             rqa_total_constituency_frequencies[constituency_code.string_value] = \
-                                episode["Total Relevant Participants"][f"constituency:{constituency_code.string_value}"]
+                                episode["Total Relevant Participants"][f"{constituency_field}:{constituency_code.string_value}"]
 
                     fig, ax = plt.subplots()
                     MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", rqa_total_constituency_frequencies, ax=ax)
@@ -559,7 +596,7 @@ if __name__ == "__main__":
                     for constituency_code in CodeSchemes.KENYA_CONSTITUENCY.codes:
                         if constituency_code.code_type == CodeTypes.NORMAL:
                             theme_constituency_frequencies[constituency_code.string_value] = \
-                                demographic_counts[f"constituency:{constituency_code.string_value}"]
+                                demographic_counts[f"{constituency_field}:{constituency_code.string_value}"]
 
                     fig, ax = plt.subplots()
                     MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", theme_constituency_frequencies, ax=ax)

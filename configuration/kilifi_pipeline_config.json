@@ -19,7 +19,8 @@
       "TestContactUUIDs": [
         "64918562-d983-4dce-8aa0-91df2879e10b",
         "96716fa6-7ab6-431e-aa87-54eff239b62c",
-        "e1442557-4c37-4da3-8a92-19fdb044880b"
+        "e1442557-4c37-4da3-8a92-19fdb044880b",
+        "f471956a-33d9-499e-ba13-eb374f791a99"
       ]
     }
   ],
@@ -65,10 +66,10 @@
     {"RapidProKey": "Disabled (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_disabled_raw"},
     {"RapidProKey": "Disabled (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_disabled_time"},
 
-    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "baseline_community_awareness_raw"},
-    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "baseline_community_awareness_time"},
-    {"RapidProKey": "Government_Role (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "baseline_government_role_raw"},
-    {"RapidProKey": "Government_Role (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "baseline_government_role_time"}
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

@@ -7,14 +7,20 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-kilifi-textit-token.txt",
       "ContactsFileName": "gpsdd_kilifi_contacts",
       "ActivationFlowNames": [
-        "gpsdd_kilifi_s01e01_activation"
+        "gpsdd_kilifi_s01e01_activation",
+        "gpsdd_kilifi_s01e02_activation",
+        "gpsdd_kilifi_s01e03_activation",
+        "gpsdd_kilifi_s01e04_activation"
       ],
       "SurveyFlowNames": [
-        "gpsdd_kilifi_s01_demog"
+        "gpsdd_kilifi_s01_demog",
+        "gpsdd_kilifi_s01_baseline"
       ],
       "TestContactUUIDs": [
-        "40b2747e-764a-4635-b922-6c67c7327075",
-        "fb7dc7b9-403d-4420-895a-dd32aac6ada2"
+        "64918562-d983-4dce-8aa0-91df2879e10b",
+        "96716fa6-7ab6-431e-aa87-54eff239b62c",
+        "e1442557-4c37-4da3-8a92-19fdb044880b",
+        "f471956a-33d9-499e-ba13-eb374f791a99"
       ]
     },
     {
@@ -23,14 +29,21 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-kiambu-textit-token.txt",
       "ContactsFileName": "gpsdd_kiambu_contacts",
       "ActivationFlowNames": [
-        "gpsdd_kiambu_s01e01_activation"
+        "gpsdd_kiambu_s01e01_activation",
+        "gpsdd_kiambu_s01e02_activation",
+        "gpsdd_kiambu_s01e03_activation",
+        "gpsdd_kiambu_s01e04_activation"
       ],
       "SurveyFlowNames": [
-        "gpsdd_kiambu_s01_demog"
+        "gpsdd_kiambu_s01_demog",
+        "gpsdd_kiambu_s01_baseline"
       ],
       "TestContactUUIDs": [
-        "40b2747e-764a-4635-b922-6c67c7327075",
-        "fb7dc7b9-403d-4420-895a-dd32aac6ada2"
+        "0793361d-c2cb-4a46-89ed-40ef05f5fa4f",
+        "89f1c969-777f-4f55-a3ec-cb49cc9c41cd",
+        "0d3e63a4-e5a6-4c85-ad4f-643e96203a3f",
+        "1dbecf30-a0d9-4005-ae96-099cf40ecb84",
+        "7dfacafd-2b66-43c5-83b7-6c744f1e9a84"
       ]
     },
     {
@@ -39,14 +52,22 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-bungoma-textit-token.txt",
       "ContactsFileName": "gpsdd_bungoma_contacts",
       "ActivationFlowNames": [
-        "gpsdd_bungoma_s01e01_activation"
+        "gpsdd_bungoma_s01e01_activation",
+        "gpsdd_bungoma_s01e02_activation",
+        "gpsdd_bungoma_s01e03_activation",
+        "gpsdd_bungoma_s01e04_activation"
       ],
       "SurveyFlowNames": [
-        "gpsdd_bungoma_s01_demog"
+        "gpsdd_bungoma_s01_demog",
+        "gpsdd_bungoma_s01_baseline"
       ],
       "TestContactUUIDs": [
         "40b2747e-764a-4635-b922-6c67c7327075",
-        "fb7dc7b9-403d-4420-895a-dd32aac6ada2"
+        "fb7dc7b9-403d-4420-895a-dd32aac6ada2",
+        "d1623047-99c1-4137-9601-8d61ba4ffdf6",
+        "c323751f-49aa-46e4-8d36-3e60e8b90e68",
+        "e38e7423-66c1-43a3-8690-af12b6faf712",
+        "11c54f2a-e842-4a38-ba1d-6af8664ef728"
       ]
     }
   ],
@@ -148,7 +169,22 @@
     {"RapidProKey": "Age (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_raw"},
     {"RapidProKey": "Age (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_age_time"},
     {"RapidProKey": "Disabled (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_raw"},
-    {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"}
+    {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_time"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_government_role_time"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

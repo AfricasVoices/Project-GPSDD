@@ -20,7 +20,9 @@
         "40b2747e-764a-4635-b922-6c67c7327075",
         "fb7dc7b9-403d-4420-895a-dd32aac6ada2",
         "d1623047-99c1-4137-9601-8d61ba4ffdf6",
-        "c323751f-49aa-46e4-8d36-3e60e8b90e68"
+        "c323751f-49aa-46e4-8d36-3e60e8b90e68",
+        "e38e7423-66c1-43a3-8690-af12b6faf712",
+        "11c54f2a-e842-4a38-ba1d-6af8664ef728"
       ]
     }
   ],
@@ -66,10 +68,10 @@
     {"RapidProKey": "Disabled (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_raw"},
     {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"},
 
-    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_community_awareness_raw"},
-    {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_community_awareness_time"},
-    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_government_role_raw"},
-    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "baseline_government_role_time"}
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

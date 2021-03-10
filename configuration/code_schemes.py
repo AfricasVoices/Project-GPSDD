@@ -28,6 +28,12 @@ class CodeSchemes(object):
     BUNGOMA_S01E04 = _open_scheme("bungoma_s01e04.json")
     BUNGOMA_S01E05 = _open_scheme("bungoma_s01e05.json")
 
+    ALL_LOCATIONS_S01E01 = _open_scheme("all_locations_s01e01.json")
+    ALL_LOCATIONS_S01E02 = _open_scheme("all_locations_s01e02.json")
+    ALL_LOCATIONS_S01E03 = _open_scheme("all_locations_s01e03.json")
+    ALL_LOCATIONS_S01E04 = _open_scheme("all_locations_s01e04.json")
+    ALL_LOCATIONS_S01E05 = _open_scheme("all_locations_s01e05.json")
+
     KENYA_CONSTITUENCY = _open_scheme("kenya_constituency.json")
     KENYA_COUNTY = _open_scheme("kenya_county.json")
     GENDER = _open_scheme("gender.json")
@@ -43,5 +49,8 @@ class CodeSchemes(object):
 
     BUNGOMA_BASELINE_COMMUNITY_AWARENESS = _open_scheme("bungoma_baseline_community_awareness.json")
     BUNGOMA_BASELINE_GOVERNMENT_ROLE = _open_scheme("bungoma_baseline_government_role.json")
+
+    ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS = _open_scheme("all_locations_baseline_community_awareness.json")
+    ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE = _open_scheme("all_locations_baseline_government_role.json")
 
     WS_CORRECT_DATASET = _open_scheme("ws_correct_dataset.json")

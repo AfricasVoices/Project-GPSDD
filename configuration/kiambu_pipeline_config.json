@@ -18,7 +18,10 @@
       ],
       "TestContactUUIDs": [
         "0793361d-c2cb-4a46-89ed-40ef05f5fa4f",
-        "89f1c969-777f-4f55-a3ec-cb49cc9c41cd"
+        "89f1c969-777f-4f55-a3ec-cb49cc9c41cd",
+        "0d3e63a4-e5a6-4c85-ad4f-643e96203a3f",
+        "1dbecf30-a0d9-4005-ae96-099cf40ecb84",
+        "7dfacafd-2b66-43c5-83b7-6c744f1e9a84"
       ]
     }
   ],
@@ -64,12 +67,12 @@
     {"RapidProKey": "Disabled (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disabled_raw"},
     {"RapidProKey": "Disabled (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_disabled_time"},
 
-    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_community_awareness_raw"},
-    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_community_awareness_time"},
-    {"RapidProKey": "Government_Role (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_government_role_raw"},
-    {"RapidProKey": "Government_Role (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "baseline_government_role_time"}
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_community_awareness_time"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_kiambu_s01_baseline", "PipelineKey": "kiambu_baseline_government_role_time"}
   ],
-  "ProjectStartDate": "2021-02-01T10:30:00+03:00",
+  "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
   "FilterTestMessages": true,
   "MoveWSMessages": true,
