@@ -28,8 +28,7 @@ RUN_ID="$TIMESTAMP-$HASH"
 
 echo "Starting run with id '$RUN_ID'"
 
-./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" \
-                        "$TIMESTAMP" "$RUN_ID" "PipelineRunStart"
+./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunStart"
 
 ./1_kiambu_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
@@ -53,5 +52,4 @@ fi
 ./8_upload_log_files.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$PERFORMANCE_LOGS_DIR" \
                         "$DATA_BACKUPS_DIR"
 
-./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" \
-                        "$TIMESTAMP" "$RUN_ID" "PipelineRunEnd"
+./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunEnd"
