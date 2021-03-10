@@ -118,14 +118,46 @@ if __name__ == "__main__":
             # dataset per field.
             # We now have to patch up this dataset:
 
-            # 1. Change the coding plans to refer to ones that contain unified field names and code schemes etc. rather
+            # 1. Check that there are no participants who have participated in multiple locations.
+            # If they have, crash because this will require additional work to handle correctly.
+            def coding_plans_to_analysis_configurations(coding_plans):
+                analysis_configurations = []
+                for plan in coding_plans:
+                    ccs = plan.coding_configurations
+                    for cc in ccs:
+                        analysis_configurations.append(
+                            AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
+                        )
+                return analysis_configurations
+
+            bungoma_rqa_participants = {td["uid"] for td in
+                                        analysis_utils.filter_opt_ins(data, "uid",
+                                                                      coding_plans_to_analysis_configurations(
+                                                                          BUNGOMA_S01_RQA_CODING_PLANS))}
+            kilifi_rqa_participants = {td["uid"] for td in
+                                       analysis_utils.filter_opt_ins(data, "uid",
+                                                                     coding_plans_to_analysis_configurations(
+                                                                         KILIFI_S01_RQA_CODING_PLANS))}
+            kiambu_rqa_participants = {td["uid"] for td in
+                                       analysis_utils.filter_opt_ins(data, "uid",
+                                                                     coding_plans_to_analysis_configurations(
+                                                                         KIAMBU_S01_RQA_CODING_PLANS))}
+
+            duplicate_participants = bungoma_rqa_participants.intersection(kilifi_rqa_participants) \
+                .union(bungoma_rqa_participants.intersection(kiambu_rqa_participants)) \
+                .union(kiambu_rqa_participants.intersection(kilifi_rqa_participants))
+            if len(duplicate_participants) > 0:
+                log.error(f"Detected participants who took part in multiple locations: {duplicate_participants}")
+                exit(1)
+
+            # 2. Change the coding plans to refer to ones that contain unified field names and code schemes etc. rather
             # than per-location
             PipelineConfiguration.RQA_CODING_PLANS = get_rqa_coding_plans(pipeline_configuration.pipeline_name, True)
             PipelineConfiguration.DEMOG_CODING_PLANS = get_demog_coding_plans(pipeline_configuration.pipeline_name, True)
             PipelineConfiguration.FOLLOW_UP_CODING_PLANS = get_follow_up_coding_plans(pipeline_configuration.pipeline_name, True)
             PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DEMOG_CODING_PLANS + PipelineConfiguration.FOLLOW_UP_CODING_PLANS
 
-            # 2. Patch up all the labels' scheme ids to refer to the relevant 'all_locations' scheme rather than to
+            # 3. Patch up all the labels' scheme ids to refer to the relevant 'all_locations' scheme rather than to
             # the individual location schemes.
             rqa_scheme_remaps = {
                 "kilifi_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
@@ -154,7 +186,7 @@ if __name__ == "__main__":
                     remapped[field] = labels
                 td.append_data(remapped, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
 
-            # 3. Convert the fields in the bungoma/kilifi/kiambu coding plans relevant to analysis to their unified
+            # 4. Convert the fields in the bungoma/kilifi/kiambu coding plans relevant to analysis to their unified
             # fields. This is mostly like folding messages -> individuals, except we now have to account for some fields
             # being None, which is why there are some special case strategies implemented inline here.
             def assert_equal(x, y):
@@ -207,38 +239,6 @@ if __name__ == "__main__":
                 "baseline_community_awareness_raw": assert_equal,
                 "baseline_government_role_raw": assert_equal
             }
-
-
-            def coding_plans_to_analysis_configurations(coding_plans):
-                analysis_configurations = []
-                for plan in coding_plans:
-                    ccs = plan.coding_configurations
-                    for cc in ccs:
-                        analysis_configurations.append(
-                            AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
-                        )
-                return analysis_configurations
-
-
-            bungoma_rqa_participants = {td["uid"] for td in
-                                        analysis_utils.filter_opt_ins(data, "uid",
-                                                                      coding_plans_to_analysis_configurations(
-                                                                          BUNGOMA_S01_RQA_CODING_PLANS))}
-            kilifi_rqa_participants = {td["uid"] for td in
-                                       analysis_utils.filter_opt_ins(data, "uid",
-                                                                     coding_plans_to_analysis_configurations(
-                                                                         KILIFI_S01_RQA_CODING_PLANS))}
-            kiambu_rqa_participants = {td["uid"] for td in
-                                       analysis_utils.filter_opt_ins(data, "uid",
-                                                                     coding_plans_to_analysis_configurations(
-                                                                         KIAMBU_S01_RQA_CODING_PLANS))}
-
-            print(len(bungoma_rqa_participants))
-
-            print(bungoma_rqa_participants.intersection(kilifi_rqa_participants))
-            print(bungoma_rqa_participants.intersection(kiambu_rqa_participants))
-            print(kiambu_rqa_participants.intersection(kilifi_rqa_participants))
-
 
             for td in data:
                 remapped = dict()

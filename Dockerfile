@@ -3,7 +3,6 @@ FROM python:3.6-slim
 # Install Python tools (git + pipenv)
 RUN apt-get update && apt-get install -y git
 RUN pip install pipenv
-RUN apt-get update && apt-get install -y libgeos-dev libgdal-dev build-essential
 
 # Install memory_profiler if this script is run with PROFILE_MEMORY flag
 ARG INSTALL_MEMORY_PROFILER="false"
