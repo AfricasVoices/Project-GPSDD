@@ -1,3 +1,5 @@
+from functools import partial
+
 from core_data_modules.cleaners import somali, swahili, Codes
 from core_data_modules.cleaners.cleaning_utils import CleaningUtils
 from core_data_modules.traced_data import Metadata
@@ -588,11 +590,11 @@ KILIFI_FOLLOW_UP_CODING_PLANS = [
                coda_filename="GPSDD_KILIFI_baseline_government_role.json",
                coding_configurations=[
                    CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
+                       coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE)
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
@@ -620,11 +622,11 @@ KIAMBU_FOLLOW_UP_CODING_PLANS = [
                coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
                coding_configurations=[
                    CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
+                       coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE)
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
@@ -652,11 +654,11 @@ BUNGOMA_FOLLOW_UP_CODING_PLANS = [
                coda_filename="GPSDD_BUNGOMA_baseline_government_role.json",
                coding_configurations=[
                    CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
+                       coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE,
                        coded_field="baseline_government_role_coded",
                        analysis_file_key="baseline_government_role",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE)
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
