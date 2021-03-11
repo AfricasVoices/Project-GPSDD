@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-1968050b",
+      "CodeType": "Normal",
+      "DisplayText": "when one is sick/infected",
+      "NumericValue": 1,
+      "StringValue": "when_one_is_sick_or_infected",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-939099b4",
+      "CodeType": "Normal",
+      "DisplayText": "only with prescription",
+      "NumericValue": 2,
+      "StringValue": "only_with_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a750ff4c",
+      "CodeType": "Normal",
+      "DisplayText": "only in the morning",
+      "NumericValue": 3,
+      "StringValue": "only_in_the_morning",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d7554004",
+      "CodeType": "Normal",
+      "DisplayText": "used anytime to prevent infections",
+      "NumericValue": 4,
+      "StringValue": "used_anytime_to_prevent_infections",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-53797127",
+      "CodeType": "Normal",
+      "DisplayText": "in the morning & evening",
+      "NumericValue": 5,
+      "StringValue": "in_the_morning_and_evening",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-80d9988f",
+      "CodeType": "Normal",
+      "DisplayText": "questions",
+      "NumericValue": 6,
+      "StringValue": "questions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-86e2ff0b",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
