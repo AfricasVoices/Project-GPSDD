@@ -163,18 +163,26 @@ if __name__ == "__main__":
                 "kilifi_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
                 "kiambu_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
                 "bungoma_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
+
                 "kilifi_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
                 "kiambu_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
                 "bungoma_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
+
                 "kilifi_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
                 "kiambu_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
                 "bungoma_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
+
                 "kilifi_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
                 "kiambu_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
                 "bungoma_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
+
                 "kilifi_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
                 "kiambu_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
-                "bungoma_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05
+                "bungoma_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
+
+                "kilifi_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
+                "kiambu_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
+                "bungoma_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE
             }
 
             for td in data:
@@ -234,7 +242,7 @@ if __name__ == "__main__":
                 "disabled_raw": assert_equal,
 
                 "baseline_community_awareness_coded": partial(demog_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
-                "baseline_government_role_coded": partial(demog_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
+                "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
 
                 "baseline_community_awareness_raw": assert_equal,
                 "baseline_government_role_raw": assert_equal
