@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-7ea7f8be",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cab7cb8d",
+      "CodeType": "Normal",
+      "DisplayText": "regulations on the use & sale of drugs",
+      "NumericValue": 2,
+      "StringValue": "regulations_on_the_use_and_sale_of_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-357dd409",
+      "CodeType": "Normal",
+      "DisplayText": "provide treatment drugs",
+      "NumericValue": 3,
+      "StringValue": "provide_treatment_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e91e6299",
+      "CodeType": "Normal",
+      "DisplayText": "government mistrust",
+      "NumericValue": 4,
+      "StringValue": "government_mistrust",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-482cdd93",
+      "CodeType": "Normal",
+      "DisplayText": "government support",
+      "NumericValue": 5,
+      "StringValue": "government_support",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fca442f5",
+      "CodeType": "Normal",
+      "DisplayText": "questions",
+      "NumericValue": 7,
+      "StringValue": "questions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-baa1f240",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 8,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
