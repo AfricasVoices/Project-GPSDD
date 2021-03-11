@@ -821,7 +821,7 @@ BUNGOMA_FOLLOW_UP_CODING_PLANS = [
                        code_scheme=CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE,
                        coded_field="bungoma_baseline_government_role_coded",
                        analysis_file_key="bungoma_baseline_government_role",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE)
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
