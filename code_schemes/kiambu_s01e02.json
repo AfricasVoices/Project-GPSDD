@@ -3,6 +3,54 @@
   "Name": "KIAMBU S01E02",
   "Version": "0.0.0.1",
   "Codes": [
+     {
+      "CodeID": "code-1968050b",
+      "CodeType": "Normal",
+      "DisplayText": "when one is sick/infected",
+      "NumericValue": 1,
+      "StringValue": "when_one_is_sick_or_infected",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d30c41b0",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 8,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bb1bcf58",
+      "CodeType": "Normal",
+      "DisplayText": "community awareness",
+      "NumericValue": 9,
+      "StringValue": "community_awareness",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1d36eee0",
+      "CodeType": "Normal",
+      "DisplayText": "impact of antimicrobials",
+      "NumericValue": 10,
+      "StringValue": "impact_of_antimicrobials",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-80d9988f",
+      "CodeType": "Normal",
+      "DisplayText": "questions",
+      "NumericValue": 6,
+      "StringValue": "questions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-86e2ff0b",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
