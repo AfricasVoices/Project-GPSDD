@@ -1,8 +1,48 @@
 {
   "SchemeID": "Scheme-3e678cba",
-  "Name": "Kiambu Baseline Community Awareness",
+  "Name": "Kilifi Baseline Community Awareness",
   "Version": "0.0.0.1",
   "Codes": [
+    {
+      "CodeID": "code-e8816593",
+      "CodeType": "Normal",
+      "DisplayText": "not informed at all",
+      "NumericValue": 1,
+      "StringValue": "not_informed_at_all",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-217a16fc",
+      "CodeType": "Normal",
+      "DisplayText": "a little bit informed",
+      "NumericValue": 2,
+      "StringValue": "a_little_bit_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6bddc38d",
+      "CodeType": "Normal",
+      "DisplayText": "well informed",
+      "NumericValue": 3,
+      "StringValue": "well_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2e2c4af3",
+      "CodeType": "Normal",
+      "DisplayText": "very well informed",
+      "NumericValue": 4,
+      "StringValue": "very_well_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a72a3023",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 5,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
