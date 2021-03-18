@@ -339,7 +339,7 @@ KILIFI_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="age_coded",
                        analysis_file_key="age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
@@ -420,7 +420,7 @@ KIAMBU_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="age_coded",
                        analysis_file_key="age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
@@ -501,7 +501,7 @@ BUNGOMA_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="age_coded",
                        analysis_file_key="age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
