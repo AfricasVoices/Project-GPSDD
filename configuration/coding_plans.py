@@ -127,7 +127,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.list_of_labels),
+               raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="kilifi_baseline_government_role_raw",
                time_field="kilifi_baseline_government_role_time",
@@ -143,7 +143,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.list_of_labels),
+               raw_field_fold_strategy=FoldStrategies.concatenate),
 ]
 
 KIAMBU_S01_RQA_CODING_PLANS = [
