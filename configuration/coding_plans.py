@@ -111,7 +111,37 @@ KILIFI_S01_RQA_CODING_PLANS = [
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e05"),
-               raw_field_fold_strategy=FoldStrategies.concatenate)
+               raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="baseline_community_awareness_raw",
+               time_field="baseline_community_awareness_time",
+               coda_filename="GPSDD_KILIFI_baseline_community_awareness.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.SINGLE,
+                       code_scheme=CodeSchemes.KILIFI_BASELINE_COMMUNITY_AWARENESS,
+                       coded_field="baseline_community_awareness_coded",
+                       analysis_file_key="baseline_community_awareness",
+                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
+
+    CodingPlan(raw_field="baseline_government_role_raw",
+               time_field="baseline_government_role_time",
+               coda_filename="GPSDD_KILIFI_baseline_government_role.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.MULTIPLE,
+                       code_scheme=CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE,
+                       coded_field="baseline_government_role_coded",
+                       analysis_file_key="baseline_government_role",
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE)
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
 ]
 
 KIAMBU_S01_RQA_CODING_PLANS = [
@@ -203,7 +233,37 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e05"),
-               raw_field_fold_strategy=FoldStrategies.concatenate)
+               raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="baseline_community_awareness_raw",
+               time_field="baseline_community_awareness_time",
+               coda_filename="GPSDD_KIAMBU_baseline_community_awareness.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.SINGLE,
+                       code_scheme=CodeSchemes.KIAMBU_BASELINE_COMMUNITY_AWARENESS,
+                       coded_field="baseline_community_awareness_coded",
+                       analysis_file_key="baseline_community_awareness",
+                       fold_strategy=FoldStrategies.assert_label_ids_equal
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
+
+    CodingPlan(raw_field="baseline_government_role_raw",
+               time_field="baseline_government_role_time",
+               coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.MULTIPLE,
+                       code_scheme=CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE,
+                       coded_field="baseline_government_role_coded",
+                       analysis_file_key="baseline_government_role",
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE)
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.assert_equal),
 ]
 
 BUNGOMA_S01_RQA_CODING_PLANS = [
@@ -295,7 +355,39 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e05"),
-               raw_field_fold_strategy=FoldStrategies.concatenate)
+               raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="baseline_community_awareness_raw",
+               time_field="baseline_community_awareness_time",
+               coda_filename="GPSDD_BUNGOMA_baseline_community_awareness.json",
+               icr_filename="bungoma_baseline_community_awareness.csv",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.MULTIPLE,
+                       code_scheme=CodeSchemes.BUNGOMA_BASELINE_COMMUNITY_AWARENESS,
+                       coded_field="baseline_community_awareness_coded",
+                       analysis_file_key="baseline_community_awareness",
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.BUNGOMA_BASELINE_COMMUNITY_AWARENESS)
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="baseline_government_role_raw",
+               time_field="baseline_government_role_time",
+               coda_filename="GPSDD_BUNGOMA_baseline_government_role.json",
+               icr_filename="bungoma_baseline_government_role.csv",
+               coding_configurations=[
+                   CodingConfiguration(
+                       coding_mode=CodingModes.MULTIPLE,
+                       code_scheme=CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE,
+                       coded_field="baseline_government_role_coded",
+                       analysis_file_key="baseline_government_role",
+                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE)
+                   )
+               ],
+               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
+               raw_field_fold_strategy=FoldStrategies.concatenate),
 ]
 
 def get_rqa_coding_plans(pipeline_name):
@@ -569,101 +661,11 @@ def get_demog_coding_plans(pipeline_name):
         return KILIFI_DEMOG_CODING_PLANS + KIAMBU_DEMOG_CODING_PLANS + BUNGOMA_DEMOG_CODING_PLANS
 
 
-KILIFI_FOLLOW_UP_CODING_PLANS = [
-    CodingPlan(raw_field="baseline_community_awareness_raw",
-               time_field="baseline_community_awareness_time",
-               coda_filename="GPSDD_KILIFI_baseline_community_awareness.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
-                       code_scheme=CodeSchemes.KILIFI_BASELINE_COMMUNITY_AWARENESS,
-                       coded_field="baseline_community_awareness_coded",
-                       analysis_file_key="baseline_community_awareness",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
+KILIFI_FOLLOW_UP_CODING_PLANS = []
 
-    CodingPlan(raw_field="baseline_government_role_raw",
-               time_field="baseline_government_role_time",
-               coda_filename="GPSDD_KILIFI_baseline_government_role.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.MULTIPLE,
-                       code_scheme=CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE,
-                       coded_field="baseline_government_role_coded",
-                       analysis_file_key="baseline_government_role",
-                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KILIFI_BASELINE_GOVERNMENT_ROLE)
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
-]
+KIAMBU_FOLLOW_UP_CODING_PLANS = []
 
-KIAMBU_FOLLOW_UP_CODING_PLANS = [
-    CodingPlan(raw_field="baseline_community_awareness_raw",
-               time_field="baseline_community_awareness_time",
-               coda_filename="GPSDD_KIAMBU_baseline_community_awareness.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
-                       code_scheme=CodeSchemes.KIAMBU_BASELINE_COMMUNITY_AWARENESS,
-                       coded_field="baseline_community_awareness_coded",
-                       analysis_file_key="baseline_community_awareness",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
-
-    CodingPlan(raw_field="baseline_government_role_raw",
-               time_field="baseline_government_role_time",
-               coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.MULTIPLE,
-                       code_scheme=CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE,
-                       coded_field="baseline_government_role_coded",
-                       analysis_file_key="baseline_government_role",
-                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.KIAMBU_BASELINE_GOVERNMENT_ROLE)
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kiambu baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
-]
-
-BUNGOMA_FOLLOW_UP_CODING_PLANS = [
-    CodingPlan(raw_field="baseline_community_awareness_raw",
-               time_field="baseline_community_awareness_time",
-               coda_filename="GPSDD_BUNGOMA_baseline_community_awareness.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
-                       code_scheme=CodeSchemes.BUNGOMA_BASELINE_COMMUNITY_AWARENESS,
-                       coded_field="baseline_community_awareness_coded",
-                       analysis_file_key="baseline_community_awareness",
-                       fold_strategy=FoldStrategies.assert_label_ids_equal
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
-
-    CodingPlan(raw_field="baseline_government_role_raw",
-               time_field="baseline_government_role_time",
-               coda_filename="GPSDD_BUNGOMA_baseline_government_role.json",
-               coding_configurations=[
-                   CodingConfiguration(
-                       coding_mode=CodingModes.MULTIPLE,
-                       code_scheme=CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE,
-                       coded_field="baseline_government_role_coded",
-                       analysis_file_key="baseline_government_role",
-                       fold_strategy=partial(FoldStrategies.list_of_labels, CodeSchemes.BUNGOMA_BASELINE_GOVERNMENT_ROLE)
-                   )
-               ],
-               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma baseline community awareness"),
-               raw_field_fold_strategy=FoldStrategies.assert_equal),
-]
+BUNGOMA_FOLLOW_UP_CODING_PLANS = []
 
 
 def get_follow_up_coding_plans(pipeline_name):
