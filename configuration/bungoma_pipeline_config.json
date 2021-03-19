@@ -10,11 +10,11 @@
         "gpsdd_bungoma_s01e01_activation",
         "gpsdd_bungoma_s01e02_activation",
         "gpsdd_bungoma_s01e03_activation",
-        "gpsdd_bungoma_s01e04_activation"
+        "gpsdd_bungoma_s01e04_activation",
+        "gpsdd_bungoma_s01_baseline"
       ],
       "SurveyFlowNames": [
-        "gpsdd_bungoma_s01_demog",
-        "gpsdd_bungoma_s01_baseline"
+        "gpsdd_bungoma_s01_demog"
       ],
       "TestContactUUIDs": [
         "40b2747e-764a-4635-b922-6c67c7327075",

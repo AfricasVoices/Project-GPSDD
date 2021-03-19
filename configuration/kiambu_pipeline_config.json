@@ -10,11 +10,11 @@
         "gpsdd_kiambu_s01e01_activation",
         "gpsdd_kiambu_s01e02_activation",
         "gpsdd_kiambu_s01e03_activation",
-        "gpsdd_kiambu_s01e04_activation"
+        "gpsdd_kiambu_s01e04_activation",
+        "gpsdd_kiambu_s01_baseline"
       ],
       "SurveyFlowNames": [
-        "gpsdd_kiambu_s01_demog",
-        "gpsdd_kiambu_s01_baseline"
+        "gpsdd_kiambu_s01_demog"
       ],
       "TestContactUUIDs": [
         "0793361d-c2cb-4a46-89ed-40ef05f5fa4f",

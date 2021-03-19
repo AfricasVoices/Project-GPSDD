@@ -10,11 +10,11 @@
         "gpsdd_kilifi_s01e01_activation",
         "gpsdd_kilifi_s01e02_activation",
         "gpsdd_kilifi_s01e03_activation",
-        "gpsdd_kilifi_s01e04_activation"
+        "gpsdd_kilifi_s01e04_activation",
+        "gpsdd_kilifi_s01_baseline"
       ],
       "SurveyFlowNames": [
-        "gpsdd_kilifi_s01_demog",
-        "gpsdd_kilifi_s01_baseline"
+        "gpsdd_kilifi_s01_demog"
       ],
       "TestContactUUIDs": [
         "64918562-d983-4dce-8aa0-91df2879e10b",
