@@ -68,9 +68,9 @@
     {"RapidProKey": "Disabled (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_raw"},
     {"RapidProKey": "Disabled (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_disabled_time"},
 
-    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_raw", "IsActivationMessage":  true},
     {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_time"},
-    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_raw", "IsActivationMessage":  true},
     {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",

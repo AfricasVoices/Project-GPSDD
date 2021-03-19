@@ -180,6 +180,10 @@ if __name__ == "__main__":
                 "kiambu_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
                 "bungoma_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
 
+                "kilifi_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
+                "kiambu_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
+                "bungoma_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
+
                 "kilifi_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
                 "kiambu_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
                 "bungoma_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE
@@ -241,7 +245,7 @@ if __name__ == "__main__":
                 "location_raw": assert_equal,
                 "disabled_raw": assert_equal,
 
-                "baseline_community_awareness_coded": partial(demog_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
+                "baseline_community_awareness_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
                 "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
 
                 "baseline_community_awareness_raw": assert_equal,

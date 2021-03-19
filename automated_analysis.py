@@ -191,7 +191,7 @@ if __name__ == "__main__":
     participation_maps.export_participation_maps(
         individuals, CONSENT_WITHDRAWN_KEY,
         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-        AnalysisConfiguration(county_field, "location_raw", "county_coded", CodeSchemes.KENYA_COUNTY),
+        AnalysisConfiguration(county_field, "location_raw", f"{county_field}_coded", CodeSchemes.KENYA_COUNTY),
         kenya_mapper.export_kenya_counties_map,
         f"{automated_analysis_output_dir}/maps/counties/county_",
         export_by_theme=pipeline_configuration.automated_analysis.generate_county_theme_distribution_maps
@@ -201,7 +201,7 @@ if __name__ == "__main__":
     participation_maps.export_participation_maps(
         individuals, CONSENT_WITHDRAWN_KEY,
         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-        AnalysisConfiguration(constituency_field, "location_raw", "constituency_coded", CodeSchemes.KENYA_CONSTITUENCY),
+        AnalysisConfiguration(constituency_field, "location_raw", f"{constituency_field}_coded", CodeSchemes.KENYA_CONSTITUENCY),
         kenya_mapper.export_kenya_constituencies_map,
         f"{automated_analysis_output_dir}/maps/constituencies/constituency_",
         export_by_theme=pipeline_configuration.automated_analysis.generate_constituency_theme_distribution_maps

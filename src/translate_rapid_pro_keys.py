@@ -26,18 +26,15 @@ class TranslateRapidProKeys(object):
         :type pipeline_configuration: PipelineConfiguration
         """
         for td in data:
-            show_dict = dict()
-
             for remapping in pipeline_configuration.rapid_pro_key_remappings:
                 if not remapping.is_activation_message:
                     continue
 
                 if td.get(remapping.rapid_pro_key) is not None:
-                    assert "rqa_message" not in show_dict
+                    show_dict = dict()
                     show_dict["rqa_message"] = td[remapping.rapid_pro_key]
                     show_dict["show_pipeline_key"] = remapping.pipeline_key
-
-            td.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
+                    td.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
 
     @classmethod
     def _remap_radio_show_by_time_range(cls, user, data, time_key, show_pipeline_key_to_remap_to,

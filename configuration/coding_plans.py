@@ -116,9 +116,10 @@ KILIFI_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kilifi_baseline_community_awareness_raw",
                time_field="kilifi_baseline_community_awareness_time",
                coda_filename="GPSDD_KILIFI_baseline_community_awareness.json",
+               icr_filename="kilifi_baseline_community_awareness.csv",
                coding_configurations=[
                    CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
+                       coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KILIFI_BASELINE_COMMUNITY_AWARENESS,
                        coded_field="kilifi_baseline_community_awareness_coded",
                        analysis_file_key="kilifi_baseline_community_awareness",
@@ -131,6 +132,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kilifi_baseline_government_role_raw",
                time_field="kilifi_baseline_government_role_time",
                coda_filename="GPSDD_KILIFI_baseline_government_role.json",
+               icr_filename="kilifi_baseline_government_role.csv",
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
@@ -238,9 +240,10 @@ KIAMBU_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kiambu_baseline_community_awareness_raw",
                time_field="kiambu_baseline_community_awareness_time",
                coda_filename="GPSDD_KIAMBU_baseline_community_awareness.json",
+               icr_filename="kiambu_baseline_community_awareness.csv",
                coding_configurations=[
                    CodingConfiguration(
-                       coding_mode=CodingModes.SINGLE,
+                       coding_mode=CodingModes.MULTIPLE,
                        code_scheme=CodeSchemes.KIAMBU_BASELINE_COMMUNITY_AWARENESS,
                        coded_field="kiambu_baseline_community_awareness_coded",
                        analysis_file_key="kiambu_baseline_community_awareness",
@@ -253,6 +256,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kiambu_baseline_government_role_raw",
                time_field="kiambu_baseline_government_role_time",
                coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
+               icr_filename="kiambu_baseline_government_role.csv",
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
@@ -859,6 +863,8 @@ KILIFI_FOLLOW_UP_CODING_PLANS = []
 KIAMBU_FOLLOW_UP_CODING_PLANS = []
 
 BUNGOMA_FOLLOW_UP_CODING_PLANS = []
+
+ALL_LOCATIONS_FOLLOW_UP_CODING_PLANS = []
 
 
 def get_follow_up_coding_plans(pipeline_name, analysis_mode=False):

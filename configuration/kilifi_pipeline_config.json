@@ -66,9 +66,9 @@
     {"RapidProKey": "Disabled (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_disabled_raw"},
     {"RapidProKey": "Disabled (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_disabled_time"},
 
-    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_raw"},
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_raw", "IsActivationMessage":  true},
     {"RapidProKey": "Community_Awareness (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_community_awareness_time"},
-    {"RapidProKey": "Government_Role (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_raw"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_raw", "IsActivationMessage":  true},
     {"RapidProKey": "Government_Role (Time) - gpsdd_kilifi_s01_baseline", "PipelineKey": "kilifi_baseline_government_role_time"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
