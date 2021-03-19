@@ -25,16 +25,22 @@ class TranslateRapidProKeys(object):
         :param pipeline_configuration: Pipeline configuration.
         :type pipeline_configuration: PipelineConfiguration
         """
+        output = []
+
         for td in data:
             for remapping in pipeline_configuration.rapid_pro_key_remappings:
                 if not remapping.is_activation_message:
                     continue
 
                 if td.get(remapping.rapid_pro_key) is not None:
+                    x = td.copy()
                     show_dict = dict()
                     show_dict["rqa_message"] = td[remapping.rapid_pro_key]
                     show_dict["show_pipeline_key"] = remapping.pipeline_key
-                    td.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
+                    x.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
+                    output.append(x)
+
+        return output
 
     @classmethod
     def _remap_radio_show_by_time_range(cls, user, data, time_key, show_pipeline_key_to_remap_to,
@@ -195,7 +201,7 @@ class TranslateRapidProKeys(object):
         # Set the show pipeline key for each message, using the presence of Rapid Pro value keys in the TracedData.
         # These are necessary in order to be able to remap radio shows and key names separately (because data
         # can't be 'deleted' from TracedData).
-        cls.set_show_ids(user, data, pipeline_configuration)
+        data = cls.set_show_ids(user, data, pipeline_configuration)
 
         # Move rqa messages which ended up in the wrong flow to the correct one.
         cls.remap_radio_shows(user, data, pipeline_configuration)
