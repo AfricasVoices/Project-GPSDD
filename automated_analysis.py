@@ -101,19 +101,6 @@ if __name__ == "__main__":
             individuals[i] = dict(individuals[i].items())
     log.info(f"Loaded {len(individuals)} individuals")
 
-    with open(f"{automated_analysis_output_dir}/{pipeline_configuration.pipeline_name}.txt", "w") as f:
-        for td in individuals:
-            if td[CONSENT_WITHDRAWN_KEY] == Codes.TRUE:
-                continue
-
-            plan = PipelineConfiguration.RQA_CODING_PLANS[1]
-            if plan.raw_field in td:
-                f.write(f"{td[plan.raw_field]}\n")
-
-            # for cc in plan.coding_configurations:
-            #     if cc.code_scheme.get_code_with_code_id(td[cc.coded_field][0]["CodeID"]).control_code == "NC":
-            #         f.write(f"{td[plan.raw_field]}\n")
-
     # Compute the number of messages, individuals, and relevant messages per episode and overall.
     log.info("Computing the per-episode and per-season engagement counts...")
     engagement_counts = OrderedDict()  # of episode name to counts
