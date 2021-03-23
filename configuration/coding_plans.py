@@ -114,7 +114,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="kilifi_baseline_community_awareness_raw",
-               time_field="kilifi_baseline_community_awareness_time",
+               time_field="sent_on",
                coda_filename="GPSDD_KILIFI_baseline_community_awareness.json",
                icr_filename="kilifi_baseline_community_awareness.csv",
                coding_configurations=[
@@ -130,7 +130,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="kilifi_baseline_government_role_raw",
-               time_field="kilifi_baseline_government_role_time",
+               time_field="sent_on",
                coda_filename="GPSDD_KILIFI_baseline_government_role.json",
                icr_filename="kilifi_baseline_government_role.csv",
                coding_configurations=[
@@ -238,7 +238,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="kiambu_baseline_community_awareness_raw",
-               time_field="kiambu_baseline_community_awareness_time",
+               time_field="sent_on",
                coda_filename="GPSDD_KIAMBU_baseline_community_awareness.json",
                icr_filename="kiambu_baseline_community_awareness.csv",
                coding_configurations=[
@@ -254,7 +254,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="kiambu_baseline_government_role_raw",
-               time_field="kiambu_baseline_government_role_time",
+               time_field="sent_on",
                coda_filename="GPSDD_KIAMBU_baseline_government_role.json",
                icr_filename="kiambu_baseline_government_role.csv",
                coding_configurations=[
@@ -362,7 +362,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="bungoma_baseline_community_awareness_raw",
-               time_field="bungoma_baseline_community_awareness_time",
+               time_field="sent_on",
                coda_filename="GPSDD_BUNGOMA_baseline_community_awareness.json",
                icr_filename="bungoma_baseline_community_awareness.csv",
                coding_configurations=[
@@ -378,7 +378,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="bungoma_baseline_government_role_raw",
-               time_field="bungoma_baseline_government_role_time",
+               time_field="sent_on",
                coda_filename="GPSDD_BUNGOMA_baseline_government_role.json",
                icr_filename="bungoma_baseline_government_role.csv",
                coding_configurations=[
@@ -476,7 +476,7 @@ ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="baseline_community_awareness_raw",
-               time_field="baseline_community_awareness_time",
+               time_field="sent_on",
                coda_filename="GPSDD_BUNGOMA_baseline_community_awareness.json",
                icr_filename="baseline_community_awareness.csv",
                coding_configurations=[
@@ -491,7 +491,7 @@ ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
                raw_field_fold_strategy=FoldStrategies.concatenate),
 
     CodingPlan(raw_field="baseline_government_role_raw",
-               time_field="baseline_government_role_time",
+               time_field="sent_on",
                coda_filename="GPSDD_BUNGOMA_baseline_government_role.json",
                icr_filename="bungoma_baseline_government_role.csv",
                coding_configurations=[

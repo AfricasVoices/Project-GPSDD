@@ -158,17 +158,16 @@ if __name__ == "__main__":
             limit_per_code=100
         )
 
-    # TODO: Re-enable once supporting different sent_on_keys and the traffic timestamps are fixed.
-    # if pipeline_configuration.automated_analysis.traffic_labels is not None:
-    #     log.info("Exporting traffic analysis...")
-    #     with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
-    #         traffic_analysis.export_traffic_analysis_csv(
-    #             messages, CONSENT_WITHDRAWN_KEY,
-    #             coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-    #             SENT_ON_KEY,
-    #             pipeline_configuration.automated_analysis.traffic_labels,
-    #             f
-    #         )
+    if pipeline_configuration.automated_analysis.traffic_labels is not None:
+        log.info("Exporting traffic analysis...")
+        with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
+            traffic_analysis.export_traffic_analysis_csv(
+                messages, CONSENT_WITHDRAWN_KEY,
+                coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
+                SENT_ON_KEY,
+                pipeline_configuration.automated_analysis.traffic_labels,
+                f
+            )
 
     # Produce maps of Kenya at county level
     pipeline_name = pipeline_configuration.pipeline_name
