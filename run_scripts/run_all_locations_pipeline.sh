@@ -3,7 +3,7 @@
 set -e
 
 if [[ $# -ne 10 ]]; then
-    echo "Usage: ./run_kilifi_pipeline.sh"
+    echo "Usage: ./run_all_locations_pipeline.sh"
     echo "  <user> <pipeline-run-mode> <pipeline-configuration-json>"
     echo "  <coda-pull-credentials-path> <coda-push-credentials-path> <avf-bucket-credentials-path>"
     echo "  <coda-tools-root> <data-root> <data-backup-dir> <performance-logs-dir>"
