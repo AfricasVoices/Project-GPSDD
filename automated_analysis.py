@@ -16,6 +16,8 @@ from core_data_modules.util import IOUtils
 from core_data_modules.analysis import AnalysisConfiguration, engagement_counts, theme_distributions, \
     repeat_participations, sample_messages, traffic_analysis, analysis_utils
 
+from configuration.coding_plans import get_rqa_coding_plans, get_demog_coding_plans, get_follow_up_coding_plans, \
+    BUNGOMA_S01_RQA_CODING_PLANS, KILIFI_S01_RQA_CODING_PLANS, KIAMBU_S01_RQA_CODING_PLANS
 from src import AnalysisUtils
 from configuration.code_schemes import  CodeSchemes
 from src.lib.configuration_objects import CodingModes
@@ -76,6 +78,12 @@ if __name__ == "__main__":
         pipeline_configuration = PipelineConfiguration.from_configuration_file(f)
     Logger.set_project_name(pipeline_configuration.pipeline_name)
     log.debug(f"Pipeline name is {pipeline_configuration.pipeline_name}")
+
+    if pipeline_configuration.pipeline_name == "gpsdd_all_locations_s01_pipeline":
+        PipelineConfiguration.RQA_CODING_PLANS = get_rqa_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.DEMOG_CODING_PLANS = get_demog_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = get_follow_up_coding_plans(pipeline_configuration.pipeline_name, True)
+        PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DEMOG_CODING_PLANS + PipelineConfiguration.FOLLOW_UP_CODING_PLANS
 
     sys.setrecursionlimit(30000)
     # Read the messages dataset
@@ -161,11 +169,28 @@ if __name__ == "__main__":
                 f
             )
 
+    # Produce maps of Kenya at county level
+    pipeline_name = pipeline_configuration.pipeline_name
+    if pipeline_name == "gpsdd_kilifi_s01_pipeline":
+        county_field = "kilifi_county"
+        constituency_field = "kilifi_constituency"
+    elif pipeline_name == "gpsdd_kiambu_s01_pipeline":
+        county_field = "kiambu_county"
+        constituency_field = "kiambu_constituency"
+    elif pipeline_name == "gpsdd_bungoma_s01_pipeline":
+        county_field = "bungoma_county"
+        constituency_field = "bungoma_constituency"
+    elif pipeline_name == "gpsdd_all_locations_s01_pipeline":
+        county_field = "county"
+        constituency_field = "constituency"
+    else:
+        assert False, f"PipelineName {pipeline_name} not recognized"
+
     log.info(f"Exporting participation maps for each Kenya county...")
     participation_maps.export_participation_maps(
         individuals, CONSENT_WITHDRAWN_KEY,
         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-        AnalysisConfiguration("county", "location_raw", "county_coded", CodeSchemes.KENYA_COUNTY),
+        AnalysisConfiguration(county_field, "location_raw", f"{county_field}_coded", CodeSchemes.KENYA_COUNTY),
         kenya_mapper.export_kenya_counties_map,
         f"{automated_analysis_output_dir}/maps/counties/county_",
         export_by_theme=pipeline_configuration.automated_analysis.generate_county_theme_distribution_maps
@@ -175,7 +200,7 @@ if __name__ == "__main__":
     participation_maps.export_participation_maps(
         individuals, CONSENT_WITHDRAWN_KEY,
         coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-        AnalysisConfiguration("constituency", "location_raw", "constituency_coded", CodeSchemes.KENYA_CONSTITUENCY),
+        AnalysisConfiguration(constituency_field, "location_raw", f"{constituency_field}_coded", CodeSchemes.KENYA_CONSTITUENCY),
         kenya_mapper.export_kenya_constituencies_map,
         f"{automated_analysis_output_dir}/maps/constituencies/constituency_",
         export_by_theme=pipeline_configuration.automated_analysis.generate_constituency_theme_distribution_maps

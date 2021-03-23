@@ -1,9 +1,17 @@
 import argparse
+from copy import deepcopy
+from functools import partial
 
+from core_data_modules.analysis import analysis_utils, AnalysisConfiguration
 from core_data_modules.logging import Logger
+from core_data_modules.traced_data import Metadata
 from core_data_modules.traced_data.io import TracedDataJsonIO
-from core_data_modules.util import IOUtils
+from core_data_modules.traced_data.util.fold_traced_data import FoldStrategies
+from core_data_modules.util import IOUtils, TimeUtils
 
+from configuration.code_schemes import CodeSchemes
+from configuration.coding_plans import get_rqa_coding_plans, get_demog_coding_plans, get_follow_up_coding_plans, \
+    BUNGOMA_S01_RQA_CODING_PLANS, KILIFI_S01_RQA_CODING_PLANS, KIAMBU_S01_RQA_CODING_PLANS
 from src import LoadData, TranslateRapidProKeys, AutoCode, ProductionFile, \
     ApplyManualCodes, AnalysisFile, WSCorrection
 from src.lib import PipelineConfiguration, MessageFilters
@@ -102,6 +110,156 @@ if __name__ == "__main__":
 
         log.info("Applying Manual Codes from Coda...")
         data = ApplyManualCodes.apply_manual_codes(user, data, prev_coded_dir_path)
+
+        if pipeline_configuration.pipeline_name == "gpsdd_all_locations_s01_pipeline":
+            # Up to this point the pipeline has run as normal, keeping data separate by location.
+            # Now, we need to produce analysis files that cover all locations, which requires combining the datasets into
+            # one. This is very difficult, because the pipeline assumed that there would be one raw field and one coda
+            # dataset per field.
+            # We now have to patch up this dataset:
+
+            # 1. Check that there are no participants who have participated in multiple locations.
+            # If they have, crash because this will require additional work to handle correctly.
+            def coding_plans_to_analysis_configurations(coding_plans):
+                analysis_configurations = []
+                for plan in coding_plans:
+                    ccs = plan.coding_configurations
+                    for cc in ccs:
+                        analysis_configurations.append(
+                            AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
+                        )
+                return analysis_configurations
+
+            bungoma_rqa_participants = {td["uid"] for td in
+                                        analysis_utils.filter_opt_ins(data, "uid",
+                                                                      coding_plans_to_analysis_configurations(
+                                                                          BUNGOMA_S01_RQA_CODING_PLANS))}
+            kilifi_rqa_participants = {td["uid"] for td in
+                                       analysis_utils.filter_opt_ins(data, "uid",
+                                                                     coding_plans_to_analysis_configurations(
+                                                                         KILIFI_S01_RQA_CODING_PLANS))}
+            kiambu_rqa_participants = {td["uid"] for td in
+                                       analysis_utils.filter_opt_ins(data, "uid",
+                                                                     coding_plans_to_analysis_configurations(
+                                                                         KIAMBU_S01_RQA_CODING_PLANS))}
+
+            duplicate_participants = bungoma_rqa_participants.intersection(kilifi_rqa_participants) \
+                .union(bungoma_rqa_participants.intersection(kiambu_rqa_participants)) \
+                .union(kiambu_rqa_participants.intersection(kilifi_rqa_participants))
+            if len(duplicate_participants) > 0:
+                log.error(f"Detected participants who took part in multiple locations: {duplicate_participants}")
+                exit(1)
+
+            # 2. Change the coding plans to refer to ones that contain unified field names and code schemes etc. rather
+            # than per-location
+            PipelineConfiguration.RQA_CODING_PLANS = get_rqa_coding_plans(pipeline_configuration.pipeline_name, True)
+            PipelineConfiguration.DEMOG_CODING_PLANS = get_demog_coding_plans(pipeline_configuration.pipeline_name, True)
+            PipelineConfiguration.FOLLOW_UP_CODING_PLANS = get_follow_up_coding_plans(pipeline_configuration.pipeline_name, True)
+            PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DEMOG_CODING_PLANS + PipelineConfiguration.FOLLOW_UP_CODING_PLANS
+
+            # 3. Patch up all the labels' scheme ids to refer to the relevant 'all_locations' scheme rather than to
+            # the individual location schemes.
+            rqa_scheme_remaps = {
+                "kilifi_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
+                "kiambu_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
+                "bungoma_rqa_s01e01_coded": CodeSchemes.ALL_LOCATIONS_S01E01,
+
+                "kilifi_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
+                "kiambu_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
+                "bungoma_rqa_s01e02_coded": CodeSchemes.ALL_LOCATIONS_S01E02,
+
+                "kilifi_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
+                "kiambu_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
+                "bungoma_rqa_s01e03_coded": CodeSchemes.ALL_LOCATIONS_S01E03,
+
+                "kilifi_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
+                "kiambu_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
+                "bungoma_rqa_s01e04_coded": CodeSchemes.ALL_LOCATIONS_S01E04,
+
+                "kilifi_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
+                "kiambu_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
+                "bungoma_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
+
+                "kilifi_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
+                "kiambu_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
+                "bungoma_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE
+            }
+
+            for td in data:
+                remapped = dict()
+                for field, target_scheme in rqa_scheme_remaps.items():
+                    labels = deepcopy(td[field])
+                    for l in labels:
+                        l["SchemeID"] = target_scheme.scheme_id
+                    remapped[field] = labels
+                td.append_data(remapped, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
+
+            # 4. Convert the fields in the bungoma/kilifi/kiambu coding plans relevant to analysis to their unified
+            # fields. This is mostly like folding messages -> individuals, except we now have to account for some fields
+            # being None, which is why there are some special case strategies implemented inline here.
+            def assert_equal(x, y):
+                if x is None:
+                    return y
+                if y is None:
+                    return x
+
+                assert x == y, f"{x} != {y}"
+                return x
+
+
+            def demog_labels(code_scheme, x, y):
+                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code == "NA":
+                    return y
+                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code == "NA":
+                    return x
+
+                assert x["CodeID"] == y["CodeID"]
+                return x
+
+            remappings = {
+                "rqa_s01e01_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E01),
+                "rqa_s01e02_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E02),
+                "rqa_s01e03_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E03),
+                "rqa_s01e04_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E04),
+                "rqa_s01e05_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E05),
+
+                "rqa_s01e01_raw": FoldStrategies.concatenate,
+                "rqa_s01e02_raw": FoldStrategies.concatenate,
+                "rqa_s01e03_raw": FoldStrategies.concatenate,
+                "rqa_s01e04_raw": FoldStrategies.concatenate,
+                "rqa_s01e05_raw": FoldStrategies.concatenate,
+
+                "gender_coded": partial(demog_labels, CodeSchemes.GENDER),
+                "age_coded": partial(demog_labels, CodeSchemes.AGE),
+                "age_category_coded": partial(demog_labels, CodeSchemes.AGE_CATEGORY),
+                "county_coded": partial(demog_labels, CodeSchemes.KENYA_COUNTY),
+                "constituency_coded": partial(demog_labels, CodeSchemes.KENYA_CONSTITUENCY),
+                "disabled_coded": partial(demog_labels, CodeSchemes.DISABLED),
+
+                "gender_raw": assert_equal,
+                "age_raw": assert_equal,
+                "location_raw": assert_equal,
+                "disabled_raw": assert_equal,
+
+                "baseline_community_awareness_coded": partial(demog_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
+                "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
+
+                "baseline_community_awareness_raw": assert_equal,
+                "baseline_government_role_raw": assert_equal
+            }
+
+            for td in data:
+                remapped = dict()
+                for field, strategy in remappings.items():
+                    x = td.get(f"kilifi_{field}")
+                    y = td.get(f"kiambu_{field}")
+                    z = td.get(f"bungoma_{field}")
+
+                    folded = strategy(strategy(x, y), z)
+                    if folded is not None:
+                        remapped[field] = folded
+
+                td.append_data(remapped, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
 
         log.info("Tagging listening group participants & Generating Analysis CSVs...")
         messages_data, individuals_data = AnalysisFile.generate(user, data, pipeline_configuration, raw_data_dir,
