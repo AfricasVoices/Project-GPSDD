@@ -24,8 +24,12 @@ class TranslateRapidProKeys(object):
         :type data: iterable of TracedData
         :param pipeline_configuration: Pipeline configuration.
         :type pipeline_configuration: PipelineConfiguration
+        :return: List of TracedData, each containing one `rqa_message` and one `show_pipeline_key` field.
+                 If an input TracedData contained multiple rqa_messages, multiple TracedData objects will be returned,
+                 one for each rqa_messaage.
+        :rtype: list of TracedData
         """
-        output = []
+        output_data = []
 
         for td in data:
             for remapping in pipeline_configuration.rapid_pro_key_remappings:
@@ -33,14 +37,18 @@ class TranslateRapidProKeys(object):
                     continue
 
                 if td.get(remapping.rapid_pro_key) is not None:
-                    x = td.copy()
-                    show_dict = dict()
-                    show_dict["rqa_message"] = td[remapping.rapid_pro_key]
-                    show_dict["show_pipeline_key"] = remapping.pipeline_key
-                    x.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
-                    output.append(x)
+                    # Some activation flows contain multiple messages. Separate these by creating one TracedData object
+                    # to handle each of those messages, so that we still have one-message per TracedData in the initial
+                    # stages of the pipeline.
+                    rqa_td = td.copy()
+                    show_dict = {
+                        "rqa_message": td[remapping.rapid_pro_key],
+                        "show_pipeline_key": remapping.pipeline_key
+                    }
+                    rqa_td.append_data(show_dict, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
+                    output_data.append(rqa_td)
 
-        return output
+        return output_data
 
     @classmethod
     def _remap_radio_show_by_time_range(cls, user, data, time_key, show_pipeline_key_to_remap_to,
