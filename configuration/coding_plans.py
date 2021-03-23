@@ -425,7 +425,7 @@ KILIFI_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="kilifi_age_coded",
                        analysis_file_key="kilifi_age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
@@ -506,7 +506,7 @@ KIAMBU_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="kiambu_age_coded",
                        analysis_file_key="kiambu_age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
@@ -665,7 +665,7 @@ ALL_LOCATIONS_DEMOG_CODING_PLANS = [
                        cleaner=clean_age_with_range_filter,
                        coded_field="age_coded",
                        analysis_file_key="age",
-                       include_in_theme_distribution=Codes.FALSE,
+                       include_in_theme_distribution=False,
                        fold_strategy=FoldStrategies.assert_label_ids_equal
                    ),
                    CodingConfiguration(
