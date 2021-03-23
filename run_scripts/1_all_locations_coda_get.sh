@@ -3,7 +3,7 @@
 set -e
 
 if [[ $# -ne 3 ]]; then
-    echo "Usage: ./1_bungoma_coda_get.sh <coda-auth-file> <coda-v2-root> <data-root>"
+    echo "Usage: ./1_all_locations_coda_get.sh <coda-auth-file> <coda-v2-root> <data-root>"
     echo "Downloads coded messages datasets from Coda to '<data-root>/Coded Coda Files'"
     exit
 fi
