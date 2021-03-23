@@ -24,7 +24,10 @@
     }
   ],
   "ListeningGroupCSVURLs":[
-
+    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e01_health_practitioners_listening_group.csv",
+    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e01_mothers_listening_group.csv",
+    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e02_health_practitioners_listening_group.csv",
+    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e02_mothers_listening_group.csv"
     ],
   "PhoneNumberUuidTable": {
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
