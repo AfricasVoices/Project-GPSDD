@@ -80,20 +80,17 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-03T12:00+03:00", "EndDate": "2020-03-03T16:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2020-03-04T11:00+03:00", "Label": "E01 Inooro"},
+      {"StartDate": "2021-03-03T15:00+03:00", "EndDate": "2021-03-03T17:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2021-03-04T11:00+03:00", "Label": "E01 Inooro"},
 
-      {"StartDate": "2021-03-10T12:00+03:00", "EndDate": "2020-03-10T16:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-11T09:00+03:00", "EndDate": "2020-03-11T11:00+03:00", "Label": "E02 Inooro"},
+      {"StartDate": "2021-03-10T14:00+03:00", "EndDate": "2021-03-10T17:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-11T08:00+03:00", "EndDate": "2021-03-10T10:00+03:00", "Label": "E02 Inooro"},
 
-      {"StartDate": "2021-03-17T12:00+03:00", "EndDate": "2020-03-17T16:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-18T09:00+03:00", "EndDate": "2020-03-18T11:00+03:00", "Label": "E03 Inooro"},
+      {"StartDate": "2021-03-24T14:00+03:00", "EndDate": "2021-03-24T17:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-25T08:00+03:00", "EndDate": "2021-03-25T10:00+03:00", "Label": "E03 Inooro"},
 
-      {"StartDate": "2021-03-24T12:00+03:00", "EndDate": "2020-03-24T16:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-03-25T09:00+03:00", "EndDate": "2020-03-25T11:00+03:00", "Label": "E04 Inooro"},
-
-      {"StartDate": "2021-03-31T12:00+03:00", "EndDate": "2020-03-31T16:00+03:00", "Label": "E05 Ad"},
-      {"StartDate": "2021-04-01T09:00+03:00", "EndDate": "2020-04-01T11:00+03:00", "Label": "E05 Inooro"}
+      {"StartDate": "2021-03-31T14:00+03:00", "EndDate": "2021-03-31T17:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-04-01T08:00+03:00", "EndDate": "2021-04-01T10:00+03:00", "Label": "E04 Inooro"}
     ]
   },
   "DriveUpload": {
