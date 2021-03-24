@@ -156,6 +156,14 @@ def fetch_from_recovery_csv(user, google_cloud_credentials_file_path, raw_data_d
             TracedDataJsonIO.export_traced_data_iterable_to_jsonl(traced_runs, f)
         log.info(f"Exported TracedData")
 
+def fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_configuration, raw_data_dir):
+    for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls:
+        listening_group = listening_group_csv_url.split("/")[-1]
+
+        log.info(f"Saving '{listening_group}' to file '{raw_data_dir}'...")
+        with open(f'{raw_data_dir}/{listening_group}', "wb") as listening_group_output_file:
+            google_cloud_utils.download_blob_to_file(
+                google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
 
 def main(user, google_cloud_credentials_file_path, pipeline_configuration_file_path, raw_data_dir):
     # Read the settings from the configuration file
@@ -192,6 +200,10 @@ def main(user, google_cloud_credentials_file_path, pipeline_configuration_file_p
 
         else:
             assert False, f"Unknown raw_data_source type {type(raw_data_source)}"
+
+    # Fetch de-identified listening group CSVs
+    log.info(f"Fetching listening group CSVs...")
+    fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_configuration, raw_data_dir)
 
 
 if __name__ == "__main__":
