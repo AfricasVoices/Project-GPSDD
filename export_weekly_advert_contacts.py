@@ -76,15 +76,15 @@ if __name__ == "__main__":
 
     # Load all listening group de-identified CSV files
     listening_group_participants = 0
-    listening_group_csvs = []
+    listening_group_csvs_names = []
     for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls:
-        listening_group_csvs.append(listening_group_csv_url.split("/")[-1])
+        listening_group_csvs_names.append(listening_group_csv_url.split("/")[-1])
 
-    for listening_group_csv in listening_group_csvs:
-        with open(f'{listening_group_data_dir}/{listening_group_csv}', "r", encoding='utf-8-sig') as f:
+    for listening_group_csv in listening_group_csvs_names:
+        with open(f"{listening_group_data_dir}/{listening_group_csv}", "r", encoding='utf-8-sig') as f:
             data = list(csv.DictReader(f))
             log.info(
-                f'Loaded {len(data)} listening group participants from {listening_group_data_dir}/{listening_group_csv}')
+                f"Loaded {len(data)} listening group participants from {listening_group_data_dir}/{listening_group_csv}")
             for row in data:
                 uuids.add(row['avf-phone-uuid'])
                 listening_group_participants +=1
