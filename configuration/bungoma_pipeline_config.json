@@ -91,7 +91,7 @@
       {"StartDate": "2021-03-06T08:00+03:00", "EndDate": "2021-03-08T14:00+03:00", "Label": "E02 Promo"},
       {"StartDate": "2021-03-08T14:00+03:00", "EndDate": "2021-03-08T24:00+03:00", "Label": "E02 Ad"},
       {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2021-03-09T12:00+03:00", "Label": "E02 West Fm"},
-      {"StartDate": "2021-03-10T07:30+03:00", "EndDate": "2021-03-10T12:00+03:00", "Label": "E02 Sulwe Fm"},
+      {"StartDate": "2021-03-11T07:30+03:00", "EndDate": "2021-03-11T12:00+03:00", "Label": "E02 Sulwe Fm"},
 
       {"StartDate": "2021-03-20T08:00+03:00", "EndDate": "2021-03-22T15:30+03:00", "Label": "E03 Promo"},
       {"StartDate": "2021-03-22T15:30+03:00", "EndDate": "2021-03-22T24:00+03:00", "Label": "E03 Ad"},
