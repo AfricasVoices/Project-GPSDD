@@ -26,6 +26,8 @@ if __name__ == "__main__":
     parser.add_argument("traced_data_paths", metavar="traced-data-paths", nargs="+",
                         help="Paths to the traced data files (either messages or individuals) to extract phone "
                              "numbers from")
+    parser.add_argument("listening_group_data_dir", metavar="listening-group-data-dir",
+                        help="Directory path to read listening group CSV files to extract listening group data from,")
     parser.add_argument("csv_output_file_path", metavar="csv-output-file-path",
                         help="Path to a CSV file to write the contacts from the locations of interest to. "
                              "Exported file is in a format suitable for direct upload to Rapid Pro")
@@ -36,6 +38,7 @@ if __name__ == "__main__":
     google_cloud_credentials_file_path = args.google_cloud_credentials_file_path
     pipeline_configuration_file_path = args.pipeline_configuration_file_path
     traced_data_paths = args.traced_data_paths
+    listening_group_data_dir = args.listening_group_data_dir
     csv_output_file_path = args.csv_output_file_path
 
     log.info("Loading Pipeline Configuration File...")
@@ -70,6 +73,22 @@ if __name__ == "__main__":
                 continue
 
             uuids.add(td["uid"])
+
+    # Load all listening group de-identified CSV files
+    listening_group_participants = 0
+    listening_group_csvs_names = []
+    for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls:
+        listening_group_csvs_names.append(listening_group_csv_url.split("/")[-1])
+
+    for listening_group_csv in listening_group_csvs_names:
+        with open(f"{listening_group_data_dir}/{listening_group_csv}", "r", encoding='utf-8-sig') as f:
+            data = list(csv.DictReader(f))
+            log.info(
+                f"Loaded {len(data)} listening group participants from {listening_group_data_dir}/{listening_group_csv}")
+            for row in data:
+                uuids.add(row['avf-phone-uuid'])
+                listening_group_participants +=1
+    log.info(f'loaded {listening_group_participants} listening group participants')
 
     if exclusion_list_file_path is not None:
         # Load the exclusion list
