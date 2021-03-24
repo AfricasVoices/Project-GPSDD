@@ -202,7 +202,7 @@ def main(user, google_cloud_credentials_file_path, pipeline_configuration_file_p
             assert False, f"Unknown raw_data_source type {type(raw_data_source)}"
 
     # Fetch de-identified listening group CSVs
-    log.info(f"Fetching listening group CSVs")
+    log.info(f"Fetching listening group CSVs...")
     fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_configuration, raw_data_dir)
 
 
