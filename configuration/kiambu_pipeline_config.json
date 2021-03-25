@@ -83,17 +83,21 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-03T15:00+03:00", "EndDate": "2021-03-03T17:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2021-03-04T11:00+03:00", "Label": "E01 Inooro"},
+      {"StartDate": "2021-03-02T08:00+03:00", "EndDate": "2021-03-03T15:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-03-03T15:00+03:00", "EndDate": "2021-03-03T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2021-03-04T12:00+03:00", "Label": "E01 Inooro"},
 
-      {"StartDate": "2021-03-10T14:00+03:00", "EndDate": "2021-03-10T17:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-11T08:00+03:00", "EndDate": "2021-03-10T10:00+03:00", "Label": "E02 Inooro"},
+      {"StartDate": "2021-03-08T08:00+03:00", "EndDate": "2021-03-10T14:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-03-10T14:00+03:00", "EndDate": "2021-03-10T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-11T08:00+03:00", "EndDate": "2021-03-11T12:00+03:00", "Label": "E02 Inooro"},
 
-      {"StartDate": "2021-03-24T14:00+03:00", "EndDate": "2021-03-24T17:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-25T08:00+03:00", "EndDate": "2021-03-25T10:00+03:00", "Label": "E03 Inooro"},
+      {"StartDate": "2021-03-22T08:00+03:00", "EndDate": "2021-03-24T14:00+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-03-24T16:00+03:00", "EndDate": "2021-03-24T24:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-25T08:00+03:00", "EndDate": "2021-03-25T12:00+03:00", "Label": "E03 Inooro"},
 
-      {"StartDate": "2021-03-31T14:00+03:00", "EndDate": "2021-03-31T17:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-04-01T08:00+03:00", "EndDate": "2021-04-01T10:00+03:00", "Label": "E04 Inooro"}
+      {"StartDate": "2021-03-29T08:00+03:00", "EndDate": "2021-03-31T14:00+03:00", "Label": "E04 Promo"},
+      {"StartDate": "2021-03-31T14:00+03:00", "EndDate": "2021-03-31T24:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-04-01T08:00+03:00", "EndDate": "2021-04-01T12:00+03:00", "Label": "E04 Inooro"}
     ]
   },
   "DriveUpload": {
