@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-201b21d2",
+      "CodeType": "Normal",
+      "DisplayText": "it can lead to death",
+      "NumericValue": 1,
+      "StringValue": "it_can_lead_to_death",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-730d4180",
+      "CodeType": "Normal",
+      "DisplayText": "affects livelihood",
+      "NumericValue": 2,
+      "StringValue": "affects_livelihood",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-966ff596",
+      "CodeType": "Normal",
+      "DisplayText": "higher cost of medication",
+      "NumericValue": 3,
+      "StringValue": "higher_cost_of_medication",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9439cd2a",
+      "CodeType": "Normal",
+      "DisplayText": "infections/diseases become hard to treat",
+      "NumericValue": 4,
+      "StringValue": "infections_diseases_become_hard_to_treat",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-234b02c2",
+      "CodeType": "Normal",
+      "DisplayText": "questions",
+      "NumericValue": 5,
+      "StringValue": "questions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-02ae51b7",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 6,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

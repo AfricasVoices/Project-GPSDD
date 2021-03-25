@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-c6944517",
+      "CodeType": "Normal",
+      "DisplayText": "it can lead to death",
+      "NumericValue": 1,
+      "StringValue": "it_can_lead_to_death",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6f6ff5ef",
+      "CodeType": "Normal",
+      "DisplayText": "affects livelihood",
+      "NumericValue": 2,
+      "StringValue": "affects_livelihood",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-257fa56b",
+      "CodeType": "Normal",
+      "DisplayText": "higher cost of medication",
+      "NumericValue": 3,
+      "StringValue": "higher_cost_of_medication",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-073ee717",
+      "CodeType": "Normal",
+      "DisplayText": "spread of the disease",
+      "NumericValue": 4,
+      "StringValue": "spread_of_the_disease",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6dafb583",
+      "CodeType": "Normal",
+      "DisplayText": "lower body immunity",
+      "NumericValue": 5,
+      "StringValue": "lower_body_immunity",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6c4b2c6d",
+      "CodeType": "Normal",
+      "DisplayText": "reduces lifespan",
+      "NumericValue": 6,
+      "StringValue": "reduces_lifespan",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ef608d2d",
+      "CodeType": "Normal",
+      "DisplayText": "questions",
+      "NumericValue": 7,
+      "StringValue": "questions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5ecf6bdc",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 8,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
