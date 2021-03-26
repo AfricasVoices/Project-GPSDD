@@ -44,42 +44,10 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-02ae51b7",
-      "CodeType": "Normal",
-      "DisplayText": "other theme",
-      "NumericValue": 6,
-      "StringValue": "other_theme_bungoma",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-c6944517",
-      "CodeType": "Normal",
-      "DisplayText": "it can lead to death",
-      "NumericValue": 7,
-      "StringValue": "it_can_lead_to_death",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-6f6ff5ef",
-      "CodeType": "Normal",
-      "DisplayText": "affects livelihood",
-      "NumericValue": 8,
-      "StringValue": "affects_livelihood",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-257fa56b",
-      "CodeType": "Normal",
-      "DisplayText": "higher cost of medication",
-      "NumericValue": 9,
-      "StringValue": "higher_cost_of_medication",
-      "VisibleInCoda": true
-    },
-    {
       "CodeID": "code-073ee717",
       "CodeType": "Normal",
       "DisplayText": "spread of the disease",
-      "NumericValue": 10,
+      "NumericValue": 6,
       "StringValue": "spread_of_the_disease",
       "VisibleInCoda": true
     },
@@ -87,7 +55,7 @@
       "CodeID": "code-6dafb583",
       "CodeType": "Normal",
       "DisplayText": "lower body immunity",
-      "NumericValue": 11,
+      "NumericValue": 7,
       "StringValue": "lower_body_immunity",
       "VisibleInCoda": true
     },
@@ -95,24 +63,16 @@
       "CodeID": "code-6c4b2c6d",
       "CodeType": "Normal",
       "DisplayText": "reduces lifespan",
-      "NumericValue": 12,
+      "NumericValue": 8,
       "StringValue": "reduces_lifespan",
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-ef608d2d",
-      "CodeType": "Normal",
-      "DisplayText": "questions",
-      "NumericValue": 13,
-      "StringValue": "questions",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-5ecf6bdc",
+      "CodeID": "code-02ae51b7",
       "CodeType": "Normal",
       "DisplayText": "other theme",
-      "NumericValue": 14,
-      "StringValue": "other_theme_kilifi",
+      "NumericValue": 9,
+      "StringValue": "other_theme",
       "VisibleInCoda": true
     },
     {
