@@ -4,7 +4,7 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
-      "CodeID": "code-c6944517",
+      "CodeID": "code-201b21d2",
       "CodeType": "Normal",
       "DisplayText": "it can lead to death",
       "NumericValue": 1,
@@ -12,7 +12,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-6f6ff5ef",
+      "CodeID": "code-730d4180",
       "CodeType": "Normal",
       "DisplayText": "affects livelihood",
       "NumericValue": 2,
@@ -20,7 +20,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-257fa56b",
+      "CodeID": "code-966ff596",
       "CodeType": "Normal",
       "DisplayText": "higher cost of medication",
       "NumericValue": 3,
@@ -52,7 +52,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-ef608d2d",
+      "CodeID": "code-234b02c2",
       "CodeType": "Normal",
       "DisplayText": "questions",
       "NumericValue": 7,
@@ -60,7 +60,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-5ecf6bdc",
+      "CodeID": "code-02ae51b7",
       "CodeType": "Normal",
       "DisplayText": "other theme",
       "NumericValue": 8,
