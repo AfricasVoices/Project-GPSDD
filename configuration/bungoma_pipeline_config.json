@@ -84,21 +84,24 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-01T14:00+03:00", "EndDate": "2021-03-01T17:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T11:00+03:00", "Label": "E01 West Fm"},
-      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T11:00+03:00", "Label": "E01 Sulwe Fm"},
+      {"StartDate": "2021-02-28T08:00+03:00", "EndDate": "2021-03-01T14:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-03-01T14:00+03:00", "EndDate": "2021-03-01T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T12:00+03:00", "Label": "E01 West & Sulwe Fm"},
 
-      {"StartDate": "2021-03-08T14:00+03:00", "EndDate": "2021-03-08T17:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2021-03-09T11:00+03:00", "Label": "E02 West Fm"},
-      {"StartDate": "2021-03-10T07:30+03:00", "EndDate": "2021-03-10T09:00+03:00", "Label": "E02 Sulwe Fm"},
+      {"StartDate": "2021-03-06T08:00+03:00", "EndDate": "2021-03-08T14:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-03-08T14:00+03:00", "EndDate": "2021-03-08T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2021-03-09T12:00+03:00", "Label": "E02 West Fm"},
+      {"StartDate": "2021-03-11T07:30+03:00", "EndDate": "2021-03-11T12:00+03:00", "Label": "E02 Sulwe Fm"},
 
-      {"StartDate": "2021-03-22T15:30+03:00", "EndDate": "2021-03-22T17:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-23T09:00+03:00", "EndDate": "2021-03-23T11:00+03:00", "Label": "E03 West Fm"},
-      {"StartDate": "2021-03-24T07:30+03:00", "EndDate": "2021-03-24T09:00+03:00", "Label": "E03 Sulwe Fm"},
+      {"StartDate": "2021-03-20T08:00+03:00", "EndDate": "2021-03-22T15:30+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-03-22T15:30+03:00", "EndDate": "2021-03-22T24:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-23T09:00+03:00", "EndDate": "2021-03-23T12:00+03:00", "Label": "E03 West Fm"},
+      {"StartDate": "2021-03-24T07:30+03:00", "EndDate": "2021-03-24T12:00+03:00", "Label": "E03 Sulwe Fm"},
 
-      {"StartDate": "2021-03-29T15:00+03:00", "EndDate": "2021-03-29T17:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-03-30T09:00+03:00", "EndDate": "2021-03-30T11:00+03:00", "Label": "E04 West Fm"},
-      {"StartDate": "2021-03-31T07:30+03:00", "EndDate": "2021-03-31T09:00+03:00", "Label": "E04 Sulwe Fm"}
+      {"StartDate": "2021-03-27T08:00+03:00", "EndDate": "2021-03-29T15:00+03:00", "Label": "E04 Promo"},
+      {"StartDate": "2021-03-29T15:00+03:00", "EndDate": "2021-03-29T24:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-03-30T09:00+03:00", "EndDate": "2021-03-30T12:00+03:00", "Label": "E04 West Fm"},
+      {"StartDate": "2021-03-31T07:30+03:00", "EndDate": "2021-03-31T12:00+03:00", "Label": "E04 Sulwe Fm"}
     ]
   },
   "DriveUpload": {

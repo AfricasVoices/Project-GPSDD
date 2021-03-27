@@ -82,17 +82,21 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-02T14:00+03:00", "EndDate": "2021-03-02T17:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T11:00+03:00", "Label": "E01 Radio Kaya"},
+      {"StartDate": "2021-02-28T08:00+03:00", "EndDate": "2021-03-02T14:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-03-02T14:00+03:00", "EndDate": "2021-03-02T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T12:00+03:00", "Label": "E01 Radio Kaya"},
 
-      {"StartDate": "2021-03-09T14:00+03:00", "EndDate": "2021-03-09T17:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-10T09:00+03:00", "EndDate": "2021-03-10T11:00+03:00", "Label": "E02 Radio Kaya"},
+      {"StartDate": "2021-03-07T08:00+03:00", "EndDate": "2021-03-09T14:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-03-09T14:00+03:00", "EndDate": "2021-03-09T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-10T09:00+03:00", "EndDate": "2021-03-10T12:00+03:00", "Label": "E02 Radio Kaya"},
 
-      {"StartDate": "2021-03-23T15:00+03:00", "EndDate": "2021-03-23T17:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-24T09:00+03:00", "EndDate": "2021-03-24T11:00+03:00", "Label": "E03 Radio Kaya"},
+      {"StartDate": "2021-03-20T08:00+03:00", "EndDate": "2021-03-23T15:00+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-03-23T15:00+03:00", "EndDate": "2021-03-23T24:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-24T09:00+03:00", "EndDate": "2021-03-24T12:00+03:00", "Label": "E03 Radio Kaya"},
 
-      {"StartDate": "2021-03-30T14:00+03:00", "EndDate": "2021-03-30T17:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2021-03-31T11:00+03:00", "Label": "E04 Radio Kaya"}
+      {"StartDate": "2021-03-27T08:00+03:00", "EndDate": "2021-03-30T14:00+03:00", "Label": "E04 Promo"},
+      {"StartDate": "2021-03-30T14:00+03:00", "EndDate": "2021-03-30T24:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2021-03-31T12:00+03:00", "Label": "E04 Radio Kaya"}
     ]
   },
   "DriveUpload": {
