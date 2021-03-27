@@ -212,12 +212,21 @@ if __name__ == "__main__":
 
 
             def demog_labels(code_scheme, x, y):
-                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code == "NA":
+                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code in ["NA", "NR"]:
                     return y
-                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code == "NA":
+                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code in ["NA", "NR"]:
                     return x
 
-                assert x["CodeID"] == y["CodeID"]
+                assert x['CodeID'] == y['CodeID'], f"{x['CodeID']} == {y['CodeID']}"
+
+                return x
+
+            def disabled_demog_labels(code_scheme, x, y):
+                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code in ["NA", "NR"]:
+                    return y
+                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code in ["NA", "NR"]:
+                    return x
+
                 return x
 
             remappings = {
@@ -238,7 +247,7 @@ if __name__ == "__main__":
                 "age_category_coded": partial(demog_labels, CodeSchemes.AGE_CATEGORY),
                 "county_coded": partial(demog_labels, CodeSchemes.KENYA_COUNTY),
                 "constituency_coded": partial(demog_labels, CodeSchemes.KENYA_CONSTITUENCY),
-                "disabled_coded": partial(demog_labels, CodeSchemes.DISABLED),
+                "disabled_coded": partial(disabled_demog_labels, CodeSchemes.DISABLED),
 
                 "gender_raw": assert_equal,
                 "age_raw": assert_equal,
