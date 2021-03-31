@@ -72,7 +72,7 @@
     }
   ],
   "ListeningGroupCSVURLs": {
-    "health_practioners": [
+    "health_practitioners": [
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_health_practitioners_listening_group.csv",
