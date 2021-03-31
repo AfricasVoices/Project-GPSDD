@@ -36,6 +36,14 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-81e886e5",
+      "CodeType": "Normal",
+      "DisplayText": "vital organ damage",
+      "NumericValue": 6,
+      "StringValue": "vital_organ_damage",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-073ee717",
       "CodeType": "Normal",
       "DisplayText": "spread of the disease",
@@ -52,34 +60,18 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-6c4b2c6d",
-      "CodeType": "Normal",
-      "DisplayText": "reduces lifespan",
-      "NumericValue": 6,
-      "StringValue": "reduces_lifespan",
-      "VisibleInCoda": true
-    },
-    {
       "CodeID": "code-234b02c2",
       "CodeType": "Normal",
       "DisplayText": "questions",
-      "NumericValue": 7,
+      "NumericValue": 6,
       "StringValue": "questions",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-81e886e5",
-      "CodeType": "Normal",
-      "DisplayText": "vital organ damage",
-      "NumericValue": 9,
-      "StringValue": "vital_organ_damage",
       "VisibleInCoda": true
     },
     {
       "CodeID": "code-02ae51b7",
       "CodeType": "Normal",
       "DisplayText": "other theme",
-      "NumericValue": 8,
+      "NumericValue": 7,
       "StringValue": "other_theme",
       "VisibleInCoda": true
     },
