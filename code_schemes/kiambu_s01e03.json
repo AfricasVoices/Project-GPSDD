@@ -1,5 +1,5 @@
 {
-  "SchemeID": "Scheme-a56175d4",
+  "SchemeID": "Scheme-a56175d4-2",
   "Name": "KIAMBU S01E03",
   "Version": "0.0.0.1",
   "Codes": [
@@ -39,7 +39,7 @@
       "CodeID": "code-81e886e5",
       "CodeType": "Normal",
       "DisplayText": "vital organ damage",
-      "NumericValue": 6,
+      "NumericValue": 5,
       "StringValue": "vital_organ_damage",
       "VisibleInCoda": true
     },
@@ -47,7 +47,7 @@
       "CodeID": "code-073ee717",
       "CodeType": "Normal",
       "DisplayText": "spread of the disease",
-      "NumericValue": 4,
+      "NumericValue": 6,
       "StringValue": "spread_of_the_disease",
       "VisibleInCoda": true
     },
@@ -55,7 +55,7 @@
       "CodeID": "code-6dafb583",
       "CodeType": "Normal",
       "DisplayText": "lower body immunity",
-      "NumericValue": 5,
+      "NumericValue": 7,
       "StringValue": "lower_body_immunity",
       "VisibleInCoda": true
     },
@@ -63,7 +63,7 @@
       "CodeID": "code-234b02c2",
       "CodeType": "Normal",
       "DisplayText": "questions",
-      "NumericValue": 6,
+      "NumericValue": 8,
       "StringValue": "questions",
       "VisibleInCoda": true
     },
@@ -71,7 +71,7 @@
       "CodeID": "code-02ae51b7",
       "CodeType": "Normal",
       "DisplayText": "other theme",
-      "NumericValue": 7,
+      "NumericValue": 9,
       "StringValue": "other_theme",
       "VisibleInCoda": true
     },
