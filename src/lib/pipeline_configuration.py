@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 import pytz
 from core_data_modules.data_models import validators
 from dateutil.parser import isoparse
+import itertools
 
 from configuration import coding_plans
 
@@ -56,8 +57,9 @@ class PipelineConfiguration(object):
         :type bucket_dir_path: str
         :param automated_analysis: Different Automated analysis Script Configurations
         :type automated_analysis: AutomatedAnalysis
-        :param listening_group_csv_urls: Google cloud storage urls to fetch listening group csvs from.
-        :type listening_group_csv_urls: list of str | None
+        :param listening_group_csv_urls: A dictionary containing Google cloud storage urls to fetch health_practitioners
+         and  mothers listening group participants csvs from.
+        :type listening_group_csv_urls: dict of lists | None
         """
         self.pipeline_name = pipeline_name
         self.raw_data_sources = raw_data_sources
@@ -175,9 +177,10 @@ class PipelineConfiguration(object):
         validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
 
         if self.listening_group_csv_urls is not None:
-            validators.validate_list(self.listening_group_csv_urls, "listening_group_csv_urls")
-            for i, listening_group_csv_url in enumerate(self.listening_group_csv_urls):
-                validators.validate_string(listening_group_csv_url, f"{listening_group_csv_url}")
+            validators.validate_dict(self.listening_group_csv_urls, "listening_group_csv_urls")
+            for k, v in self.listening_group_csv_urls.items():
+                for i, listening_group_csv_url in enumerate(v):
+                    validators.validate_string(listening_group_csv_url, f"{listening_group_csv_url}")
 
 
 class RawDataSource(ABC):
