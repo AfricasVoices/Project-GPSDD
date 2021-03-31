@@ -76,6 +76,14 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-81e886e5",
+      "CodeType": "Normal",
+      "DisplayText": "vital organ damage",
+      "NumericValue": 10,
+      "StringValue": "vital_organ_damage",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
