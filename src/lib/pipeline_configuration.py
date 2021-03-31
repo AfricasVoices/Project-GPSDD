@@ -6,7 +6,6 @@ from urllib.parse import urlparse
 import pytz
 from core_data_modules.data_models import validators
 from dateutil.parser import isoparse
-import itertools
 
 from configuration import coding_plans
 
