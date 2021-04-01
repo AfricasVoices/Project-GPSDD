@@ -3,7 +3,86 @@
   "Name": "All Locations S01E04",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-5aa7bd3b",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f702894e",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 2,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4d466ac5",
+      "CodeType": "Normal",
+      "DisplayText": "eat a balanced diet",
+      "NumericValue": 3,
+      "StringValue": "eat_a_balanced_diet",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-db36e52b",
+      "CodeType": "Normal",
+      "DisplayText": "maintain hygiene",
+      "NumericValue": 4,
+      "StringValue": "maintain_hygiene",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-d83fa753",
+      "CodeType": "Normal",
+      "DisplayText": "avoid over the counter drugs",
+      "NumericValue": 5,
+      "StringValue": "avoid_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d29e23cf",
+      "CodeType": "Normal",
+      "DisplayText": "do not share drugs",
+      "NumericValue": 5,
+      "StringValue": "do_not_share_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-07b24910",
+      "CodeType": "Normal",
+      "DisplayText": "other_theme",
+      "NumericValue": 6,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9e3af59d",
+      "CodeType": "Normal",
+      "DisplayText": "enact stiff laws",
+      "NumericValue": 7,
+      "StringValue": "enact_stiff_laws",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-97b1e7a3",
+      "CodeType": "Normal",
+      "DisplayText": "follow authorities guidelines",
+      "NumericValue": 8,
+      "StringValue": "follow_authorities_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a5fbf069",
+      "CodeType": "Normal",
+      "DisplayText": "questions/narratives",
+      "NumericValue": 9,
+      "StringValue": "questions_or_narratives",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
