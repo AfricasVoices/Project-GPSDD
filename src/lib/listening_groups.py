@@ -32,7 +32,7 @@ class ListeningGroups(object):
 
         # Read listening group participants CSVs and add their uids to the respective group
         for k in listening_group_participants.keys():
-            for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls[f'{k}']:
+            for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls[k]:
                 listening_group_csv = listening_group_csv_url.split("/")[-1]
                 with open(f'{raw_data_dir}/{listening_group_csv}', "r", encoding='utf-8-sig') as f:
                     listening_group_data = list(csv.DictReader(f))
@@ -44,9 +44,9 @@ class ListeningGroups(object):
         # Tag a participant based on the listening group type they belong to
         for td in data:
             listening_group_participation = dict() # of uid health_practitioner or mother lg participation data
-            listening_group_participation[f'health_practitioners_listening_group_participant'] = \
+            listening_group_participation['health_practitioners_listening_group_participant'] = \
                 td['uid'] in listening_group_participants['health_practitioners']
-            listening_group_participation[f'mothers_listening_group_participant'] = \
+            listening_group_participation['mothers_listening_group_participant'] = \
                 td['uid'] in listening_group_participants['mothers']
 
             td.append_data(listening_group_participation, Metadata(user, Metadata.get_call_location(), time.time()))
