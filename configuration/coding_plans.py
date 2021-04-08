@@ -210,10 +210,10 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
-                       code_scheme=CodeSchemes.KIAMBU_S01E05,
+                       code_scheme=CodeSchemes.KIAMBU_S01E04,
                        coded_field="kiambu_rqa_s01e04_coded",
                        analysis_file_key="kiambu_rqa_s01e04",
-                       fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E05, x, y)
+                       fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E04, x, y)
                    )
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e04"),
