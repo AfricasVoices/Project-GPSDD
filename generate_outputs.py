@@ -210,6 +210,15 @@ if __name__ == "__main__":
                 assert x == y, f"{x} != {y}"
                 return x
 
+            def disabled_assert_equal(x, y):
+                if x is None:
+                    return y
+                if y is None:
+                    return x
+
+                if x != y:
+                    return x
+
 
             def demog_labels(code_scheme, x, y):
                 if code_scheme.get_code_with_code_id(x["CodeID"]).control_code in ["NA", "NR"]:
@@ -252,7 +261,7 @@ if __name__ == "__main__":
                 "gender_raw": assert_equal,
                 "age_raw": assert_equal,
                 "location_raw": assert_equal,
-                "disabled_raw": assert_equal,
+                "disabled_raw": disabled_assert_equal,
 
                 "baseline_community_awareness_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
                 "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
