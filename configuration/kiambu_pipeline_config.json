@@ -8,10 +8,14 @@
       "ContactsFileName": "gpsdd_kiambu_contacts",
       "ActivationFlowNames": [
         "gpsdd_kiambu_s01e01_activation",
+        "gpsdd_kiambu_s01_baseline",
         "gpsdd_kiambu_s01e02_activation",
         "gpsdd_kiambu_s01e03_activation",
         "gpsdd_kiambu_s01e04_activation",
-        "gpsdd_kiambu_s01_baseline"
+        "gpsdd_kiambu_s01e05_activation",
+        "gpsdd_kiambu_s01e06_activation",
+        "gpsdd_kiambu_s01e07_activation",
+        "gpsdd_kiambu_s01e08_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_kiambu_s01_demog"
@@ -64,6 +68,18 @@
     {"RapidProKey": "Rqa_S01E05 (Text) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "kiambu_rqa_s01e05_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "kiambu_rqa_s01e05_run_id"},
     {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E06 (Text) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "kiambu_rqa_s01e06_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E06 (Run ID) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "kiambu_rqa_s01e06_run_id"},
+    {"RapidProKey": "Rqa_S01E06 (Time) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E07 (Text) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "kiambu_rqa_s01e07_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E07 (Run ID) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "kiambu_rqa_s01e07_run_id"},
+    {"RapidProKey": "Rqa_S01E07 (Time) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_run_id"},
+    {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_time"},
