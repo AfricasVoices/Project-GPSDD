@@ -180,6 +180,18 @@ if __name__ == "__main__":
                 "kiambu_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
                 "bungoma_rqa_s01e05_coded": CodeSchemes.ALL_LOCATIONS_S01E05,
 
+                "kilifi_rqa_s01e06_coded": CodeSchemes.ALL_LOCATIONS_S01E06,
+                "kiambu_rqa_s01e06_coded": CodeSchemes.ALL_LOCATIONS_S01E06,
+                "bungoma_rqa_s01e06_coded": CodeSchemes.ALL_LOCATIONS_S01E06,
+
+                "kilifi_rqa_s01e07_coded": CodeSchemes.ALL_LOCATIONS_S01E07,
+                "kiambu_rqa_s01e07_coded": CodeSchemes.ALL_LOCATIONS_S01E07,
+                "bungoma_rqa_s01e07_coded": CodeSchemes.ALL_LOCATIONS_S01E07,
+
+                "kilifi_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
+                "kiambu_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
+                "bungoma_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
+
                 "kilifi_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
                 "kiambu_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
                 "bungoma_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
