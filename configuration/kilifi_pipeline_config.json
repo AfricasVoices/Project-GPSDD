@@ -92,7 +92,19 @@
       {"StartDate": "2021-03-24T09:00+03:00", "EndDate": "2021-03-24T11:00+03:00", "Label": "E03 Radio Kaya"},
 
       {"StartDate": "2021-03-30T14:00+03:00", "EndDate": "2021-03-30T17:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2021-03-31T11:00+03:00", "Label": "E04 Radio Kaya"}
+      {"StartDate": "2021-03-31T09:00+03:00", "EndDate": "2021-03-31T11:00+03:00", "Label": "E04 Radio Kaya"},
+
+      {"StartDate": "2021-04-20T16:00+03:00", "EndDate": "2021-04-21T09:00+03:00", "Label": "E05 Ad"},
+      {"StartDate": "2021-04-21T09:00+03:00", "EndDate": "2021-04-21T11:00+03:00", "Label": "E05 Radio Kaya"},
+
+      {"StartDate": "2021-04-27T16:00+03:00", "EndDate": "2021-04-28T09:00+03:00", "Label": "E06 Ad"},
+      {"StartDate": "2021-04-28T09:00+03:00", "EndDate": "2021-04-28T11:00+03:00", "Label": "E06 Radio Kaya"},
+
+      {"StartDate": "2021-05-04T16:00+03:00", "EndDate": "2021-05-05T09:00+03:00", "Label": "E07 Ad"},
+      {"StartDate": "2021-05-05T09:00+03:00", "EndDate": "2021-05-05T11:00+03:00", "Label": "E07 Radio Kaya"},
+
+      {"StartDate": "2021-05-11T16:00+03:00", "EndDate": "2021-05-12T09:00+03:00", "Label": "E08 Ad"},
+      {"StartDate": "2021-05-12T09:00+03:00", "EndDate": "2021-05-12T11:00+03:00", "Label": "E08 Radio Kaya"}
     ]
   },
   "DriveUpload": {
