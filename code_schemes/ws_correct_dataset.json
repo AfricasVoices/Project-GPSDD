@@ -191,6 +191,39 @@
       ]
     },
     {
+      "CodeID": "code-e73b24bf",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e06",
+      "StringValue": "gpsdd_kilifi_s01e06",
+      "NumericValue": 34,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e06"
+      ]
+    },
+    {
+      "CodeID": "code-494f7df5",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e07",
+      "StringValue": "gpsdd_kilifi_s01e07",
+      "NumericValue": 35,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e07"
+      ]
+    },
+    {
+      "CodeID": "code-df88c3d6",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01e08",
+      "StringValue": "gpsdd_kilifi_s01e08",
+      "NumericValue": 36,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI s01e08"
+      ]
+    },
+    {
       "CodeID": "code-59ce7a3e",
       "CodeType": "Normal",
       "DisplayText": "GPSDD KIAMBU s01e01",
@@ -246,6 +279,39 @@
       ]
     },
     {
+      "CodeID": "code-314143b5",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e06",
+      "StringValue": "gpsdd_kiambu_s01e06",
+      "NumericValue": 37,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e06"
+      ]
+    },
+    {
+      "CodeID": "code-b95d6200",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e07",
+      "StringValue": "gpsdd_kiambu_s01e07",
+      "NumericValue": 38,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e07"
+      ]
+    },
+    {
+      "CodeID": "code-9fc19767",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01e08",
+      "StringValue": "gpsdd_kiambu_s01e08",
+      "NumericValue": 39,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU s01e08"
+      ]
+    },
+    {
       "CodeID": "code-54b4fc0a",
       "CodeType": "Normal",
       "DisplayText": "GPSDD BUNGOMA s01e01",
@@ -298,6 +364,39 @@
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD BUNGOMA s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-35ab827f",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e06",
+      "StringValue": "gpsdd_bungoma_s01e06",
+      "NumericValue": 40,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e06"
+      ]
+    },
+    {
+      "CodeID": "code-fdb29d70",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e07",
+      "StringValue": "gpsdd_bungoma_s01e07",
+      "NumericValue": 41,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e07"
+      ]
+    },
+    {
+      "CodeID": "code-9ada4b7c",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01e08",
+      "StringValue": "gpsdd_bungoma_s01e08",
+      "NumericValue": 42,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA s01e08"
       ]
     },
     {

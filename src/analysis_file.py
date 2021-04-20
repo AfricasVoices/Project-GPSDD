@@ -81,7 +81,8 @@ class AnalysisFile(object):
         fold_strategies["uid"] = FoldStrategies.assert_equal
         fold_strategies[consent_withdrawn_key] = FoldStrategies.boolean_or
 
-        export_keys = ["uid", consent_withdrawn_key]
+        export_keys = ["uid", consent_withdrawn_key, "health_practitioners_listening_group_participant",
+                       "mothers_listening_group_participant"]
 
         for plan in PipelineConfiguration.RQA_CODING_PLANS + PipelineConfiguration.SURVEY_CODING_PLANS:
             for cc in plan.coding_configurations:
@@ -111,7 +112,7 @@ class AnalysisFile(object):
 
         # Tag listening group participants
         ListeningGroups.tag_listening_groups_participants(user, data, pipeline_configuration, raw_data_dir)
-        ListeningGroups.tag_listening_groups_participants(user, data, pipeline_configuration, raw_data_dir)
+        ListeningGroups.tag_listening_groups_participants(user, folded_data, pipeline_configuration, raw_data_dir)
 
         ConsentUtils.set_stopped(user, data, consent_withdrawn_key)
         ConsentUtils.set_stopped(user, folded_data, consent_withdrawn_key)

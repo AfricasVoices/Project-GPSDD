@@ -8,10 +8,14 @@
       "ContactsFileName": "gpsdd_kiambu_contacts",
       "ActivationFlowNames": [
         "gpsdd_kiambu_s01e01_activation",
+        "gpsdd_kiambu_s01_baseline",
         "gpsdd_kiambu_s01e02_activation",
         "gpsdd_kiambu_s01e03_activation",
         "gpsdd_kiambu_s01e04_activation",
-        "gpsdd_kiambu_s01_baseline"
+        "gpsdd_kiambu_s01e05_activation",
+        "gpsdd_kiambu_s01e06_activation",
+        "gpsdd_kiambu_s01e07_activation",
+        "gpsdd_kiambu_s01e08_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_kiambu_s01_demog"
@@ -25,12 +29,16 @@
       ]
     }
   ],
-  "ListeningGroupCSVURLs":[
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_health_practitioners_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_mothers_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_health_practitioners_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_mothers_listening_group.csv"
-  ],
+  "ListeningGroupCSVURLs":{
+    "health_practitioners":[
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_health_practitioners_listening_group.csv"
+    ],
+    "mothers":[
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_mothers_listening_group.csv"
+    ]
+  },
   "PhoneNumberUuidTable": {
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
     "TableName": "GPSDD_phone_number_avf_phone_id"
@@ -61,6 +69,18 @@
     {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "kiambu_rqa_s01e05_run_id"},
     {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_kiambu_s01e05_activation", "PipelineKey": "sent_on"},
 
+    {"RapidProKey": "Rqa_S01E06 (Text) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "kiambu_rqa_s01e06_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E06 (Run ID) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "kiambu_rqa_s01e06_run_id"},
+    {"RapidProKey": "Rqa_S01E06 (Time) - gpsdd_kiambu_s01e06_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E07 (Text) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "kiambu_rqa_s01e07_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E07 (Run ID) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "kiambu_rqa_s01e07_run_id"},
+    {"RapidProKey": "Rqa_S01E07 (Time) - gpsdd_kiambu_s01e07_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_run_id"},
+    {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "sent_on"},
+
     {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_time"},
     {"RapidProKey": "Gender (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_gender_raw"},
@@ -83,17 +103,21 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-03T15:00+03:00", "EndDate": "2021-03-03T17:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2021-03-04T11:00+03:00", "Label": "E01 Inooro"},
+      {"StartDate": "2021-03-02T08:00+03:00", "EndDate": "2021-03-03T15:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-03-03T15:00+03:00", "EndDate": "2021-03-03T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-04T09:00+03:00", "EndDate": "2021-03-04T12:00+03:00", "Label": "E01 Inooro"},
 
-      {"StartDate": "2021-03-10T14:00+03:00", "EndDate": "2021-03-10T17:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-11T08:00+03:00", "EndDate": "2021-03-10T10:00+03:00", "Label": "E02 Inooro"},
+      {"StartDate": "2021-03-08T08:00+03:00", "EndDate": "2021-03-10T14:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-03-10T14:00+03:00", "EndDate": "2021-03-10T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-11T08:00+03:00", "EndDate": "2021-03-11T12:00+03:00", "Label": "E02 Inooro"},
 
-      {"StartDate": "2021-03-24T14:00+03:00", "EndDate": "2021-03-24T17:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-25T08:00+03:00", "EndDate": "2021-03-25T10:00+03:00", "Label": "E03 Inooro"},
+      {"StartDate": "2021-03-22T08:00+03:00", "EndDate": "2021-03-24T14:00+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-03-24T16:00+03:00", "EndDate": "2021-03-24T24:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-25T08:00+03:00", "EndDate": "2021-03-25T12:00+03:00", "Label": "E03 Inooro"},
 
-      {"StartDate": "2021-03-31T14:00+03:00", "EndDate": "2021-03-31T17:00+03:00", "Label": "E04 Ad"},
-      {"StartDate": "2021-04-01T08:00+03:00", "EndDate": "2021-04-01T10:00+03:00", "Label": "E04 Inooro"},
+      {"StartDate": "2021-03-29T08:00+03:00", "EndDate": "2021-03-31T14:00+03:00", "Label": "E04 Promo"},
+      {"StartDate": "2021-03-31T14:00+03:00", "EndDate": "2021-03-31T24:00+03:00", "Label": "E04 Ad"},
+      {"StartDate": "2021-04-01T08:00+03:00", "EndDate": "2021-04-01T12:00+03:00", "Label": "E04 Inooro"}
 
       {"StartDate": "2021-04-20T08:00+03:00", "EndDate": "2021-04-21T16:00+03:00", "Label": "E05 Promo"},
       {"StartDate": "2021-04-21T16:00+03:00", "EndDate": "2021-04-22T08:00+03:00", "Label": "E05 Ad"},

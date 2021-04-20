@@ -8,10 +8,14 @@
       "ContactsFileName": "gpsdd_bungoma_contacts",
       "ActivationFlowNames": [
         "gpsdd_bungoma_s01e01_activation",
+        "gpsdd_bungoma_s01_baseline",
         "gpsdd_bungoma_s01e02_activation",
         "gpsdd_bungoma_s01e03_activation",
         "gpsdd_bungoma_s01e04_activation",
-        "gpsdd_bungoma_s01_baseline"
+        "gpsdd_bungoma_s01e05_activation",
+        "gpsdd_bungoma_s01e06_activation",
+        "gpsdd_bungoma_s01e07_activation",
+        "gpsdd_bungoma_s01e08_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog"
@@ -26,12 +30,18 @@
       ]
     }
   ],
-  "ListeningGroupCSVURLs":[
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_health_practitioners_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_mothers_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_health_practitioners_listening_group.csv",
-    "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_mothers_listening_group.csv"
-  ],
+  "ListeningGroupCSVURLs": {
+    "health_practitioners": [
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_health_practitioners_listening_group.csv"
+    ],
+    "mothers": [
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_mothers_listening_group.csv"
+    ]
+  },
   "PhoneNumberUuidTable": {
     "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
     "TableName": "GPSDD_phone_number_avf_phone_id"
@@ -62,6 +72,18 @@
     {"RapidProKey": "Rqa_S01E05 (Run ID) - gpsdd_bungoma_s01e05_activation", "PipelineKey": "bungoma_rqa_s01e05_run_id"},
     {"RapidProKey": "Rqa_S01E05 (Time) - gpsdd_bungoma_s01e05_activation", "PipelineKey": "sent_on"},
 
+    {"RapidProKey": "Rqa_S01E06 (Text) - gpsdd_bungoma_s01e06_activation", "PipelineKey": "bungoma_rqa_s01e06_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E06 (Run ID) - gpsdd_bungoma_s01e06_activation", "PipelineKey": "bungoma_rqa_s01e06_run_id"},
+    {"RapidProKey": "Rqa_S01E06 (Time) - gpsdd_bungoma_s01e06_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E07 (Text) - gpsdd_bungoma_s01e07_activation", "PipelineKey": "bungoma_rqa_s01e07_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E07 (Run ID) - gpsdd_bungoma_s01e07_activation", "PipelineKey": "bungoma_rqa_s01e07_run_id"},
+    {"RapidProKey": "Rqa_S01E07 (Time) - gpsdd_bungoma_s01e07_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "bungoma_rqa_s01e08_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "bungoma_rqa_s01e08_run_id"},
+    {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "sent_on"},
+
     {"RapidProKey": "Constituency (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_location_time"},
     {"RapidProKey": "Gender (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_gender_raw"},
@@ -84,17 +106,19 @@
     "GenerateCountyThemeDistributionMaps": true,
     "GenerateConstituencyThemeDistributionMaps": true,
     "TrafficLabels": [
-      {"StartDate": "2021-03-01T14:00+03:00", "EndDate": "2021-03-01T17:00+03:00", "Label": "E01 Ad"},
-      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T11:00+03:00", "Label": "E01 West Fm"},
-      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T11:00+03:00", "Label": "E01 Sulwe Fm"},
+      {"StartDate": "2021-02-28T08:00+03:00", "EndDate": "2021-03-01T14:00+03:00", "Label": "E01 Promo"},
+      {"StartDate": "2021-03-01T14:00+03:00", "EndDate": "2021-03-01T24:00+03:00", "Label": "E01 Ad"},
+      {"StartDate": "2021-03-03T09:00+03:00", "EndDate": "2021-03-03T12:00+03:00", "Label": "E01 West & Sulwe Fm"},
 
-      {"StartDate": "2021-03-08T14:00+03:00", "EndDate": "2021-03-08T17:00+03:00", "Label": "E02 Ad"},
-      {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2021-03-09T11:00+03:00", "Label": "E02 West Fm"},
-      {"StartDate": "2021-03-10T07:30+03:00", "EndDate": "2021-03-10T09:00+03:00", "Label": "E02 Sulwe Fm"},
+      {"StartDate": "2021-03-06T08:00+03:00", "EndDate": "2021-03-08T14:00+03:00", "Label": "E02 Promo"},
+      {"StartDate": "2021-03-08T14:00+03:00", "EndDate": "2021-03-08T24:00+03:00", "Label": "E02 Ad"},
+      {"StartDate": "2021-03-09T09:00+03:00", "EndDate": "2021-03-09T12:00+03:00", "Label": "E02 West Fm"},
+      {"StartDate": "2021-03-11T07:30+03:00", "EndDate": "2021-03-11T12:00+03:00", "Label": "E02 Sulwe Fm"},
 
-      {"StartDate": "2021-03-22T15:30+03:00", "EndDate": "2021-03-22T17:00+03:00", "Label": "E03 Ad"},
-      {"StartDate": "2021-03-23T09:00+03:00", "EndDate": "2021-03-23T11:00+03:00", "Label": "E03 West Fm"},
-      {"StartDate": "2021-03-24T07:30+03:00", "EndDate": "2021-03-24T09:00+03:00", "Label": "E03 Sulwe Fm"},
+      {"StartDate": "2021-03-20T08:00+03:00", "EndDate": "2021-03-22T15:30+03:00", "Label": "E03 Promo"},
+      {"StartDate": "2021-03-22T15:30+03:00", "EndDate": "2021-03-22T24:00+03:00", "Label": "E03 Ad"},
+      {"StartDate": "2021-03-23T09:00+03:00", "EndDate": "2021-03-23T12:00+03:00", "Label": "E03 West Fm"},
+      {"StartDate": "2021-03-24T07:30+03:00", "EndDate": "2021-03-24T12:00+03:00", "Label": "E03 Sulwe Fm"},
 
       {"StartDate": "2021-03-29T15:00+03:00", "EndDate": "2021-03-29T17:00+03:00", "Label": "E04 Ad"},
       {"StartDate": "2021-03-30T09:00+03:00", "EndDate": "2021-03-30T11:00+03:00", "Label": "E04 West Fm"},
@@ -112,9 +136,9 @@
       {"StartDate": "2021-05-04T09:00+03:00", "EndDate": "2021-05-04T11:00+03:00", "Label": "E07 West Fm"},
       {"StartDate": "2021-05-05T07:30+03:00", "EndDate": "2021-05-05T09:30+03:00", "Label": "E07 Sulwe Fm"},
 
-      {"StartDate": "2021-05-10T16:00+03:00", "EndDate": "2021-05-10T09:00+03:00", "Label": "E07 Ad"},
-      {"StartDate": "2021-05-11T09:00+03:00", "EndDate": "2021-05-11T11:00+03:00", "Label": "E07 West Fm"},
-      {"StartDate": "2021-05-12T07:30+03:00", "EndDate": "2021-05-12T09:30+03:00", "Label": "E07 Sulwe Fm"}
+      {"StartDate": "2021-05-10T16:00+03:00", "EndDate": "2021-05-10T09:00+03:00", "Label": "E08 Ad"},
+      {"StartDate": "2021-05-11T09:00+03:00", "EndDate": "2021-05-11T11:00+03:00", "Label": "E08 West Fm"},
+      {"StartDate": "2021-05-12T07:30+03:00", "EndDate": "2021-05-12T09:30+03:00", "Label": "E08 Sulwe Fm"}
     ]
   },
   "DriveUpload": {
