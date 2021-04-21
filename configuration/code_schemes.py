@@ -27,6 +27,7 @@ class CodeSchemes(object):
     KIAMBU_S01E06 = _open_scheme("kiambu_s01e06.json")
     KIAMBU_S01E07 = _open_scheme("kiambu_s01e07.json")
     KIAMBU_S01E08 = _open_scheme("kiambu_s01e08.json")
+    ICRAF_CONSENT = _open_scheme("icraf_consent.json")
 
     BUNGOMA_S01E01 = _open_scheme("bungoma_s01e01.json")
     BUNGOMA_S01E02 = _open_scheme("bungoma_s01e02.json")
