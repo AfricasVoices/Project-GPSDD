@@ -15,7 +15,8 @@
         "gpsdd_kiambu_s01e05_activation",
         "gpsdd_kiambu_s01e06_activation",
         "gpsdd_kiambu_s01e07_activation",
-        "gpsdd_kiambu_s01e08_activation"
+        "gpsdd_kiambu_s01e08_activation",
+        "gpsdd_kiambu_s01e05_Icraf_Kenyanpool_sms_ad"
       ],
       "SurveyFlowNames": [
         "gpsdd_kiambu_s01_demog"
@@ -84,6 +85,10 @@
     {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "kiambu_rqa_s01e08_run_id"},
     {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_kiambu_s01e08_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Icraf_Consent (Text) - gpsdd_kiambu_s01e05_Icraf_Kenyanpool_sms_ad", "PipelineKey": "icraf_consent_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Icraf_Consent (Run ID) - gpsdd_kiambu_s01e05_Icraf_Kenyanpool_sms_ad", "PipelineKey": "icraf_consent_run_id"},
+    {"RapidProKey": "Icraf_Consent (Time) - gpsdd_kiambu_s01e05_Icraf_Kenyanpool_sms_ad", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Constituency (Text) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_kiambu_s01_demog", "PipelineKey": "kiambu_location_time"},

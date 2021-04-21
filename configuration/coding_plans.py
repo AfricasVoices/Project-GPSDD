@@ -359,8 +359,24 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e08"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate)
-]
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="icraf_consent_raw",
+                       time_field="sent_on",
+                       run_id_field="icraf_consent_run_id",
+                       coda_filename="GPSDD_KIAMBU_icraf_consent.json",
+                       icr_filename="icraf_consent.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.ICRAF_CONSENT,
+                               coded_field="icraf_consent_coded",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.ICRAF_CONSENT, x, y)
+                           )
+                       ],
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU Icraf Consent"),
+                       raw_field_fold_strategy=FoldStrategies.concatenate)
+    ]
 
 BUNGOMA_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="bungoma_rqa_s01e01_raw",
