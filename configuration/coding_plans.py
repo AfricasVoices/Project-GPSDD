@@ -371,6 +371,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                                coding_mode=CodingModes.MULTIPLE,
                                code_scheme=CodeSchemes.ICRAF_CONSENT,
                                coded_field="icraf_consent_coded",
+                               analysis_file_key="icraf_consent",
                                fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.ICRAF_CONSENT, x, y)
                            )
                        ],
