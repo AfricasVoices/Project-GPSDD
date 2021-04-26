@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-145fd9ba",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cb631b67",
+      "CodeType": "Normal",
+      "DisplayText": "follow vet/doctor's prescription",
+      "NumericValue": 2,
+      "StringValue": "follow_vet_or_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4d466ac5",
+      "CodeType": "Normal",
+      "DisplayText": "questions and narratives",
+      "NumericValue": 3,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-89500909",
+      "CodeType": "Normal",
+      "DisplayText": "maintain hygiene",
+      "NumericValue": 4,
+      "StringValue": "maintain_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-15590006",
+      "CodeType": "Normal",
+      "DisplayText": "vaccinate animals",
+      "NumericValue": 5,
+      "StringValue": "vaccinate_animals",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-b3a4a65a",
+      "CodeType": "Normal",
+      "DisplayText": "do not consume product from sick animals",
+      "NumericValue": 6,
+      "StringValue": "do_not_consume_product_from_sick_animals",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a8afccb8",
+      "CodeType": "Normal",
+      "DisplayText": "other_theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
