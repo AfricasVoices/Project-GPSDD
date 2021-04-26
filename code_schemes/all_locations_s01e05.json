@@ -91,7 +91,14 @@
       "StringValue": "other_theme",
       "VisibleInCoda": true
     },
-
+    {
+      "CodeID": "code-5f07efc3",
+      "CodeType": "Normal",
+      "DisplayText": "isolating sick animals",
+      "NumericValue": 12,
+      "StringValue": "isolating_sick_animals",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
