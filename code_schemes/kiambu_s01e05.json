@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-145fd9ba",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cb631b67",
+      "CodeType": "Normal",
+      "DisplayText": "follow vet/doctor's prescription",
+      "NumericValue": 2,
+      "StringValue": "follow_vet_or_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4d466ac5",
+      "CodeType": "Normal",
+      "DisplayText": "questions and narratives",
+      "NumericValue": 3,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-89500909",
+      "CodeType": "Normal",
+      "DisplayText": "maintain hygiene",
+      "NumericValue": 4,
+      "StringValue": "maintain_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8717dbf9",
+      "CodeType": "Normal",
+      "DisplayText": "enact strict laws",
+      "NumericValue": 5,
+      "StringValue": "enact_strict_laws",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-15590006",
+      "CodeType": "Normal",
+      "DisplayText": "vaccinate animals",
+      "NumericValue": 6,
+      "StringValue": "vaccinate_animals",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-9f9b75c6",
+      "CodeType": "Normal",
+      "DisplayText": "avoid over the counter drugs",
+      "NumericValue": 7,
+      "StringValue": "avoid_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5f07efc3",
+      "CodeType": "Normal",
+      "DisplayText": "isolating sick animals",
+      "NumericValue": 12,
+      "StringValue": "isolating_sick_animals",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
