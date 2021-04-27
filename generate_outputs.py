@@ -276,9 +276,9 @@ if __name__ == "__main__":
                 "constituency_coded": partial(demog_labels, CodeSchemes.KENYA_CONSTITUENCY),
                 "disabled_coded": partial(disabled_demog_labels, CodeSchemes.DISABLED),
 
-                "gender_raw": assert_equal,
-                "age_raw": assert_equal,
-                "location_raw": assert_equal,
+                "gender_raw": disabled_assert_equal,
+                "age_raw": disabled_assert_equal,
+                "location_raw": disabled_assert_equal,
                 "disabled_raw": disabled_assert_equal,
 
                 "baseline_community_awareness_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
