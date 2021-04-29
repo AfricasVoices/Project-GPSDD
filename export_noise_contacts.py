@@ -9,6 +9,7 @@ from core_data_modules.traced_data.io import TracedDataJsonIO
 from id_infrastructure.firestore_uuid_table import FirestoreUuidTable
 from storage.google_cloud import google_cloud_utils
 
+from src.lib.configuration_objects import CodingModes
 from src.lib import PipelineConfiguration
 
 log = Logger(__name__)
@@ -76,8 +77,13 @@ if __name__ == "__main__":
 
             for plan in PipelineConfiguration.RQA_CODING_PLANS + PipelineConfiguration.DEMOG_CODING_PLANS:
                 for cc in plan.coding_configurations:
-                    for label in td[cc.coded_field]:
-                        code = cc.code_scheme.get_code_with_code_id(label["CodeID"])
+                    if cc.coding_mode == CodingModes.SINGLE:
+                        codes = [cc.code_scheme.get_code_with_code_id(td[cc.coded_field]["CodeID"])]
+                    else:
+                        assert cc.coding_mode == CodingModes.MULTIPLE
+                        codes = [cc.code_scheme.get_code_with_code_id(label["CodeID"]) for label in td[cc.coded_field]]
+
+                    for code in codes:
                         if code.string_value == "NOC":
                             noise_uuids.add(td["uid"])
 
