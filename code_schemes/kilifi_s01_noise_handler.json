@@ -1,72 +1,16 @@
 {
-  "SchemeID": "Scheme-01eb5046",
-  "Name": "Age Category",
+  "SchemeID": "Scheme-d4b6e31e",
+  "Name": "KILIFI S01 NOISE HANDLER",
   "Version": "0.0.0.1",
   "Codes": [
-     {
-      "CodeID": "code-E-720cdb66",
-      "CodeType": "Meta",
-      "MetaCode": "escalate",
-      "DisplayText": "meta: ESCALATE",
-      "NumericValue": -100080,
-      "StringValue": "escalate",
-      "VisibleInCoda": true,
-      "Shortcut": "e"
-    },
     {
-      "CodeID": "code-aa2640e7",
-      "CodeType": "Normal",
-      "DisplayText": "10 to 14",
-      "NumericValue": 1,
-      "StringValue": "10_to_14",
+      "CodeID": "code-NOC-4eb70633",
+      "ControlCode": "NOC",
+      "StringValue": "NOC",
+      "DisplayText": "Noise (Other Channel)",
       "VisibleInCoda": true,
-      "MatchValues": [
-        "10 to 14"
-      ]
-    },
-    {
-      "CodeID": "code-57391e8f",
-      "CodeType": "Normal",
-      "DisplayText": "15 to 17",
-      "NumericValue": 2,
-      "StringValue": "15_to_17",
-      "VisibleInCoda": true,
-      "MatchValues": [
-        "15 to 17"
-      ]
-    },
-    {
-      "CodeID": "code-ef3c9330",
-      "CodeType": "Normal",
-      "DisplayText": "18 to 35",
-      "NumericValue": 3,
-      "StringValue": "18_to_35",
-      "VisibleInCoda": true,
-      "MatchValues": [
-        "18 to 35"
-      ]
-    },
-    {
-      "CodeID": "code-494d7659",
-      "CodeType": "Normal",
-      "DisplayText": "36 to 54",
-      "NumericValue": 4,
-      "StringValue": "36_to_54",
-      "VisibleInCoda": true,
-      "MatchValues": [
-        "36 to 54"
-      ]
-    },
-    {
-      "CodeID": "code-968879ef",
-      "CodeType": "Normal",
-      "DisplayText": "55 to 99",
-      "NumericValue": 5,
-      "StringValue": "55_to_99",
-      "VisibleInCoda": true,
-      "MatchValues": [
-        "55 to 99"
-      ]
+      "NumericValue": -60,
+      "CodeType": "Control"
     },
     {
       "CodeID": "code-NA-f93d3eb7",
@@ -114,15 +58,6 @@
       "VisibleInCoda": false
     },
     {
-      "CodeID": "code-NOC-4eb70633",
-      "ControlCode": "NOC",
-      "StringValue": "NOC",
-      "DisplayText": "Noise (Other Channel)",
-      "VisibleInCoda": true,
-      "NumericValue": -60,
-      "CodeType": "Control"
-    },
-    {
       "CodeID": "code-STOP-08b832a8",
       "CodeType": "Control",
       "ControlCode": "STOP",
@@ -165,15 +100,6 @@
       "DisplayText": "meta: showtime question",
       "NumericValue": -100030,
       "StringValue": "showtime_question",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-Q-a5d3700d",
-      "CodeType": "Meta",
-      "MetaCode": "question",
-      "DisplayText": "meta: question",
-      "NumericValue": -100010,
-      "StringValue": "question",
       "VisibleInCoda": true
     },
     {
@@ -222,6 +148,25 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-E-720cdb66",
+      "CodeType": "Meta",
+      "MetaCode": "escalate",
+      "DisplayText": "meta: ESCALATE",
+      "NumericValue": -100080,
+      "StringValue": "escalate",
+      "VisibleInCoda": true,
+      "Shortcut": "e"
+    },
+    {
+      "CodeID": "code-O-7ce0d2a7",
+      "CodeType": "Meta",
+      "MetaCode": "other",
+      "DisplayText": "meta: other",
+      "NumericValue": -100110,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-GR-e6de1b7e",
       "CodeType": "Meta",
       "MetaCode": "gratitude",
@@ -237,7 +182,7 @@
       "DisplayText": "meta: about conversation",
       "NumericValue": -100120,
       "StringValue": "about_conversation",
-      "VisibleInCoda": false
+      "VisibleInCoda": true
     },
     {
       "CodeID": "code-CR-8e99616b",
@@ -246,16 +191,34 @@
       "DisplayText": "meta: chasing reply",
       "NumericValue": -100130,
       "StringValue": "chasing_reply",
-      "VisibleInCoda": false
+      "VisibleInCoda": true
     },
     {
       "CodeID": "code-I-b13a41f6",
       "CodeType": "Meta",
       "MetaCode": "impact",
       "DisplayText": "meta: impact",
-      "StringValue": "impact",
       "NumericValue": -100140,
-      "VisibleInCoda": false
+      "StringValue": "impact",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-A-a542fb02",
+      "CodeType": "Meta",
+      "MetaCode": "accountability",
+      "DisplayText": "meta: accountability",
+      "NumericValue": -100150,
+      "StringValue": "accountability",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-SG-e1f8b4bd",
+      "CodeType": "Meta",
+      "MetaCode": "safeguarding",
+      "DisplayText": "meta: safeguarding",
+      "NumericValue": -100160,
+      "StringValue": "safeguarding",
+      "VisibleInCoda": true
     }
   ]
 }

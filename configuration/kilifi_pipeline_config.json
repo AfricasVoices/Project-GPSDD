@@ -15,7 +15,8 @@
         "gpsdd_kilifi_s01e05_activation",
         "gpsdd_kilifi_s01e06_activation",
         "gpsdd_kilifi_s01e07_activation",
-        "gpsdd_kilifi_s01e08_activation"
+        "gpsdd_kilifi_s01e08_activation",
+        "gpsdd_kilifi_s01_noise_handler_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_kilifi_s01_demog"
@@ -85,6 +86,10 @@
     {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_kilifi_s01e08_activation", "PipelineKey": "kilifi_rqa_s01e08_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_kilifi_s01e08_activation", "PipelineKey": "kilifi_rqa_s01e08_run_id"},
     {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_kilifi_s01e08_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "S01_Noise_Handler (Text) - gpsdd_kilifi_s01_noise_handler_activation", "PipelineKey": "kilifi_s01_noise_handler_raw", "IsActivationMessage": true},
+    {"RapidProKey": "S01_Noise_Handler (Run ID) - gpsdd_kilifi_s01_noise_handler_activation", "PipelineKey": "kilifi_s01_noise_handler_run_id"},
+    {"RapidProKey": "S01_Noise_Handler (Time) - gpsdd_kilifi_s01_noise_handler_activation", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Constituency (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_location_time"},
