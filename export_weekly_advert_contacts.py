@@ -1,6 +1,7 @@
 import argparse
 import csv
 import json
+import os
 
 from core_data_modules.cleaners import Codes
 from core_data_modules.logging import Logger
@@ -83,13 +84,14 @@ if __name__ == "__main__":
     for listening_group_type in pipeline_configuration.listening_group_csv_urls.keys():
         for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls[listening_group_type]:
             listening_group_csv = listening_group_csv_url.split("/")[-1]
-            with open(f"{listening_group_data_dir}/{listening_group_csv}", "r", encoding='utf-8-sig') as f:
-                data = list(csv.DictReader(f))
-                log.info(
-                    f"Loaded {len(data)} listening group participants from {listening_group_data_dir}/{listening_group_csv}")
-                for row in data:
-                    uuids.add(row["avf-phone-uuid"])
-                    listening_group_participants += 1
+            if os.path.exists(f'{listening_group_data_dir}/{listening_group_csv}'):
+                with open(f"{listening_group_data_dir}/{listening_group_csv}", "r", encoding='utf-8-sig') as f:
+                    data = list(csv.DictReader(f))
+                    log.info(
+                        f"Loaded {len(data)} listening group participants from {listening_group_data_dir}/{listening_group_csv}")
+                    for row in data:
+                        uuids.add(row["avf-phone-uuid"])
+                        listening_group_participants += 1
     log.info(f"loaded {listening_group_participants} listening group participants")
 
     if exclusion_list_file_path is not None:
