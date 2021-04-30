@@ -189,7 +189,24 @@ KILIFI_S01_RQA_CODING_PLANS = [
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e08"),
-                   raw_field_fold_strategy=FoldStrategies.concatenate)
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="kilifi_s01_noise_handler_raw",
+                       time_field="sent_on",
+                       run_id_field="kilifi_s01_noise_handler_run_id",
+                       coda_filename="GPSDD_KILIFI_s01_noise_handler.json",
+                       icr_filename="kilifi_s01_noise_handler.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.KILIFI_S01_NOISE_HANDLER,
+                               coded_field="kilifi_s01_noise_handler_coded",
+                               analysis_file_key="kilifi_s01_noise_handler",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01_NOISE_HANDLER, x, y)
+                           )
+                       ],
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01_noise_handler"),
+                       raw_field_fold_strategy=FoldStrategies.concatenate)
 ]
 
 KIAMBU_S01_RQA_CODING_PLANS = [
@@ -371,6 +388,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                                coding_mode=CodingModes.MULTIPLE,
                                code_scheme=CodeSchemes.ICRAF_CONSENT,
                                coded_field="icraf_consent_coded",
+                               analysis_file_key="icraf_consent",
                                fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.ICRAF_CONSENT, x, y)
                            )
                        ],
