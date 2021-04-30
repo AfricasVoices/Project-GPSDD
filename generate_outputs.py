@@ -270,8 +270,8 @@ if __name__ == "__main__":
                 "rqa_s01e08_raw": FoldStrategies.concatenate,
 
                 "gender_coded": partial(demog_labels, CodeSchemes.GENDER),
-                "age_coded": partial(demog_labels, CodeSchemes.AGE),
-                "age_category_coded": partial(demog_labels, CodeSchemes.AGE_CATEGORY),
+                "age_coded": partial(disabled_demog_labels, CodeSchemes.AGE),
+                "age_category_coded": partial(disabled_demog_labels, CodeSchemes.AGE_CATEGORY),
                 "county_coded": partial(demog_labels, CodeSchemes.KENYA_COUNTY),
                 "constituency_coded": partial(demog_labels, CodeSchemes.KENYA_CONSTITUENCY),
                 "disabled_coded": partial(disabled_demog_labels, CodeSchemes.DISABLED),
