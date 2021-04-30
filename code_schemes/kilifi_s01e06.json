@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-e63629f1",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9a0aecae",
+      "CodeType": "Normal",
+      "DisplayText": "enact and enforce strict regulations",
+      "NumericValue": 2,
+      "StringValue": "enact_and_enforce_strict_regulations",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-47631a68",
+      "CodeType": "Normal",
+      "DisplayText": "provide free medication",
+      "NumericValue": 3,
+      "StringValue": "provide_free_medication",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-787e7c53",
+      "CodeType": "Normal",
+      "DisplayText": "employ more medical practitioners",
+      "NumericValue": 4,
+      "StringValue": "employ_more_medical_practitioners",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1b004f5d",
+      "CodeType": "Normal",
+      "DisplayText": "questions and narratives",
+      "NumericValue": 5,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-84f89a2d",
+      "CodeType": "Normal",
+      "DisplayText": "build health facilities",
+      "NumericValue": 7,
+      "StringValue": "build_health_facilities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-42582d84",
+      "CodeType": "Normal",
+      "DisplayText": "other_theme",
+      "NumericValue": 8,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
