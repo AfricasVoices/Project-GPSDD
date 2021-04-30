@@ -157,17 +157,27 @@ def fetch_from_recovery_csv(user, google_cloud_credentials_file_path, raw_data_d
         log.info(f"Exported TracedData")
 
 def fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_configuration, raw_data_dir):
+
+    uploaded_listening_group_files = [file.split("/")[-1] for file in google_cloud_utils.list_blobs(google_cloud_credentials_file_path,
+                                                                   pipeline_configuration.project_dataset_bucket_url,
+                                                                   pipeline_configuration.listening_group_bucket_path)]
+
     for k, v in pipeline_configuration.listening_group_csv_urls.items():
         for i, listening_group_csv_url in enumerate(v):
-            listening_group = listening_group_csv_url.split("/")[-1]
+            listening_group_csv = listening_group_csv_url.split("/")[-1]
 
-            if os.path.exists(f'{raw_data_dir}/{listening_group}'):
-                log.info(f"File '{raw_data_dir}/{listening_group}' for '{listening_group}' already exists;"
+            if listening_group_csv not in uploaded_listening_group_files:
+                log.info(f"{listening_group_csv}' not yet uploaded to {pipeline_configuration.project_dataset_bucket_url};"
                          f" skipping download")
                 continue
 
-            log.info(f"Saving '{listening_group}' to file '{raw_data_dir}'...")
-            with open(f'{raw_data_dir}/{listening_group}', "wb") as listening_group_output_file:
+            if os.path.exists(f'{raw_data_dir}/{listening_group_csv}'):
+                log.info(f"File '{raw_data_dir}/{listening_group_csv}' for '{listening_group_csv}' already exists;"
+                         f" skipping download")
+                continue
+
+            log.info(f"Saving '{listening_group_csv}' to file '{raw_data_dir}'...")
+            with open(f'{raw_data_dir}/{listening_group_csv}', "wb") as listening_group_output_file:
                 google_cloud_utils.download_blob_to_file(
                     google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
 

@@ -20,7 +20,8 @@ class PipelineConfiguration(object):
     def __init__(self, pipeline_name, raw_data_sources, phone_number_uuid_table, operations_dashboard, timestamp_remappings,
                  rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages, move_ws_messages,
                  memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path,
-                 automated_analysis, drive_upload=None, listening_group_csv_urls=None):
+                 automated_analysis, project_dataset_bucket_url, listening_group_bucket_path,
+                 drive_upload=None, listening_group_csv_urls=None):
         """
         :param pipeline_name: The name of this pipeline.
         :type pipeline_name: str
@@ -56,6 +57,10 @@ class PipelineConfiguration(object):
         :type bucket_dir_path: str
         :param automated_analysis: Different Automated analysis Script Configurations
         :type automated_analysis: AutomatedAnalysis
+        :param project_dataset_bucket_url: The GS bucket folder path to store the pipeline project datasets to.
+        :type project_dataset_bucket_url: str
+        :param listening_group_bucket_path: The GS bucket folder path to store the listening group files to.
+        :type listening_group_bucket_path: str
         :param listening_group_csv_urls: A dictionary containing Google cloud storage urls to fetch health_practitioners
          and  mothers listening group participants csvs from.
         :type listening_group_csv_urls: dict of lists | None
@@ -75,6 +80,8 @@ class PipelineConfiguration(object):
         self.data_archive_upload_bucket = data_archive_upload_bucket
         self.automated_analysis = automated_analysis
         self.bucket_dir_path = bucket_dir_path
+        self.project_dataset_bucket_url = project_dataset_bucket_url
+        self.listening_group_bucket_path = listening_group_bucket_path
         self.listening_group_csv_urls = listening_group_csv_urls
 
         PipelineConfiguration.RQA_CODING_PLANS = coding_plans.get_rqa_coding_plans(self.pipeline_name)
@@ -134,10 +141,14 @@ class PipelineConfiguration(object):
         data_archive_upload_bucket = configuration_dict["DataArchiveUploadBucket"]
         bucket_dir_path = configuration_dict["BucketDirPath"]
 
+        project_dataset_bucket_url = configuration_dict["ProjectDatasetBucketURL"]
+        listening_group_bucket_path = configuration_dict["ListeningGroupBucketPath"]
+
         return cls(pipeline_name, raw_data_sources, phone_number_uuid_table, operations_dashboard, timestamp_remappings,
                    rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages,
                    move_ws_messages, memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path,
-                   automated_analysis, drive_upload_paths, listening_group_csv_urls)
+                   automated_analysis, project_dataset_bucket_url, listening_group_bucket_path,
+                   drive_upload_paths, listening_group_csv_urls)
 
     @classmethod
     def from_configuration_file(cls, f):
@@ -166,14 +177,17 @@ class PipelineConfiguration(object):
         validators.validate_bool(self.filter_test_messages, "filter_test_messages")
         validators.validate_bool(self.move_ws_messages, "move_ws_messages")
 
+        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
+        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
+        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
+
+        validators.validate_url(self.project_dataset_bucket_url, "project_dataset_bucket_url", "gs")
+        validators.validate_string(self.listening_group_bucket_path, "project_dataset_bucket_url")
+
         if self.drive_upload is not None:
             assert isinstance(self.drive_upload, DriveUpload), \
                 "drive_upload is not of type DriveUpload"
             self.drive_upload.validate()
-
-        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
-        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
-        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
 
         if self.listening_group_csv_urls is not None:
             validators.validate_dict(self.listening_group_csv_urls, "listening_group_csv_urls")
