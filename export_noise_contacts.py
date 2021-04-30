@@ -80,7 +80,7 @@ if __name__ == "__main__":
                     codes = [cc.code_scheme.get_code_with_code_id(label["CodeID"]) for label in td[cc.coded_field]]
 
                 for code in codes:
-                    if code.string_value == Codes.Codes.NOISE_OTHER_CHANNEL:
+                    if code.string_value == Codes.NOISE_OTHER_CHANNEL:
                         noise_uuids.add(td["uid"])
 
     log.info(f"Loaded {len(noise_uuids)} uuids from TracedData")
