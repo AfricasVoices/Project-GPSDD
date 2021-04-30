@@ -15,19 +15,17 @@ from src.lib import PipelineConfiguration
 log = Logger(__name__)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Exports phone numbers of people who opted into AVF's Kenya "
-                                                 "Pool at the end of the project")
+    parser = argparse.ArgumentParser(description="Exports phone numbers of people who sent messages labelled as Noise "
+                                                 "other channel")
 
     parser.add_argument("google_cloud_credentials_file_path", metavar="google-cloud-credentials-file-path",
                         help="Path to a Google Cloud service account credentials file to use to access the "
                              "credentials bucket")
     parser.add_argument("pipeline_configuration_file_path", metavar="pipeline-configuration-file",
                         help="Path to the pipeline configuration json file")
-    parser.add_argument("traced_data_paths", metavar="traced-data-paths", nargs="+",
-                        help="Paths to the traced data files (either messages or individuals) to extract phone "
+    parser.add_argument("traced_data_path", metavar="traced-data-path",
+                        help="Paths to the traced data file (either messages or individuals) to extract phone "
                              "numbers from")
-    parser.add_argument("opt_in_dataset_name", metavar="opt-in-dataset-name",
-                        help="`dataset_name` of the coding plan to use to search for opt-ins")
     parser.add_argument("csv_output_file_path", metavar="csv-output-file-path",
                         help="Path to a CSV file to write the contacts to. "
                              "Exported file is in a format suitable for direct upload to Rapid Pro")
@@ -36,8 +34,7 @@ if __name__ == "__main__":
 
     google_cloud_credentials_file_path = args.google_cloud_credentials_file_path
     pipeline_configuration_file_path = args.pipeline_configuration_file_path
-    traced_data_paths = args.traced_data_paths
-    opt_in_dataset_name = args.opt_in_dataset_name
+    traced_data_path = args.traced_data_path
     csv_output_file_path = args.csv_output_file_path
 
     sys.setrecursionlimit(10000)
@@ -62,30 +59,29 @@ if __name__ == "__main__":
     log.info("Initialised the Firestore UUID table")
 
     noise_uuids = set()
-    skipped = 0
-    for path in traced_data_paths:
-        # Load the traced data
-        log.info(f"Loading previous traced data from file '{path}'...")
-        with open(path) as f:
-            data = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
-        log.info(f"Loaded {len(data)} traced data objects")
 
-        # Filter for participants that opted-in via the close-out.
-        for td in data:
-            if td["consent_withdrawn"] == Codes.TRUE:
-                continue
+    # Load the traced data
+    log.info(f"Loading traced data from file '{traced_data_path}'...")
+    with open(traced_data_path) as f:
+        data = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
+    log.info(f"Loaded {len(data)} traced data objects")
 
-            for plan in PipelineConfiguration.RQA_CODING_PLANS + PipelineConfiguration.DEMOG_CODING_PLANS:
-                for cc in plan.coding_configurations:
-                    if cc.coding_mode == CodingModes.SINGLE:
-                        codes = [cc.code_scheme.get_code_with_code_id(td[cc.coded_field]["CodeID"])]
-                    else:
-                        assert cc.coding_mode == CodingModes.MULTIPLE
-                        codes = [cc.code_scheme.get_code_with_code_id(label["CodeID"]) for label in td[cc.coded_field]]
+    # Filter for participants that have messages labelled as NOC in any field.
+    for td in data:
+        if td["consent_withdrawn"] == Codes.TRUE:
+            continue
 
-                    for code in codes:
-                        if code.string_value == "NOC":
-                            noise_uuids.add(td["uid"])
+        for plan in PipelineConfiguration.RQA_CODING_PLANS + PipelineConfiguration.DEMOG_CODING_PLANS:
+            for cc in plan.coding_configurations:
+                if cc.coding_mode == CodingModes.SINGLE:
+                    codes = [cc.code_scheme.get_code_with_code_id(td[cc.coded_field]["CodeID"])]
+                else:
+                    assert cc.coding_mode == CodingModes.MULTIPLE
+                    codes = [cc.code_scheme.get_code_with_code_id(label["CodeID"]) for label in td[cc.coded_field]]
+
+                for code in codes:
+                    if code.string_value == Codes.Codes.NOISE_OTHER_CHANNEL:
+                        noise_uuids.add(td["uid"])
 
     log.info(f"Loaded {len(noise_uuids)} uuids from TracedData")
 
