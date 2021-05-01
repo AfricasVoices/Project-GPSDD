@@ -68,6 +68,30 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-8113a0d5",
+      "CodeType": "Normal",
+      "DisplayText": "restrict over the counter sale of antibiotics",
+      "NumericValue": 9,
+      "StringValue": "restrict_over_the_counter_sale_of_antibiotics",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3ea6b7d3",
+      "CodeType": "Normal",
+      "DisplayText": "improve health care provision in government hospitals",
+      "NumericValue": 10,
+      "StringValue": "improve_health_care_provision_in_government_hospitals",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-04f189df",
+      "CodeType": "Normal",
+      "DisplayText": "enquiries about the side effects of antibiotics",
+      "NumericValue": 11,
+      "StringValue": "enquiries_about_the_side_effects_of_antibiotics",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
