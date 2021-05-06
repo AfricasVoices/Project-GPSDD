@@ -92,6 +92,8 @@ if __name__ == "__main__":
                     for row in data:
                         uuids.add(row["avf-phone-uuid"])
                         listening_group_participants += 1
+            else:
+                log.warning(f"{listening_group_csv} not found in {listening_group_data_dir} skipping..")
     log.info(f"loaded {listening_group_participants} listening group participants")
 
     if exclusion_list_file_path is not None:
