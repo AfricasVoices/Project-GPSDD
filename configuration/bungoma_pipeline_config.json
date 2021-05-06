@@ -165,7 +165,5 @@
   },
   "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
   "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
-  "BucketDirPath": "2021/GPSDD/BUNGOMA",
-  "ProjectDatasetBucketURL": "gs://avf-project-datasets",
-  "ListeningGroupBucketPath": "2021/GPSDD/"
+  "BucketDirPath": "2021/GPSDD/BUNGOMA"
 }
