@@ -168,7 +168,7 @@ def fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_con
                          f" skipping download")
                 continue
             try:
-                log.info(f"Saving '{listening_group_csv}' to file '{raw_data_dir}'...")
+                log.info(f"Saving '{listening_group_csv}' to file '{raw_data_dir}/{listening_group_csv}'...")
                 with open(f'{raw_data_dir}/{listening_group_csv}', "wb") as listening_group_output_file:
                     google_cloud_utils.download_blob_to_file(
                         google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
