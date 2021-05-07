@@ -174,7 +174,7 @@ def fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_con
                         google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
 
             except NotFound:
-                log.warning(f"{listening_group_csv}' not yet uploaded to google cloud skipping download")
+                log.warning(f"{listening_group_csv}' not found in google cloud, skipping download")
 
 
 def main(user, google_cloud_credentials_file_path, pipeline_configuration_file_path, raw_data_dir):
