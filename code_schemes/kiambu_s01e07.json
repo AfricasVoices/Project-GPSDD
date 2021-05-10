@@ -1,8 +1,88 @@
 {
-  "SchemeID": "Scheme-965f7ae6",
+  "SchemeID": "Scheme-965f7ae6-1",
   "Name": "KIAMBU S01E07",
   "Version": "0.0.0.1",
   "Codes": [
+    {
+      "CodeID": "code-32bb67cc",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 1,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e6367288",
+      "CodeType": "Normal",
+      "DisplayText": "mantain proper hygiene or sanitation",
+      "NumericValue": 2,
+      "StringValue": "mantain_proper_hygiene_or_sanitation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f750c911",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 3,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-793647ed",
+      "CodeType": "Normal",
+      "DisplayText": "avoid over the counter drugs",
+      "NumericValue": 4,
+      "StringValue": "avoid_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-644a40cf",
+      "CodeType": "Normal",
+      "DisplayText": "do not share drugs",
+      "NumericValue": 6,
+      "StringValue": "do_not_share_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d1e627ce",
+      "CodeType": "Normal",
+      "DisplayText": "avoid using antibiotics",
+      "NumericValue": 8,
+      "StringValue": "avoid_using_antibiotics",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-28178bd7",
+      "CodeType": "Normal",
+      "DisplayText": "prevention or immunization",
+      "NumericValue": 9,
+      "StringValue": "prevention_or_immunization",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-471fc319",
+      "CodeType": "Normal",
+      "DisplayText": "regulations or rules on chemists",
+      "NumericValue": 10,
+      "StringValue": "regulations_or_rules_on_chemists",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-96768ae6",
+      "CodeType": "Normal",
+      "DisplayText": "questions and narratives",
+      "NumericValue": 5,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6ca0b0be",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
