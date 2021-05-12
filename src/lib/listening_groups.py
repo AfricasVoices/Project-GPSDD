@@ -1,4 +1,5 @@
 import csv
+import os
 
 from core_data_modules.logging import Logger
 from core_data_modules.traced_data import Metadata
@@ -34,10 +35,14 @@ class ListeningGroups(object):
         for k in listening_group_participants.keys():
             for listening_group_csv_url in pipeline_configuration.listening_group_csv_urls[k]:
                 listening_group_csv = listening_group_csv_url.split("/")[-1]
-                with open(f'{raw_data_dir}/{listening_group_csv}', "r", encoding='utf-8-sig') as f:
-                    listening_group_data = list(csv.DictReader(f))
-                    for row in listening_group_data:
-                        listening_group_participants[k].add(row['avf-phone-uuid'])
+
+                if os.path.exists(f'{raw_data_dir}/{listening_group_csv}'):
+                    with open(f'{raw_data_dir}/{listening_group_csv}', "r", encoding='utf-8-sig') as f:
+                        listening_group_data = list(csv.DictReader(f))
+                        for row in listening_group_data:
+                            listening_group_participants[k].add(row['avf-phone-uuid'])
+                else:
+                    log.warning(f"{listening_group_csv} does not exist in {raw_data_dir} skipping!")
 
             log.info(f'Loaded {len(listening_group_participants[k])} {k} listening group participants')
 

@@ -35,13 +35,21 @@
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_health_practitioners_listening_group.csv"
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_health_practitioners_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_health_practitioners_listening_group.csv"
     ],
     "mothers": [
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_mothers_listening_group.csv"
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_mothers_listening_group.csv",
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_mothers_listening_group.csv"
     ]
   },
   "PhoneNumberUuidTable": {
@@ -143,7 +151,7 @@
       {"StartDate": "2021-05-05T07:30+03:00", "EndDate": "2021-05-05T09:30+03:00", "Label": "E07 Sulwe Fm"},
 
       {"StartDate": "2021-05-08T08:00+03:00", "EndDate": "2021-05-10T16:00+03:00", "Label": "E08 Promo"},
-      {"StartDate": "2021-05-10T16:00+03:00", "EndDate": "2021-05-10T09:00+03:00", "Label": "E08 Ad"},
+      {"StartDate": "2021-05-10T16:00+03:00", "EndDate": "2021-05-11T09:00+03:00", "Label": "E08 Ad"},
       {"StartDate": "2021-05-11T09:00+03:00", "EndDate": "2021-05-11T11:00+03:00", "Label": "E08 West Fm"},
       {"StartDate": "2021-05-12T07:30+03:00", "EndDate": "2021-05-12T09:30+03:00", "Label": "E08 Sulwe Fm"}
     ]

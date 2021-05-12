@@ -166,14 +166,14 @@ class PipelineConfiguration(object):
         validators.validate_bool(self.filter_test_messages, "filter_test_messages")
         validators.validate_bool(self.move_ws_messages, "move_ws_messages")
 
+        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
+        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
+        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
+
         if self.drive_upload is not None:
             assert isinstance(self.drive_upload, DriveUpload), \
                 "drive_upload is not of type DriveUpload"
             self.drive_upload.validate()
-
-        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
-        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
-        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
 
         if self.listening_group_csv_urls is not None:
             validators.validate_dict(self.listening_group_csv_urls, "listening_group_csv_urls")

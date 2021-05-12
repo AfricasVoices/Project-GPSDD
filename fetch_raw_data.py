@@ -4,6 +4,7 @@ import json
 import os
 from datetime import datetime
 from io import StringIO
+from google.api_core.exceptions import  NotFound
 
 import pytz
 from core_data_modules.logging import Logger
@@ -157,19 +158,24 @@ def fetch_from_recovery_csv(user, google_cloud_credentials_file_path, raw_data_d
         log.info(f"Exported TracedData")
 
 def fetch_listening_groups_csvs(google_cloud_credentials_file_path, pipeline_configuration, raw_data_dir):
+
     for k, v in pipeline_configuration.listening_group_csv_urls.items():
         for i, listening_group_csv_url in enumerate(v):
-            listening_group = listening_group_csv_url.split("/")[-1]
+            listening_group_csv = listening_group_csv_url.split("/")[-1]
 
-            if os.path.exists(f'{raw_data_dir}/{listening_group}'):
-                log.info(f"File '{raw_data_dir}/{listening_group}' for '{listening_group}' already exists;"
+            if os.path.exists(f'{raw_data_dir}/{listening_group_csv}'):
+                log.info(f"File '{raw_data_dir}/{listening_group_csv}' for '{listening_group_csv}' already exists;"
                          f" skipping download")
                 continue
+            try:
+                log.info(f"Saving '{listening_group_csv}' to file '{raw_data_dir}/{listening_group_csv}'...")
+                with open(f'{raw_data_dir}/{listening_group_csv}', "wb") as listening_group_output_file:
+                    google_cloud_utils.download_blob_to_file(
+                        google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
 
-            log.info(f"Saving '{listening_group}' to file '{raw_data_dir}'...")
-            with open(f'{raw_data_dir}/{listening_group}', "wb") as listening_group_output_file:
-                google_cloud_utils.download_blob_to_file(
-                    google_cloud_credentials_file_path, listening_group_csv_url, listening_group_output_file)
+            except NotFound:
+                log.warning(f"{listening_group_csv}' not found in google cloud, skipping download")
+
 
 def main(user, google_cloud_credentials_file_path, pipeline_configuration_file_path, raw_data_dir):
     # Read the settings from the configuration file
