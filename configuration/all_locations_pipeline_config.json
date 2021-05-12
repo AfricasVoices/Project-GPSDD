@@ -51,7 +51,13 @@
         "89f1c969-777f-4f55-a3ec-cb49cc9c41cd",
         "0d3e63a4-e5a6-4c85-ad4f-643e96203a3f",
         "1dbecf30-a0d9-4005-ae96-099cf40ecb84",
-        "7dfacafd-2b66-43c5-83b7-6c744f1e9a84"
+        "7dfacafd-2b66-43c5-83b7-6c744f1e9a84",
+        "f92e3c96-9121-43a2-ab61-fe21c4f96eec",
+        "5f0b0a7a-7986-4454-adf0-4a0034e7eda1",
+        "dc1d2727-19a5-4b92-ab41-157dc80eeb6a",
+        "cfaa7b42-89c4-458e-b418-814c17df56f1",
+        "a97ef1cc-5cf2-45e3-a9c0-63842a6ae8b4",
+        "38c08bd-0e29-4fc3-8fd9-e0f7355a4b73"
       ]
     },
     {
@@ -79,7 +85,10 @@
         "d1623047-99c1-4137-9601-8d61ba4ffdf6",
         "c323751f-49aa-46e4-8d36-3e60e8b90e68",
         "e38e7423-66c1-43a3-8690-af12b6faf712",
-        "11c54f2a-e842-4a38-ba1d-6af8664ef728"
+        "11c54f2a-e842-4a38-ba1d-6af8664ef728",
+        "de398f05-f534-4f02-b6f3-4aaa7f88bb40",
+        "8db96083-b907-4970-904a-4269900ca2e2",
+        "6810e8d6-8dc4-40b6-a26f-15a973508bcc"
       ]
     }
   ],
@@ -90,25 +99,16 @@
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e03_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e04_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e05_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e06_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e07_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e08_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e01_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e02_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e03_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e04_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e05_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e06_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e07_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e08_health_practitioners_listening_group.csv"
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e05_health_practitioners_listening_group.csv"
     ],
     "mothers": [
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_mothers_listening_group.csv",
@@ -116,26 +116,16 @@
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e01_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e02_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e03_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e04_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e05_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e06_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e07_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kiambu_s01e08_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e01_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e02_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e03_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e04_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e05_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e06_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e07_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e08_mothers_listening_group.csv"
-
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_kilifi_s01e05_mothers_listening_group.csv"
       ]
 },
   "PhoneNumberUuidTable": {

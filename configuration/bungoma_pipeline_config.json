@@ -26,7 +26,8 @@
         "d1623047-99c1-4137-9601-8d61ba4ffdf6",
         "c323751f-49aa-46e4-8d36-3e60e8b90e68",
         "e38e7423-66c1-43a3-8690-af12b6faf712",
-        "11c54f2a-e842-4a38-ba1d-6af8664ef728"
+        "11c54f2a-e842-4a38-ba1d-6af8664ef728",
+        "8db96083-b907-4970-904a-4269900ca2e2"
       ]
     }
   ],
@@ -36,20 +37,14 @@
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_health_practitioners_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_health_practitioners_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_health_practitioners_listening_group.csv"
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_health_practitioners_listening_group.csv"
     ],
     "mothers": [
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e01_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e02_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e03_mothers_listening_group.csv",
       "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e04_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e06_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e07_mothers_listening_group.csv",
-      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e08_mothers_listening_group.csv"
+      "gs://avf-project-datasets/2021/GPSDD/gpsdd_bungoma_s01e05_mothers_listening_group.csv"
     ]
   },
   "PhoneNumberUuidTable": {
