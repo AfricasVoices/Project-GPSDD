@@ -52,6 +52,30 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-d1e627ce",
+      "CodeType": "Normal",
+      "DisplayText": "avoid using antibiotics",
+      "NumericValue": 8,
+      "StringValue": "avoid_using_antibiotics",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-28178bd7",
+      "CodeType": "Normal",
+      "DisplayText": "prevention or immunization",
+      "NumericValue": 9,
+      "StringValue": "prevention_or_immunization",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-471fc319",
+      "CodeType": "Normal",
+      "DisplayText": "regulations or rules on chemists",
+      "NumericValue": 10,
+      "StringValue": "regulations_or_rules_on_chemists",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-6ca0b0be",
       "CodeType": "Normal",
       "DisplayText": "other theme",
