@@ -448,7 +448,7 @@
       "CodeType": "Normal",
       "DisplayText": "kiambu endline community awareness",
       "StringValue": "kiambu_endline_community_awareness",
-      "NumericValue": 44,
+      "NumericValue": 45,
       "VisibleInCoda": true,
       "MatchValues": [
         "kiambu endline community awareness"
@@ -459,7 +459,7 @@
       "CodeType": "Normal",
       "DisplayText": "kiambu endline government role",
       "StringValue": "kiambu_endline_government_role",
-      "NumericValue": 45,
+      "NumericValue": 46,
       "VisibleInCoda": true,
       "MatchValues": [
         "kiambu endline government role"
@@ -492,7 +492,7 @@
       "CodeType": "Normal",
       "DisplayText": "kilifi endline community awareness",
       "StringValue": "kilifi_endline_community_awareness",
-      "NumericValue": 46,
+      "NumericValue": 47,
       "VisibleInCoda": true,
       "MatchValues": [
         "kilifi endline community awareness"
@@ -503,7 +503,7 @@
       "CodeType": "Normal",
       "DisplayText": "kilifi endline government role",
       "StringValue": "kilifi_endline_government_role",
-      "NumericValue": 47,
+      "NumericValue": 48,
       "VisibleInCoda": true,
       "MatchValues": [
         "kilifi endline government role"
@@ -536,7 +536,7 @@
       "CodeType": "Normal",
       "DisplayText": "bungoma endline community awareness",
       "StringValue": "bungoma_endline_community_awareness",
-      "NumericValue": 48,
+      "NumericValue": 49,
       "VisibleInCoda": true,
       "MatchValues": [
         "bungoma endline community awareness"
@@ -547,7 +547,7 @@
       "CodeType": "Normal",
       "DisplayText": "bungoma endline government role",
       "StringValue": "bungoma_endline_government_role",
-      "NumericValue": 49,
+      "NumericValue": 50,
       "VisibleInCoda": true,
       "MatchValues": [
         "bungoma endline government role"
