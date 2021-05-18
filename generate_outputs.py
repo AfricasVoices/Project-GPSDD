@@ -198,7 +198,15 @@ if __name__ == "__main__":
 
                 "kilifi_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
                 "kiambu_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
-                "bungoma_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE
+                "bungoma_baseline_government_role_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE,
+
+                "kilifi_endline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_COMMUNITY_AWARENESS,
+                "kiambu_endline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_COMMUNITY_AWARENESS,
+                "bungoma_endline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_COMMUNITY_AWARENESS,
+
+                "kilifi_endline_government_role_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_GOVERNMENT_ROLE,
+                "kiambu_endline_government_role_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_GOVERNMENT_ROLE,
+                "bungoma_endline_government_role_coded": CodeSchemes.ALL_LOCATIONS_ENDLINE_GOVERNMENT_ROLE
             }
 
             for td in data:
@@ -267,7 +275,15 @@ if __name__ == "__main__":
                 "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
 
                 "baseline_community_awareness_raw": assert_equal,
-                "baseline_government_role_raw": assert_equal
+                "baseline_government_role_raw": assert_equal,
+
+                "endline_community_awareness_coded": partial(FoldStrategies.list_of_labels,
+                                                              CodeSchemes.ALL_LOCATIONS_ENDLINE_COMMUNITY_AWARENESS),
+                "endline_government_role_coded": partial(FoldStrategies.list_of_labels,
+                                                          CodeSchemes.ALL_LOCATIONS_ENDLINE_GOVERNMENT_ROLE),
+
+                "endline_community_awareness_raw": assert_equal,
+                "endline_government_role_raw": assert_equal
             }
 
             for td in data:

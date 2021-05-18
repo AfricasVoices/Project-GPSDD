@@ -33,6 +33,9 @@ DATASETS=(
     "GPSDD_BUNGOMA_baseline_community_awareness"
     "GPSDD_BUNGOMA_baseline_government_role"
 
+    "GPSDD_BUNGOMA_endline_community_awareness"
+    "GPSDD_BUNGOMA_endline_government_role"
+
     "GPSDD_KIAMBU_s01e01"
     "GPSDD_KIAMBU_s01e02"
     "GPSDD_KIAMBU_s01e03"
@@ -49,6 +52,9 @@ DATASETS=(
 
     "GPSDD_KIAMBU_baseline_community_awareness"
     "GPSDD_KIAMBU_baseline_government_role"
+
+    "GPSDD_KIAMBU_endline_community_awareness"
+    "GPSDD_KIAMBU_endline_government_role"
 
     "GPSDD_KILIFI_s01e01"
     "GPSDD_KILIFI_s01e02"
@@ -67,6 +73,9 @@ DATASETS=(
 
     "GPSDD_KILIFI_baseline_community_awareness"
     "GPSDD_KILIFI_baseline_government_role"
+
+    "GPSDD_KILIFI_endline_community_awareness"
+    "GPSDD_KILIFI_endline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"

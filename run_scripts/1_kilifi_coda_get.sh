@@ -32,6 +32,9 @@ DATASETS=(
 
     "GPSDD_KILIFI_baseline_community_awareness"
     "GPSDD_KILIFI_baseline_government_role"
+
+    "GPSDD_KILIFI_endline_community_awareness"
+    "GPSDD_KILIFI_endline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"
