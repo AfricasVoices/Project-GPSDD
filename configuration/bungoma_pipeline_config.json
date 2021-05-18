@@ -15,7 +15,8 @@
         "gpsdd_bungoma_s01e05_activation",
         "gpsdd_bungoma_s01e06_activation",
         "gpsdd_bungoma_s01e07_activation",
-        "gpsdd_bungoma_s01e08_activation"
+        "gpsdd_bungoma_s01e08_activation",
+        "gpsdd_bungoma_s01_endline"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog"
@@ -101,7 +102,12 @@
     {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_community_awareness_raw", "IsActivationMessage":  true},
     {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "sent_on"},
     {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_baseline", "PipelineKey": "bungoma_baseline_government_role_raw", "IsActivationMessage":  true},
-    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "sent_on"}
+    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_baseline", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Community_Awareness (Text) - gpsdd_bungoma_s01_endline", "PipelineKey": "bungoma_endline_community_awareness_raw", "IsActivationMessage":  true},
+    {"RapidProKey": "Community_Awareness (Time) - gpsdd_bungoma_s01_endline", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Government_Role (Text) - gpsdd_bungoma_s01_endline", "PipelineKey": "bungoma_endline_government_role_raw", "IsActivationMessage":  true},
+    {"RapidProKey": "Government_Role (Time) - gpsdd_bungoma_s01_endline", "PipelineKey": "sent_on"}
   ],
   "ProjectStartDate": "2021-03-01T10:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",

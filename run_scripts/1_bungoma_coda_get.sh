@@ -31,6 +31,9 @@ DATASETS=(
 
     "GPSDD_BUNGOMA_baseline_community_awareness"
     "GPSDD_BUNGOMA_baseline_government_role"
+
+    "GPSDD_BUNGOMA_endline_community_awareness"
+    "GPSDD_BUNGOMA_endline_government_role"
 )
 
 cd "$CODA_V2_ROOT/data_tools"

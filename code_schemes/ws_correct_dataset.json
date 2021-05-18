@@ -444,6 +444,28 @@
       ]
     },
     {
+      "CodeID": "code-0a526eb8",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu endline community awareness",
+      "StringValue": "kiambu_endline_community_awareness",
+      "NumericValue": 44,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu endline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-a3f526a0",
+      "CodeType": "Normal",
+      "DisplayText": "kiambu endline government role",
+      "StringValue": "kiambu_endline_government_role",
+      "NumericValue": 45,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kiambu endline government role"
+      ]
+    },
+    {
       "CodeID": "code-51174478",
       "CodeType": "Normal",
       "DisplayText": "kilifi baseline community awareness",
@@ -466,6 +488,28 @@
       ]
     },
     {
+      "CodeID": "code-900fadec",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi endline community awareness",
+      "StringValue": "kilifi_endline_community_awareness",
+      "NumericValue": 46,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi endline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-d94d96dd",
+      "CodeType": "Normal",
+      "DisplayText": "kilifi endline government role",
+      "StringValue": "kilifi_endline_government_role",
+      "NumericValue": 47,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "kilifi endline government role"
+      ]
+    },
+    {
       "CodeID": "code-3dfee167",
       "CodeType": "Normal",
       "DisplayText": "bungoma baseline community awareness",
@@ -485,6 +529,28 @@
       "VisibleInCoda": true,
       "MatchValues": [
         "bungoma baseline government role"
+      ]
+    },
+    {
+      "CodeID": "code-f4842f5b",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma endline community awareness",
+      "StringValue": "bungoma_endline_community_awareness",
+      "NumericValue": 48,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma endline community awareness"
+      ]
+    },
+    {
+      "CodeID": "code-ff30f702",
+      "CodeType": "Normal",
+      "DisplayText": "bungoma endline government role",
+      "StringValue": "bungoma_endline_government_role",
+      "NumericValue": 49,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "bungoma endline government role"
       ]
     },
     {
