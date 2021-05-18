@@ -60,6 +60,30 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-52340d82",
+      "CodeType": "Normal",
+      "DisplayText": "clear instructions to patients while prescribing",
+      "NumericValue": 8,
+      "StringValue": "clear_instructions_to_patients_while_prescribing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3965bdf2",
+      "CodeType": "Normal",
+      "DisplayText": "requisite testing procedures",
+      "NumericValue": 9,
+      "StringValue": "requisite_testing_procedures",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-13bd91e8",
+      "CodeType": "Normal",
+      "DisplayText": "ensure professionalism in health sector",
+      "NumericValue": 10,
+      "StringValue": "ensure_professionalism_in_health_sector",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
