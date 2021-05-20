@@ -52,6 +52,14 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-2504a31d",
+      "CodeType": "Normal",
+      "DisplayText": "sensitise health workers",
+      "NumericValue": 7,
+      "StringValue": "sensitise_health_workers",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
