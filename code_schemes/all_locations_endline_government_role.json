@@ -3,7 +3,62 @@
   "Name": "All Locations Endline Government Role",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-90192bad",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b0eb66f2",
+      "CodeType": "Normal",
+      "DisplayText": "regulations on the use & sale of drugs",
+      "NumericValue": 2,
+      "StringValue": "regulations_on_the_use_and_sale_of_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c5473d38",
+      "CodeType": "Normal",
+      "DisplayText": "provide treatment drugs",
+      "NumericValue": 3,
+      "StringValue": "provide_treatment_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ee8d46e4",
+      "CodeType": "Normal",
+      "DisplayText": "employ more health workers",
+      "NumericValue": 4,
+      "StringValue": "employ_more_health_workers",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5260ef1c",
+      "CodeType": "Normal",
+      "DisplayText": "government support",
+      "NumericValue": 5,
+      "StringValue": "government_support",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b4f3bef6",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 6,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2504a31d",
+      "CodeType": "Normal",
+      "DisplayText": "sensitise health workers",
+      "NumericValue": 7,
+      "StringValue": "sensitise_health_workers",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
