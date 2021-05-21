@@ -239,6 +239,40 @@ KILIFI_S01_RQA_CODING_PLANS = [
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("kilifi endline community awareness"),
                raw_field_fold_strategy=FoldStrategies.concatenate),
+    
+    CodingPlan(raw_field="kilifi_rqa_s01e09_raw",
+                       time_field="sent_on",
+                       run_id_field="kilifi_rqa_s01e09_run_id",
+                       coda_filename="GPSDD_KILIFI_s01e09.json",
+                       icr_filename="kilifi_s01e09.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.KILIFI_S01E09,
+                               coded_field="kilifi_rqa_s01e09_coded",
+                               analysis_file_key="kilifi_rqa_s01e09",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E09, x, y)
+                           )
+                       ],
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e09"),
+                       raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="kilifi_rqa_s01e10_raw",
+                   time_field="sent_on",
+                   run_id_field="kilifi_rqa_s01e10_run_id",
+                   coda_filename="GPSDD_KILIFI_s01e10.json",
+                   icr_filename="kilifi_s01e10.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.KILIFI_S01E10,
+                           coded_field="kilifi_rqa_s01e10_coded",
+                           analysis_file_key="kilifi_rqa_s01e10",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KILIFI_S01E10, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI s01e10"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
 ]
 
 KIAMBU_S01_RQA_CODING_PLANS = [
@@ -660,7 +694,57 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                ],
                ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("bungoma endline community awareness"),
                raw_field_fold_strategy=FoldStrategies.concatenate),
+    
+CodingPlan(raw_field="bungoma_rqa_s01e07_raw",
+                   time_field="sent_on",
+                   run_id_field="bungoma_rqa_s01e07_run_id",
+                   coda_filename="GPSDD_BUNGOMA_s01e07.json",
+                   icr_filename="bungoma_s01e07.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.BUNGOMA_S01E07,
+                           coded_field="bungoma_rqa_s01e07_coded",
+                           analysis_file_key="bungoma_rqa_s01e07",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E07, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e07"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
 
+    CodingPlan(raw_field="bungoma_rqa_s01e09_raw",
+                   time_field="sent_on",
+                   run_id_field="bungoma_rqa_s01e09_run_id",
+                   coda_filename="GPSDD_BUNGOMA_s01e09.json",
+                   icr_filename="bungoma_s01e09.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.BUNGOMA_S01E09,
+                           coded_field="bungoma_rqa_s01e09_coded",
+                           analysis_file_key="bungoma_rqa_s01e09",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E09, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e09"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+    
+    CodingPlan(raw_field="bungoma_rqa_s01e10_raw",
+                       time_field="sent_on",
+                       run_id_field="bungoma_rqa_s01e10_run_id",
+                       coda_filename="GPSDD_BUNGOMA_s01e10.json",
+                       icr_filename="bungoma_s01e10.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.BUNGOMA_S01E10,
+                               coded_field="bungoma_rqa_s01e10_coded",
+                               analysis_file_key="bungoma_rqa_s01e10",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.BUNGOMA_S01E10, x, y)
+                           )
+                       ],
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA s01e10"),
+                       raw_field_fold_strategy=FoldStrategies.concatenate),
 ]
 
 ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
@@ -839,7 +923,36 @@ ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
                    )
                ],
                raw_field_fold_strategy=FoldStrategies.concatenate),
+    
+    CodingPlan(raw_field="rqa_s01e09_raw",
+                       time_field="sent_on",
+                       run_id_field="rqa_s01e09_run_id",
+                       icr_filename="s01e09.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.ALL_LOCATIONS_S01E09,
+                               coded_field="rqa_s01e09_coded",
+                               analysis_file_key="rqa_s01e09",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.ALL_LOCATIONS_S01E09, x, y)
+                           )
+                       ],
+                       raw_field_fold_strategy=FoldStrategies.concatenate),
 
+    CodingPlan(raw_field="rqa_s01e10_raw",
+                       time_field="sent_on",
+                       run_id_field="rqa_s01e10_run_id",
+                       icr_filename="s01e10.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.ALL_LOCATIONS_S01E10,
+                               coded_field="rqa_s01e10_coded",
+                               analysis_file_key="rqa_s01e10",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.ALL_LOCATIONS_S01E10, x, y)
+                           )
+                       ],
+                       raw_field_fold_strategy=FoldStrategies.concatenate),
 ]
 
 
