@@ -3,7 +3,46 @@
   "Name": "Kiambu Endline Community Awareness",
   "Version": "0.0.0.1",
   "Codes": [
-
+{
+      "CodeID": "code-4255f8ab",
+      "CodeType": "Normal",
+      "DisplayText": "not informed at all",
+      "NumericValue": 1,
+      "StringValue": "not_informed_at_all",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7539a348",
+      "CodeType": "Normal",
+      "DisplayText": "a little bit informed",
+      "NumericValue": 2,
+      "StringValue": "a_little_bit_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-400a3478",
+      "CodeType": "Normal",
+      "DisplayText": "well informed",
+      "NumericValue": 3,
+      "StringValue": "well_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-456c06a5",
+      "CodeType": "Normal",
+      "DisplayText": "very well informed",
+      "NumericValue": 4,
+      "StringValue": "very_well_informed",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-757f4633",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 5,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
