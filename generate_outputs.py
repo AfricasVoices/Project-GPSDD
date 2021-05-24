@@ -195,6 +195,14 @@ if __name__ == "__main__":
                 "kiambu_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
                 "bungoma_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
 
+                "kilifi_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
+                "kiambu_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
+                "bungoma_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
+
+                "kilifi_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
+                "kiambu_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
+                "bungoma_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
+
                 "kilifi_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
                 "kiambu_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
                 "bungoma_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
@@ -270,6 +278,8 @@ if __name__ == "__main__":
                 "rqa_s01e06_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E06),
                 "rqa_s01e07_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E07),
                 "rqa_s01e08_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E08),
+                "rqa_s01e09_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E09),
+                "rqa_s01e10_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_S01E10),
 
                 "rqa_s01e01_raw": FoldStrategies.concatenate,
                 "rqa_s01e02_raw": FoldStrategies.concatenate,
@@ -277,8 +287,8 @@ if __name__ == "__main__":
                 "rqa_s01e04_raw": FoldStrategies.concatenate,
                 "rqa_s01e05_raw": FoldStrategies.concatenate,
                 "rqa_s01e06_raw": FoldStrategies.concatenate,
-                "rqa_s01e07_raw": FoldStrategies.concatenate,
-                "rqa_s01e08_raw": FoldStrategies.concatenate,
+                "rqa_s01e09_raw": FoldStrategies.concatenate,
+                "rqa_s01e10_raw": FoldStrategies.concatenate,
 
                 "gender_coded": partial(demog_labels, CodeSchemes.GENDER),
                 "age_coded": partial(disabled_demog_labels, CodeSchemes.AGE),
