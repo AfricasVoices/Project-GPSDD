@@ -217,7 +217,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD KILIFI s01e08",
       "StringValue": "gpsdd_kilifi_s01e08",
-      "NumericValue": 51,
+      "NumericValue": 36,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD KILIFI s01e08"
@@ -228,7 +228,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD KILIFI s01e09",
       "StringValue": "gpsdd_kilifi_s01e09",
-      "NumericValue": 52,
+      "NumericValue": 51,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD KILIFI s01e09"
@@ -239,7 +239,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD KILIFI s01e10",
       "StringValue": "gpsdd_kilifi_s01e10",
-      "NumericValue": 36,
+      "NumericValue": 52,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD KILIFI s01e10"
