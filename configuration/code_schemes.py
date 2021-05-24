@@ -19,6 +19,8 @@ class CodeSchemes(object):
     KILIFI_S01E07 = _open_scheme("kilifi_s01e07.json")
     KILIFI_S01E08 = _open_scheme("kilifi_s01e08.json")
     KILIFI_S01_NOISE_HANDLER = _open_scheme("kilifi_s01_noise_handler.json")
+    KILIFI_S01E09 = _open_scheme("kilifi_s01e09.json")
+    KILIFI_S01E10 = _open_scheme("kilifi_s01e10.json")
 
     KIAMBU_S01E01 = _open_scheme("kiambu_s01e01.json")
     KIAMBU_S01E02 = _open_scheme("kiambu_s01e02.json")
@@ -38,6 +40,8 @@ class CodeSchemes(object):
     BUNGOMA_S01E06 = _open_scheme("bungoma_s01e06.json")
     BUNGOMA_S01E07 = _open_scheme("bungoma_s01e07.json")
     BUNGOMA_S01E08 = _open_scheme("bungoma_s01e08.json")
+    BUNGOMA_S01E09 = _open_scheme("bungoma_s01e09.json")
+    BUNGOMA_S01E10 = _open_scheme("bungoma_s01e10.json")
 
     ALL_LOCATIONS_S01E01 = _open_scheme("all_locations_s01e01.json")
     ALL_LOCATIONS_S01E02 = _open_scheme("all_locations_s01e02.json")
@@ -47,6 +51,8 @@ class CodeSchemes(object):
     ALL_LOCATIONS_S01E06 = _open_scheme("all_locations_s01e06.json")
     ALL_LOCATIONS_S01E07 = _open_scheme("all_locations_s01e07.json")
     ALL_LOCATIONS_S01E08 = _open_scheme("all_locations_s01e08.json")
+    ALL_LOCATIONS_S01E09 = _open_scheme("all_locations_s01e09.json")
+    ALL_LOCATIONS_S01E10 = _open_scheme("all_locations_s01e10.json")
 
     KENYA_CONSTITUENCY = _open_scheme("kenya_constituency.json")
     KENYA_COUNTY = _open_scheme("kenya_county.json")

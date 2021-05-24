@@ -15,7 +15,9 @@
         "gpsdd_kilifi_s01e05_activation",
         "gpsdd_kilifi_s01e06_activation",
         "gpsdd_kilifi_s01e07_activation",
-        "gpsdd_kilifi_s01e08_activation"
+        "gpsdd_kilifi_s01e08_activation",
+        "gpsdd_kilifi_s01e09_activation",
+        "gpsdd_kilifi_s01e10_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_kilifi_s01_demog"
@@ -74,7 +76,9 @@
         "gpsdd_bungoma_s01e05_activation",
         "gpsdd_bungoma_s01e06_activation",
         "gpsdd_bungoma_s01e07_activation",
-        "gpsdd_bungoma_s01e08_activation"
+        "gpsdd_bungoma_s01e08_activation",
+        "gpsdd_bungoma_s01e09_activation",
+        "gpsdd_bungoma_s01e10_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog"
@@ -170,6 +174,14 @@
     {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_kilifi_s01e08_activation", "PipelineKey": "kilifi_rqa_s01e08_run_id"},
     {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_kilifi_s01e08_activation", "PipelineKey": "sent_on"},
 
+    {"RapidProKey": "Rqa_S01E09 (Text) - gpsdd_kilifi_s01e09_activation", "PipelineKey": "kilifi_rqa_s01e09_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E09 (Run ID) - gpsdd_kilifi_s01e09_activation", "PipelineKey": "kilifi_rqa_s01e09_run_id"},
+    {"RapidProKey": "Rqa_S01E09 (Time) - gpsdd_kilifi_s01e09_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E10 (Text) - gpsdd_kilifi_s01e10_activation", "PipelineKey": "kilifi_rqa_s01e10_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E10 (Run ID) - gpsdd_kilifi_s01e10_activation", "PipelineKey": "kilifi_rqa_s01e10_run_id"},
+    {"RapidProKey": "Rqa_S01E10 (Time) - gpsdd_kilifi_s01e10_activation", "PipelineKey": "sent_on"},
+
     {"RapidProKey": "Rqa_S01E01 (Text) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "kiambu_rqa_s01e01_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E01 (Run ID) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "kiambu_rqa_s01e01_run_id"},
     {"RapidProKey": "Rqa_S01E01 (Time) - gpsdd_kiambu_s01e01_activation", "PipelineKey": "sent_on"},
@@ -233,6 +245,14 @@
     {"RapidProKey": "Rqa_S01E08 (Text) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "bungoma_rqa_s01e08_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E08 (Run ID) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "bungoma_rqa_s01e08_run_id"},
     {"RapidProKey": "Rqa_S01E08 (Time) - gpsdd_bungoma_s01e08_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E09 (Text) - gpsdd_bungoma_s01e09_activation", "PipelineKey": "bungoma_rqa_s01e09_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E09 (Run ID) - gpsdd_bungoma_s01e09_activation", "PipelineKey": "bungoma_rqa_s01e09_run_id"},
+    {"RapidProKey": "Rqa_S01E09 (Time) - gpsdd_bungoma_s01e09_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E10 (Text) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "bungoma_rqa_s01e10_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E10 (Run ID) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "bungoma_rqa_s01e10_run_id"},
+    {"RapidProKey": "Rqa_S01E10 (Time) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Constituency (Text) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_kilifi_s01_demog", "PipelineKey": "kilifi_location_time"},

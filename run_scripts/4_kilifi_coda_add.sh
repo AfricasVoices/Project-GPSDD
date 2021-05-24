@@ -23,6 +23,8 @@ DATASETS=(
     "GPSDD_KILIFI_s01e06"
     "GPSDD_KILIFI_s01e07"
     "GPSDD_KILIFI_s01e08"
+    "GPSDD_KILIFI_s01e09"
+    "GPSDD_KILIFI_s01e10"
     "GPSDD_KILIFI_s01_noise_handler"
 
     "GPSDD_KILIFI_age"
