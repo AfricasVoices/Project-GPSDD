@@ -1,56 +1,9 @@
 {
-  "SchemeID": "Scheme-c816b2ea",
-  "Name": "KILIFI S01E08",
+  "SchemeID": "Scheme-a5a99c8b",
+  "Name": "KILIFI S01E10",
   "Version": "0.0.0.1",
   "Codes": [
-    {
-      "CodeID": "code-ce41fedf",
-      "CodeType": "Normal",
-      "DisplayText": "educating the community",
-      "NumericValue": 1,
-      "StringValue": "educating_the_community",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-626671f3",
-      "CodeType": "Normal",
-      "DisplayText": "through media platforms",
-      "NumericValue": 2,
-      "StringValue": "through_media_platforms",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-30d15184",
-      "CodeType": "Normal",
-      "DisplayText": "follow doctor's prescription",
-      "NumericValue": 3,
-      "StringValue": "follow_doctors_prescription",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-8b31b6d7",
-      "CodeType": "Normal",
-      "DisplayText": "regular patient follow up",
-      "NumericValue": 4,
-      "StringValue": "regular_patient_follow_up",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-32bb67cc",
-      "CodeType": "Normal",
-      "DisplayText": "questions and narratives",
-      "NumericValue": 5,
-      "StringValue": "questions_and_narratives",
-      "VisibleInCoda": true
-    },
-    {
-      "CodeID": "code-e59f39fa",
-      "CodeType": "Normal",
-      "DisplayText": "other theme",
-      "NumericValue": 7,
-      "StringValue": "other_theme",
-      "VisibleInCoda": true
-    },
+
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
