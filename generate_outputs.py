@@ -285,6 +285,8 @@ if __name__ == "__main__":
                 "rqa_s01e04_raw": FoldStrategies.concatenate,
                 "rqa_s01e05_raw": FoldStrategies.concatenate,
                 "rqa_s01e06_raw": FoldStrategies.concatenate,
+                "rqa_s01e07_raw": FoldStrategies.concatenate,
+                "rqa_s01e08_raw": FoldStrategies.concatenate,
                 "rqa_s01e09_raw": FoldStrategies.concatenate,
                 "rqa_s01e10_raw": FoldStrategies.concatenate,
 
@@ -322,6 +324,7 @@ if __name__ == "__main__":
                     y = td.get(f"kiambu_{field}")
                     z = td.get(f"bungoma_{field}")
 
+                    # kiambu did not air episode 9-10 - only fold the other locations where kiambu fields are None.
                     if y is not None:
                         folded = strategy(strategy(x, y), z)
                     else:
