@@ -266,6 +266,8 @@ if __name__ == "__main__":
                 "rqa_s01e04_raw": FoldStrategies.concatenate,
                 "rqa_s01e05_raw": FoldStrategies.concatenate,
                 "rqa_s01e06_raw": FoldStrategies.concatenate,
+                "rqa_s01e07_raw": FoldStrategies.concatenate,
+                "rqa_s01e08_raw": FoldStrategies.concatenate,
                 "rqa_s01e09_raw": FoldStrategies.concatenate,
                 "rqa_s01e10_raw": FoldStrategies.concatenate,
 
