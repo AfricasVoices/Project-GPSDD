@@ -3,6 +3,62 @@
   "Name": "BUNGOMA S01E09",
   "Version": "0.0.0.1",
   "Codes": [
+    {
+      "CodeID": "code-4277587f",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 1,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9d3f7d93",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 2,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c3e709c8",
+      "CodeType": "Normal",
+      "DisplayText": "maintain hygiene",
+      "NumericValue": 3,
+      "StringValue": "maintain_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d9105980",
+      "CodeType": "Normal",
+      "DisplayText": "questions & narratives",
+      "NumericValue": 4,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fa440842",
+      "CodeType": "Normal",
+      "DisplayText": "proper food inspection",
+      "NumericValue": 5,
+      "StringValue": "proper_food_inspection",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c9efb900",
+      "CodeType": "Normal",
+      "DisplayText": "avoid over the counter drugs",
+      "NumericValue": 6,
+      "StringValue": "avoid_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-354c11d5",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 8,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
 
     {
       "CodeID": "code-NA-f93d3eb7",
