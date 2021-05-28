@@ -444,6 +444,40 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e08"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
 
+    CodingPlan(raw_field="kiambu_rqa_s01e09_raw",
+                       time_field="sent_on",
+                       run_id_field="kiambu_rqa_s01e09_run_id",
+                       coda_filename="GPSDD_KIAMBU_s01e09.json",
+                       icr_filename="kiambu_s01e09.csv",
+                       coding_configurations=[
+                           CodingConfiguration(
+                               coding_mode=CodingModes.MULTIPLE,
+                               code_scheme=CodeSchemes.KIAMBU_S01E09,
+                               coded_field="kiambu_rqa_s01e09_coded",
+                               analysis_file_key="kiambu_rqa_s01e09",
+                               fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E09, x, y)
+                           )
+                       ],
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e09"),
+                       raw_field_fold_strategy=FoldStrategies.concatenate),
+
+    CodingPlan(raw_field="kiambu_rqa_s01e10_raw",
+                   time_field="sent_on",
+                   run_id_field="kiambu_rqa_s01e10_run_id",
+                   coda_filename="GPSDD_KIAMBU_s01e10.json",
+                   icr_filename="kiambu_s01e10.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.KIAMBU_S01E10,
+                           coded_field="kiambu_rqa_s01e10_coded",
+                           analysis_file_key="kiambu_rqa_s01e10",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KIAMBU_S01E10, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU s01e10"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
     CodingPlan(raw_field="icraf_consent_raw",
                        time_field="sent_on",
                        run_id_field="icraf_consent_run_id",
