@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8966cbb1ac03669d71a600093edf441633823bf4f5dce7f520f6aacc91c7ee7e"
+            "sha256": "39e245fa73f65c5fc957796519a1cf08dc9df69857391214953aa213a1a990a1"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.7"
+            "python_version": "3.6"
         },
         "sources": [
             {
@@ -132,7 +132,7 @@
                 "mapping"
             ],
             "git": "https://www.github.com/AfricasVoices/CoreDataModules",
-            "ref": "1f23f47bb446ad1167d2f45145e10f7b329c6f4d"
+            "ref": "74a04b60b186882a4e0e705a7e1375e133f13e3f"
         },
         "cycler": {
             "hashes": [
