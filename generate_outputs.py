@@ -305,11 +305,7 @@ if __name__ == "__main__":
                     y = td.get(f"kiambu_{field}")
                     z = td.get(f"bungoma_{field}")
 
-                    # kiambu did not air episode 9-10 - only fold the other locations where kiambu fields are None.
-                    if y is not None:
-                        folded = strategy(strategy(x, y), z)
-                    else:
-                        folded = strategy(x, z)
+                    folded = strategy(strategy(x, y), z)
 
                     if folded is not None:
                         remapped[field] = folded
