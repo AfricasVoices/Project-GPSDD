@@ -196,9 +196,11 @@ if __name__ == "__main__":
                 "bungoma_rqa_s01e08_coded": CodeSchemes.ALL_LOCATIONS_S01E08,
 
                 "kilifi_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
+                "kiambu_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
                 "bungoma_rqa_s01e09_coded": CodeSchemes.ALL_LOCATIONS_S01E09,
 
                 "kilifi_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
+                "kiambu_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
                 "bungoma_rqa_s01e10_coded": CodeSchemes.ALL_LOCATIONS_S01E10,
 
                 "kilifi_baseline_community_awareness_coded": CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS,
