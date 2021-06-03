@@ -3,7 +3,54 @@
   "Name": "All Locations S01E10",
   "Version": "0.0.0.1",
   "Codes": [
-
+{
+      "CodeID": "code-5f6ff649",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 1,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-68d8ba69",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 2,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-15ba6968",
+      "CodeType": "Normal",
+      "DisplayText": "maintain hygiene",
+      "NumericValue": 3,
+      "StringValue": "maintain_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-97bd38d1",
+      "CodeType": "Normal",
+      "DisplayText": "use herbal medication",
+      "NumericValue": 4,
+      "StringValue": "use_herbal_medication",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2a6101b8",
+      "CodeType": "Normal",
+      "DisplayText": "questions & narratives",
+      "NumericValue": 5,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a042f9f1",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 6,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
