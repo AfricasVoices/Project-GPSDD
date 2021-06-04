@@ -3,7 +3,70 @@
   "Name": "KIAMBU S01E10",
   "Version": "0.0.0.1",
   "Codes": [
-
+    {
+      "CodeID": "code-5f6ff649",
+      "CodeType": "Normal",
+      "DisplayText": "follow doctor's prescription",
+      "NumericValue": 1,
+      "StringValue": "follow_doctors_prescription",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-68d8ba69",
+      "CodeType": "Normal",
+      "DisplayText": "educate the community",
+      "NumericValue": 2,
+      "StringValue": "educate_the_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e6db05ab",
+      "CodeType": "Normal",
+      "DisplayText": "seeking doctor's advice",
+      "NumericValue": 7,
+      "StringValue": "seeking_doctors_advice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-36ee9d3b",
+      "CodeType": "Normal",
+      "DisplayText": "undertake all requisite testing and examination procedures",
+      "NumericValue": 8,
+      "StringValue": "undertake_all_requisite_testing_and_examination_procedures",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-277e9c4a",
+      "CodeType": "Normal",
+      "DisplayText": "not sharing drugs",
+      "NumericValue": 9,
+      "StringValue": "not_sharing_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-60354f34",
+      "CodeType": "Normal",
+      "DisplayText": "avoiding over the counter drugs",
+      "NumericValue": 10,
+      "StringValue": "avoiding_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2a6101b8",
+      "CodeType": "Normal",
+      "DisplayText": "questions & narratives",
+      "NumericValue": 5,
+      "StringValue": "questions_and_narratives",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a042f9f1",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 6,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
