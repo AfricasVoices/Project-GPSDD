@@ -44,6 +44,38 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-e6db05ab",
+      "CodeType": "Normal",
+      "DisplayText": "seeking doctor's advice",
+      "NumericValue": 7,
+      "StringValue": "seeking_doctors_advice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-36ee9d3b",
+      "CodeType": "Normal",
+      "DisplayText": "undertake all requisite testing and examination procedures",
+      "NumericValue": 8,
+      "StringValue": "undertake_all_requisite_testing_and_examination_procedures",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-277e9c4a",
+      "CodeType": "Normal",
+      "DisplayText": "not sharing drugs",
+      "NumericValue": 9,
+      "StringValue": "not_sharing_drugs",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-60354f34",
+      "CodeType": "Normal",
+      "DisplayText": "avoiding over the counter drugs",
+      "NumericValue": 10,
+      "StringValue": "avoiding_over_the_counter_drugs",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-a042f9f1",
       "CodeType": "Normal",
       "DisplayText": "other theme",
