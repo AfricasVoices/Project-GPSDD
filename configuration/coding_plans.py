@@ -873,7 +873,7 @@ ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="baseline_government_role_raw",
                time_field="sent_on",
-               icr_filename="bungoma_baseline_government_role.csv",
+               icr_filename="baseline_government_role.csv",
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
@@ -946,7 +946,7 @@ ALL_LOCATIONS_S01_RQA_CODING_PLANS = [
 
     CodingPlan(raw_field="endline_government_role_raw",
                time_field="sent_on",
-               icr_filename="bungoma_endline_government_role.csv",
+               icr_filename="endline_government_role.csv",
                coding_configurations=[
                    CodingConfiguration(
                        coding_mode=CodingModes.MULTIPLE,
