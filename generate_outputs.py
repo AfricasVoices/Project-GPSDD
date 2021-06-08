@@ -333,23 +333,6 @@ if __name__ == "__main__":
 
                 td.append_data(remapped, Metadata(user, Metadata.get_call_location(), TimeUtils.utc_now_as_iso_string()))
 
-
-        def coding_plans_to_analysis_configurations(coding_plans):
-            analysis_configurations = []
-            for plan in coding_plans:
-                for cc in plan.coding_configurations:
-                    if not cc.include_in_theme_distribution:
-                        continue
-
-                    analysis_configurations.append(
-                        AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
-                    )
-            return analysis_configurations
-
-
-        data =  analysis_utils.filter_relevant(data, "consent_withdrawn",
-                                               coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS))
-
         log.info("Tagging listening group participants & Generating Analysis CSVs...")
         messages_data, individuals_data = AnalysisFile.generate(user, data, pipeline_configuration, raw_data_dir,
                                                                 csv_by_message_output_path,

@@ -8,6 +8,8 @@ from core_data_modules.traced_data.io import TracedDataCSVIO
 from core_data_modules.traced_data.util import FoldTracedData
 from core_data_modules.traced_data.util.fold_traced_data import FoldStrategies
 from core_data_modules.util import TimeUtils
+from core_data_modules.analysis import analysis_utils, AnalysisConfiguration
+
 
 from src.lib import PipelineConfiguration, ConsentUtils, ListeningGroups
 from src.lib.configuration_objects import CodingModes
@@ -116,6 +118,26 @@ class AnalysisFile(object):
 
         ConsentUtils.set_stopped(user, data, consent_withdrawn_key)
         ConsentUtils.set_stopped(user, folded_data, consent_withdrawn_key)
+
+        def coding_plans_to_analysis_configurations(coding_plans):
+            analysis_configurations = []
+            for plan in coding_plans:
+                for cc in plan.coding_configurations:
+                    if not cc.include_in_theme_distribution:
+                        continue
+
+                    analysis_configurations.append(
+                        AnalysisConfiguration(cc.analysis_file_key, plan.raw_field, cc.coded_field, cc.code_scheme)
+                    )
+            return analysis_configurations
+
+
+        data =  analysis_utils.filter_relevant(data, "consent_withdrawn",
+                                               coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS))
+
+        folded_data = analysis_utils.filter_relevant(folded_data, "consent_withdrawn",
+                                              coding_plans_to_analysis_configurations(
+                                                  PipelineConfiguration.RQA_CODING_PLANS))
 
         cls.export_to_csv(user, data, csv_by_message_output_path, export_keys, consent_withdrawn_key)
         cls.export_to_csv(user, folded_data, csv_by_individual_output_path, export_keys, consent_withdrawn_key)
