@@ -87,4 +87,6 @@ class CodeSchemes(object):
     ALL_LOCATIONS_ENDLINE_COMMUNITY_AWARENESS = _open_scheme("all_locations_endline_community_awareness.json")
     ALL_LOCATIONS_ENDLINE_GOVERNMENT_ROLE = _open_scheme("all_locations_endline_government_role.json")
 
+    S01_CLOSEOUT = _open_scheme("s01_closeout.json")
+
     WS_CORRECT_DATASET = _open_scheme("ws_correct_dataset.json")
