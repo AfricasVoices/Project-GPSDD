@@ -277,7 +277,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kilifi_s01_closeout_raw",
                        time_field="sent_on",
                        run_id_field="kilifi_s01_closeout_run_id",
-                       coda_filename="GPSDD_KILIFI_s01e10.json",
+                       coda_filename="GPSDD_KILIFI_s01_closeout.json",
                        icr_filename="kilifi_s01_closeout.csv",
                        coding_configurations=[
                            CodingConfiguration(
@@ -547,7 +547,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="kiambu_s01_closeout_raw",
                            time_field="sent_on",
                            run_id_field="kiambu_s01_closeout_run_id",
-                           coda_filename="GPSDD_KIAMBU_s01e10.json",
+                           coda_filename="GPSDD_KIAMBU_s01_closeout.json",
                            icr_filename="kiambu_s01_closeout.csv",
                            coding_configurations=[
                                CodingConfiguration(
@@ -801,7 +801,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
     CodingPlan(raw_field="bungoma_s01_closeout_raw",
                                time_field="sent_on",
                                run_id_field="bungoma_s01_closeout_run_id",
-                               coda_filename="GPSDD_BUNGOMA_s01e10.json",
+                               coda_filename="GPSDD_BUNGOMA_s01_closeout.json",
                                icr_filename="bungoma_s01_closeout.csv",
                                coding_configurations=[
                                    CodingConfiguration(
