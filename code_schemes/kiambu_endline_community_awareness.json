@@ -4,7 +4,7 @@
   "Version": "0.0.0.1",
   "Codes": [
 {
-      "CodeID": "code-4255f8ab",
+      "CodeID": "code-7a3c9684",
       "CodeType": "Normal",
       "DisplayText": "not informed at all",
       "NumericValue": 1,
@@ -12,7 +12,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-7539a348",
+      "CodeID": "code-efe7671a",
       "CodeType": "Normal",
       "DisplayText": "a little bit informed",
       "NumericValue": 2,
@@ -20,7 +20,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-400a3478",
+      "CodeID": "code-6f566122",
       "CodeType": "Normal",
       "DisplayText": "well informed",
       "NumericValue": 3,
@@ -28,7 +28,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-456c06a5",
+      "CodeID": "code-722d72e1",
       "CodeType": "Normal",
       "DisplayText": "very well informed",
       "NumericValue": 4,
@@ -36,7 +36,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-757f4633",
+      "CodeID": "code-40bd3a7d",
       "CodeType": "Normal",
       "DisplayText": "other theme",
       "NumericValue": 5,
