@@ -261,7 +261,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD KILIFI s01 closeout",
       "StringValue": "gpsdd_kilifi_s01 closeout",
-      "NumericValue": 55,
+      "NumericValue": 57,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD KILIFI s01 closeout"
@@ -382,7 +382,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD KIAMBU s01 closeout",
       "StringValue": "gpsdd_kiambu_s01 closeout",
-      "NumericValue": 56,
+      "NumericValue": 58,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD KIAMBU s01 closeout"
@@ -503,7 +503,7 @@
       "CodeType": "Normal",
       "DisplayText": "GPSDD BUNGOMA s01 closeout",
       "StringValue": "gpsdd_bungoma_s01 closeout",
-      "NumericValue": 57,
+      "NumericValue": 59,
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD BUNGOMA s01 closeout"
