@@ -288,7 +288,7 @@ KILIFI_S01_RQA_CODING_PLANS = [
                                fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01_CLOSEOUT, x, y)
                            )
                        ],
-                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI closeout"),
+                       ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KILIFI S01 closeout"),
                        raw_field_fold_strategy=FoldStrategies.concatenate)
 ]
 
@@ -558,7 +558,7 @@ KIAMBU_S01_RQA_CODING_PLANS = [
                                    fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01_CLOSEOUT, x, y)
                                )
                            ],
-                           ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU closeout"),
+                           ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD KIAMBU S01 closeout"),
                            raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 
@@ -812,7 +812,7 @@ BUNGOMA_S01_RQA_CODING_PLANS = [
                                        fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01_CLOSEOUT, x, y)
                                    )
                                ],
-                               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD bungoma closeout"),
+                               ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("GPSDD BUNGOMA S01 closeout"),
                                raw_field_fold_strategy=FoldStrategies.concatenate)
 
 ]
