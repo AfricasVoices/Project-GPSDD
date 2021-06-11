@@ -25,6 +25,7 @@ DATASETS=(
     "GPSDD_BUNGOMA_s01e08"
     "GPSDD_BUNGOMA_s01e09"
     "GPSDD_BUNGOMA_s01e10"
+    "GPSDD_BUNGOMA_s01_closeout"
 
     "GPSDD_BUNGOMA_age"
     "GPSDD_BUNGOMA_gender"
