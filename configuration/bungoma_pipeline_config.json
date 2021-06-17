@@ -18,7 +18,8 @@
         "gpsdd_bungoma_s01e08_activation",
         "gpsdd_bungoma_s01_endline",
         "gpsdd_bungoma_s01e09_activation",
-        "gpsdd_bungoma_s01e10_activation"
+        "gpsdd_bungoma_s01e10_activation",
+        "gpsdd_bungoma_s01_closeout_activation"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog"
@@ -105,6 +106,10 @@
     {"RapidProKey": "Rqa_S01E10 (Text) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "bungoma_rqa_s01e10_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E10 (Run ID) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "bungoma_rqa_s01e10_run_id"},
     {"RapidProKey": "Rqa_S01E10 (Time) - gpsdd_bungoma_s01e10_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "S01_Closeout (Text) - gpsdd_bungoma_s01_closeout_activation", "PipelineKey": "bungoma_s01_closeout_raw", "IsActivationMessage": true},
+    {"RapidProKey": "S01_Closeout (Run ID) - gpsdd_bungoma_s01_closeout_activation", "PipelineKey": "bungoma_s01_closeout_run_id"},
+    {"RapidProKey": "S01_Closeout (Time) - gpsdd_bungoma_s01_closeout_activation", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Constituency (Text) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_location_raw"},
     {"RapidProKey": "Constituency (Time) - gpsdd_bungoma_s01_demog", "PipelineKey": "bungoma_location_time"},

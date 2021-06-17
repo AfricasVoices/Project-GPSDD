@@ -26,6 +26,7 @@ DATASETS=(
     "GPSDD_KIAMBU_s01e09"
     "GPSDD_KIAMBU_s01e10"
     "GPSDD_KIAMBU_icraf_consent"
+    "GPSDD_KIAMBU_s01_closeout"
 
     "GPSDD_KIAMBU_age"
     "GPSDD_KIAMBU_gender"

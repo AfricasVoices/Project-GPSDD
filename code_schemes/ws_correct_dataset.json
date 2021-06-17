@@ -257,6 +257,17 @@
       ]
     },
     {
+      "CodeID": "code-fcb95c7f",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KILIFI s01 closeout",
+      "StringValue": "gpsdd_kilifi_s01 closeout",
+      "NumericValue": 57,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KILIFI S01 closeout"
+      ]
+    },
+    {
       "CodeID": "code-59ce7a3e",
       "CodeType": "Normal",
       "DisplayText": "GPSDD KIAMBU s01e01",
@@ -367,6 +378,17 @@
       ]
     },
     {
+      "CodeID": "code-0ec5e335",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD KIAMBU s01 closeout",
+      "StringValue": "gpsdd_kiambu_s01 closeout",
+      "NumericValue": 58,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD KIAMBU S01 closeout"
+      ]
+    },
+    {
       "CodeID": "code-54b4fc0a",
       "CodeType": "Normal",
       "DisplayText": "GPSDD BUNGOMA s01e01",
@@ -474,6 +496,17 @@
       "VisibleInCoda": true,
       "MatchValues": [
         "GPSDD BUNGOMA s01e10"
+      ]
+    },
+    {
+      "CodeID": "code-a4101f08",
+      "CodeType": "Normal",
+      "DisplayText": "GPSDD BUNGOMA s01 closeout",
+      "StringValue": "gpsdd_bungoma_s01 closeout",
+      "NumericValue": 59,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "GPSDD BUNGOMA S01 closeout"
       ]
     },
     {
