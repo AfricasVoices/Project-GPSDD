@@ -146,9 +146,12 @@ if __name__ == "__main__":
             duplicate_participants = bungoma_rqa_participants.intersection(kilifi_rqa_participants) \
                 .union(bungoma_rqa_participants.intersection(kiambu_rqa_participants)) \
                 .union(kiambu_rqa_participants.intersection(kilifi_rqa_participants))
+
             if len(duplicate_participants) > 0:
                 log.error(f"Detected participants who took part in multiple locations: {duplicate_participants}")
-                exit(1)
+
+                #Filter out duplicate participants
+                data = [td for td in data if td['uid'] not in duplicate_participants]
 
             # 2. Change the coding plans to refer to ones that contain unified field names and code schemes etc. rather
             # than per-location
@@ -238,14 +241,32 @@ if __name__ == "__main__":
                 assert x == y, f"{x} != {y}"
                 return x
 
-
-            def demog_labels(code_scheme, x, y):
-                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code == "NA":
+            def disabled_assert_equal(x, y):
+                if x is None:
                     return y
-                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code == "NA":
+                if y is None:
                     return x
 
-                assert x["CodeID"] == y["CodeID"]
+                if x != y:
+                    return x
+
+
+            def demog_labels(code_scheme, x, y):
+                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code in ["NA", "NR"]:
+                    return y
+                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code in ["NA", "NR"]:
+                    return x
+
+                assert x['CodeID'] == y['CodeID'], f"{x['CodeID']} == {y['CodeID']}"
+
+                return x
+
+            def disabled_demog_labels(code_scheme, x, y):
+                if code_scheme.get_code_with_code_id(x["CodeID"]).control_code in ["NA", "NR"]:
+                    return y
+                if code_scheme.get_code_with_code_id(y["CodeID"]).control_code in ["NA", "NR"]:
+                    return x
+
                 return x
 
             remappings = {
@@ -272,16 +293,16 @@ if __name__ == "__main__":
                 "rqa_s01e10_raw": FoldStrategies.concatenate,
 
                 "gender_coded": partial(demog_labels, CodeSchemes.GENDER),
-                "age_coded": partial(demog_labels, CodeSchemes.AGE),
-                "age_category_coded": partial(demog_labels, CodeSchemes.AGE_CATEGORY),
+                "age_coded": partial(disabled_demog_labels, CodeSchemes.AGE),
+                "age_category_coded": partial(disabled_demog_labels, CodeSchemes.AGE_CATEGORY),
                 "county_coded": partial(demog_labels, CodeSchemes.KENYA_COUNTY),
                 "constituency_coded": partial(demog_labels, CodeSchemes.KENYA_CONSTITUENCY),
-                "disabled_coded": partial(demog_labels, CodeSchemes.DISABLED),
+                "disabled_coded": partial(disabled_demog_labels, CodeSchemes.DISABLED),
 
-                "gender_raw": assert_equal,
-                "age_raw": assert_equal,
-                "location_raw": assert_equal,
-                "disabled_raw": assert_equal,
+                "gender_raw": disabled_assert_equal,
+                "age_raw": disabled_assert_equal,
+                "location_raw": disabled_assert_equal,
+                "disabled_raw": disabled_assert_equal,
 
                 "baseline_community_awareness_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_COMMUNITY_AWARENESS),
                 "baseline_government_role_coded": partial(FoldStrategies.list_of_labels, CodeSchemes.ALL_LOCATIONS_BASELINE_GOVERNMENT_ROLE),
