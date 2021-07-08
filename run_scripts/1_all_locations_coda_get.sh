@@ -26,6 +26,7 @@ DATASETS=(
     "GPSDD_KILIFI_s01_noise_handler"
     "GPSDD_BUNGOMA_s01e09"
     "GPSDD_BUNGOMA_s01e10"
+    "GPSDD_BUNGOMA_s01_closeout"
 
     "GPSDD_BUNGOMA_age"
     "GPSDD_BUNGOMA_gender"
@@ -48,6 +49,7 @@ DATASETS=(
     "GPSDD_KIAMBU_s01e08"
     "GPSDD_KIAMBU_s01e09"
     "GPSDD_KIAMBU_s01e10"
+    "GPSDD_KIAMBU_s01_closeout"
 
     "GPSDD_KIAMBU_age"
     "GPSDD_KIAMBU_gender"
@@ -71,6 +73,7 @@ DATASETS=(
     "GPSDD_KILIFI_s01e09"
     "GPSDD_KILIFI_s01e10"
     "GPSDD_KIAMBU_icraf_consent"
+    "GPSDD_KILIFI_s01_closeout"
 
     "GPSDD_KILIFI_age"
     "GPSDD_KILIFI_gender"
