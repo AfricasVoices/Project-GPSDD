@@ -114,7 +114,7 @@ if __name__ == "__main__":
                 )
         return analysis_configurations
 
-
+    '''
     log.info("Computing engagement counts...")
     with open(f"{automated_analysis_output_dir}/engagement_counts.csv", "w") as f:
         engagement_counts.export_engagement_counts_csv(
@@ -157,17 +157,19 @@ if __name__ == "__main__":
             f,
             limit_per_code=100
         )
-
+    '''
     # Export question messages
     log.info("Exporting questions raw messages for each episode...")
-    questions_story_string_values = ["questions", "questions_and_narratives", "showtime_question"]
+    questions_story_code_ids = ["code-SQ-5e8f0122", "code-80d9988f", "code-96768ae6", "code-32bb67cc"
+                                     "code-d9105980", "code-4d466ac5", "code-1b004f5d", "code-234b02c2",
+                                     "code-2a6101b8", "code-a5fbf069"]
     with open(f"{automated_analysis_output_dir}/questions_messages.csv", "w") as f:
         sample_messages.export_sample_messages_csv(
             messages, CONSENT_WITHDRAWN_KEY,
             coding_plans_to_analysis_configurations(PipelineConfiguration.RQA_CODING_PLANS),
-            f, filter_code_ids=questions_story_string_values, limit_per_code=sys.maxsize
+            f, filter_code_ids=questions_story_code_ids, limit_per_code=sys.maxsize
         )
-
+    '''
     if pipeline_configuration.automated_analysis.traffic_labels is not None:
         log.info("Exporting traffic analysis...")
         with open(f"{automated_analysis_output_dir}/traffic_analysis.csv", "w") as f:
@@ -215,5 +217,5 @@ if __name__ == "__main__":
         f"{automated_analysis_output_dir}/maps/constituencies/constituency_",
         export_by_theme=pipeline_configuration.automated_analysis.generate_constituency_theme_distribution_maps
     )
-
+    '''
     log.info("Automated analysis python script complete")

@@ -90,7 +90,7 @@ if __name__ == "__main__":
             drive_client_wrapper.update_or_create_batch(
                 paths_to_upload, pipeline_configuration.drive_upload.automated_analysis_dir,
                 target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True)
-
+            '''
             paths_to_upload = glob(f"{automated_analysis_input_dir}/maps/counties/*.png")
             log.info(f"Uploading {len(paths_to_upload)} county maps to Drive...")
             drive_client_wrapper.update_or_create_batch(
@@ -102,6 +102,7 @@ if __name__ == "__main__":
             drive_client_wrapper.update_or_create_batch(
                 paths_to_upload, f"{pipeline_configuration.drive_upload.automated_analysis_dir}/maps/constituencies/",
                 target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True)
+            '''
         else:
             assert pipeline_run_mode == "auto-code-only", "pipeline run mode must be either auto-code-only or all-stages"
             production_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.production_upload_path)
