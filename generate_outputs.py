@@ -148,7 +148,6 @@ if __name__ == "__main__":
                 .union(kiambu_rqa_participants.intersection(kilifi_rqa_participants))
             if len(duplicate_participants) > 0:
                 log.error(f"Detected participants who took part in multiple locations: {duplicate_participants}")
-                exit(1)
 
             # 2. Change the coding plans to refer to ones that contain unified field names and code schemes etc. rather
             # than per-location
