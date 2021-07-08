@@ -30,7 +30,7 @@ echo "Starting run with id '$RUN_ID'"
 
 #./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunStart"
 
-#./1_all_locations_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
+./1_all_locations_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
 ./2_fetch_raw_data.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
 
@@ -52,4 +52,4 @@ fi
 ./8_upload_log_files.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$PERFORMANCE_LOGS_DIR" \
                         "$DATA_BACKUPS_DIR"
 
-./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunEnd"
+#./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunEnd"
