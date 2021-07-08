@@ -28,9 +28,9 @@ RUN_ID="$TIMESTAMP-$HASH"
 
 echo "Starting run with id '$RUN_ID'"
 
-./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunStart"
+#./log_pipeline_event.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$RUN_ID" "PipelineRunStart"
 
-./1_all_locations_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
+#./1_all_locations_coda_get.sh "$CODA_PULL_CREDENTIALS_PATH" "$CODA_TOOLS_ROOT" "$DATA_ROOT"
 
 ./2_fetch_raw_data.sh "$USER" "$AVF_BUCKET_CREDENTIALS_PATH" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
 

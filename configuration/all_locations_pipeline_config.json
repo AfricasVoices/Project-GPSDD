@@ -7,17 +7,7 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-kilifi-textit-token.txt",
       "ContactsFileName": "gpsdd_kilifi_contacts",
       "ActivationFlowNames": [
-        "gpsdd_kilifi_s01e01_activation",
-        "gpsdd_kilifi_s01_baseline",
-        "gpsdd_kilifi_s01e02_activation",
-        "gpsdd_kilifi_s01e03_activation",
-        "gpsdd_kilifi_s01e04_activation",
-        "gpsdd_kilifi_s01e05_activation",
-        "gpsdd_kilifi_s01e06_activation",
-        "gpsdd_kilifi_s01e07_activation",
-        "gpsdd_kilifi_s01e08_activation",
-        "gpsdd_kilifi_s01e09_activation",
-        "gpsdd_kilifi_s01e10_activation"
+        "gpsdd_kilifi_s01_endline"
       ],
       "SurveyFlowNames": [
         "gpsdd_kilifi_s01_demog"
@@ -35,17 +25,7 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-kiambu-textit-token.txt",
       "ContactsFileName": "gpsdd_kiambu_contacts",
       "ActivationFlowNames": [
-        "gpsdd_kiambu_s01e01_activation",
-        "gpsdd_kiambu_s01_baseline",
-        "gpsdd_kiambu_s01e02_activation",
-        "gpsdd_kiambu_s01e03_activation",
-        "gpsdd_kiambu_s01e04_activation",
-        "gpsdd_kiambu_s01e05_activation",
-        "gpsdd_kiambu_s01e06_activation",
-        "gpsdd_kiambu_s01e07_activation",
-        "gpsdd_kiambu_s01e08_activation",
-        "gpsdd_kiambu_s01e09_activation",
-        "gpsdd_kiambu_s01e10_activation"
+        "gpsdd_kiambu_s01_endline"
       ],
       "SurveyFlowNames": [
         "gpsdd_kiambu_s01_demog"
@@ -64,17 +44,7 @@
       "TokenFileURL": "gs://avf-credentials/gpsdd-bungoma-textit-token.txt",
       "ContactsFileName": "gpsdd_bungoma_contacts",
       "ActivationFlowNames": [
-        "gpsdd_bungoma_s01e01_activation",
-        "gpsdd_bungoma_s01_baseline",
-        "gpsdd_bungoma_s01e02_activation",
-        "gpsdd_bungoma_s01e03_activation",
-        "gpsdd_bungoma_s01e04_activation",
-        "gpsdd_bungoma_s01e05_activation",
-        "gpsdd_bungoma_s01e06_activation",
-        "gpsdd_bungoma_s01e07_activation",
-        "gpsdd_bungoma_s01e08_activation",
-        "gpsdd_bungoma_s01e09_activation",
-        "gpsdd_bungoma_s01e10_activation"
+        "gpsdd_bungoma_s01_endline"
       ],
       "SurveyFlowNames": [
         "gpsdd_bungoma_s01_demog"
@@ -341,10 +311,10 @@
   },
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-    "ProductionUploadPath": "gpsdd_analysis_outputs/all_locations/production.csv",
-    "MessagesUploadPath": "gpsdd_analysis_outputs/all_locations/messages.csv",
-    "IndividualsUploadPath": "gpsdd_analysis_outputs/all_locations/individuals.csv",
-    "AutomatedAnalysisDir": "gpsdd_analysis_outputs/all_locations/automated_analysis"
+    "ProductionUploadPath": "gpsdd_analysis_outputs/all_locations/endline-only/production.csv",
+    "MessagesUploadPath": "gpsdd_analysis_outputs/all_locations/endline-only/messages.csv",
+    "IndividualsUploadPath": "gpsdd_analysis_outputs/all_locations/endline-only/individuals.csv",
+    "AutomatedAnalysisDir": "gpsdd_analysis_outputs/all_locations/endline-only/automated_analysis"
   },
   "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
   "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
