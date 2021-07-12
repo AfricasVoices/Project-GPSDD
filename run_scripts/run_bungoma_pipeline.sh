@@ -41,7 +41,7 @@ echo "Starting run with id '$RUN_ID'"
 
 #if [[ $PIPELINE_RUN_MODE == "all-stages" ]]; then
    #./5_automated_analysis.sh --profile-memory "$PERFORMANCE_LOGS_DIR/automated-analysis-memory-$RUN_ID.profile" \
-                            "$USER" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
+                            #"$USER" "$PIPELINE_CONFIGURATION" "$DATA_ROOT"
 #fi
 
 #./6_backup_data_root.sh "$DATA_ROOT" "$DATA_BACKUPS_DIR/data-$RUN_ID.tar.gzip"
