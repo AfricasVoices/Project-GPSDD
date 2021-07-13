@@ -339,8 +339,8 @@
   "FilterTestMessages": true,
   "MoveWSMessages": true,
   "AutomatedAnalysis": {
-    "GenerateCountyThemeDistributionMaps": true,
-    "GenerateConstituencyThemeDistributionMaps": true
+    "GenerateCountyThemeDistributionMaps": false,
+    "GenerateConstituencyThemeDistributionMaps": false
   },
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
